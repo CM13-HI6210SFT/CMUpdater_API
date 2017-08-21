@@ -2,10 +2,10 @@
     "id": null,
     "result": [
         {
-            "incremental": "fca1a69fa4",
+            "incremental": "fca1969fa4",
             "api_level": 23,
             "url": "http: //get.cm/get/jenkins/57124/cm-11-20140130-NIGHTLY-i9300.zip",
-            "timestamp": "1503335592",
+            "timestamp": "1503335692",
             "md5sum": "4e0a335b378035d12cb6626b6623072b",
             "changes": "http: //get.cm/get/jenkins/57124/CHANGES.txt",
             "channel": "nightly",
