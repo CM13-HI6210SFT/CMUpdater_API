@@ -9,11 +9,11 @@
       "version": "13.0"
     }, 
     {
-      "datetime": 1503336592, 
-      "filename": "lineage-13.0-20170822-NIGHTLY-cherryplus.zip", 
-      "id": "599abad373393c38ce452320", 
+      "datetime": 1503354849, 
+      "filename": "lineage-13.0-20170821-NIGHTLY-cherryplus.zip", 
+      "id": "92dcc93dca", 
       "romtype": "nightly", 
-      "url": "https://mirrorbits.lineageos.org/full/angler/20170821/lineage-14.1-20170821-nightly-angler-signed.zip", 
+      "url": "https://www.dropbox.com/s/l4k2wzul9ji2e70/lineage-13.0-20170821-NIGHTLY-cherryplus.zip?dl=1", 
       "version": "13.0"
     }
   ]
