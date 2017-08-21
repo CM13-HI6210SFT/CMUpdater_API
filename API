@@ -1,16 +1,20 @@
 {
-    "id": null,
-    "result": [
-        {
-            "incremental": "fca1969fa4",
-            "api_level": 23,
-            "url": "http: //get.cm/get/jenkins/57124/cm-11-20140130-NIGHTLY-i9300.zip",
-            "timestamp": "1503335692",
-            "md5sum": "4e0a335b378035d12cb6626b6623072b",
-            "changes": "http: //get.cm/get/jenkins/57124/CHANGES.txt",
-            "channel": "nightly",
-            "filename": "cm-11-20140130-NIGHTLY-i9300.zip"
-        }
-    ],
-    "error": null
+  "response": [ 
+    {
+      "datetime": 1503335592, 
+      "filename": "lineage-13.0-20170821-NIGHTLY-cherryplus.zip", 
+      "id": "5991799c73393c7e72fcde24", 
+      "romtype": "nightly", 
+      "url": "https://mirrorbits.lineageos.org/full/angler/20170814/lineage-14.1-20170814-nightly-angler-signed.zip", 
+      "version": "13.0"
+    }, 
+    {
+      "datetime": 1503336592, 
+      "filename": "lineage-13.0-20170822-NIGHTLY-cherryplus.zip", 
+      "id": "599abad373393c38ce452320", 
+      "romtype": "nightly", 
+      "url": "https://mirrorbits.lineageos.org/full/angler/20170821/lineage-14.1-20170821-nightly-angler-signed.zip", 
+      "version": "13.0"
+    }
+  ]
 }
