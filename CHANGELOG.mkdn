@@ -1,147 +1,157 @@
 
  ▼ Resurrection Remix Nougat Ver 5.8.4 Changelog
 
- ▪ fix ussd
- ▪ fix headphone/microphone jack
- ▪ add power.hi6210sft libs
+ ▪ update kernel to 3.10.107
 
- ▼ 08/16/2017
+ ▼ 08/28/2017
 
 
  ▪ project build/
- ▪ 8988c32ee ru
+ ▪ 263c42bce ru
 
  ▪ project external/roboto-fonts/
- ▪ 9de6e37 Roboto-Light
+ ▪ 9f1d0f9 Roboto-Light
 
  ▪ project frameworks/base/
- ▪ 7856504aa7c mtp: stop ocassional crash in MTP Host.
+ ▪ 3b1fa2f8958 mtp: stop ocassional crash in MTP Host.
 
  ▪ project frameworks/native/
- ▪ 7d6a2e109 opengl: dont use swap buffers with damage
- ▪ 557d5a115 gui: don't use native fence sync
- ▪ fa934a324 Fix deep sleep issue
+ ▪ 555884e99 opengl: dont use swap buffers with damage
+ ▪ e87bc3a5e gui: don't use native fence sync
+ ▪ c53494787 Fix deep sleep issue
 
  ▪ project frameworks/opt/telephony/
- ▪ 7b77f2f3 fix ussd
- ▪ 5293dff1 fix 2g/3g/LTE switch
-
- ▪ project hardware/qcom/bt-caf/
- ▪ 328d8af Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
+ ▪ fe213112 fix ussd
+ ▪ c86f3bd9 fix 2g/3g/LTE switch
 
  ▪ project packages/apps/Camera2/
- ▪ 9062ef7fb Camera2: override capture support level
- ▪ b4cad6331 Camera2: Fix photo snap delay on front cam.
-
- ▪ project packages/apps/Jelly/
- ▪ 21b9d05 Jelly: Check for onChanged in history data observer
-
- ▪ project packages/apps/Settings/
- ▪ 3858939ae5 add ota
- ▪ c32f8e65e2 Adjust brightness by sliding across the status bar
- ▪ 115a5419ea added helium (#843)
-
- ▪ project packages/apps/Terminal/
- ▪ f1f339b Terminal
-
- ▪ project packages/apps/Trebuchet/
- ▪ abdbec96c my apps
-
- ▪ project packages/providers/MediaProvider/
- ▪ 11a09a1 fix_mtp
-
- ▪ project packages/services/OmniJaws/
- ▪ 30241d9 enable weather by default
-
- ▪ project system/core/
- ▪ 7b3887f7b CPU Fix by K4CZP3R
-
- ▪ project vendor/cm/
- ▪ c73feb2a vendor
-
- ▼ 08/15/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ c0c5c3a1 Merge "Fix typos / inconsistencies in German language" into android-7.1
-
- ▪ project packages/apps/Jelly/
- ▪ 1ea2382 Jelly: Improve URL bar behavior
-
- ▪ project packages/apps/Settings/
- ▪ 7d771ca324 Fix i9500 maintainer dont show (#842)
- ▪ df1f26ec20 Fix i9500 maintainer dont show (#840)
-
- ▼ 08/14/2017
-
-
- ▪ project frameworks/base/
+ ▪ be18b3c2e Camera2: override capture support level
+ ▪ fbc84d0a6 Camera2: Fix photo snap delay on front cam.
 
  ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/DeskClock/
- ▪ 436ce6ae clock: Reset profile if profile is already selected
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ 72deb1296d Fix land device position (#839)
- ▪ f6cc7a7c19 Add Redmi 4X device maintainer (#838)
+ ▪ fd41c6810c add ota
+ ▪ b77ae8909b Adjust brightness by sliding across the status bar
+
+ ▪ project packages/apps/Terminal/
+ ▪ 7ad1e9f Terminal
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 2f512d046 my apps
+
+ ▪ project packages/providers/MediaProvider/
+ ▪ 04789f4 fix_mtp
 
  ▪ project packages/services/OmniJaws/
+ ▪ 1933b2f enable weather by default
 
- ▼ 08/13/2017
+ ▪ project system/core/
+ ▪ 9e976023f CPU Fix by K4CZP3R
+
+ ▪ project vendor/cm/
+ ▪ 49dcc557 vendor
+
+ ▼ 08/26/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 756f3e06842 Allow to ignore presentation indicator of outgoing calls [1/3]
+ ▪ 89fc8fd5c3e Use SystemClock.elapsedRealtime() to calc TTFF
+ ▪ d1cb95502dd Tweak Privacy Guard dialog layout
+ ▪ 20d80eba13f PowerManager: Allow to distinguish different keypresses
+ ▪ 8b63de6f74c Add @hide annotation to the privacy guard ops set
+ ▪ 41932072a67 Change visibility of the Privacy Guard ops set
+ ▪ 6ab7b900210 Camera: ignore torch status update for aux or compsite camera
+ ▪ be1d6ba588b base: audioservice: Set BT_SCO status
+
+ ▪ project frameworks/native/
+ ▪ 9cb668104 Merge remote-tracking branch 'remotes/laos/cm-14.1' into HEAD
+
+ ▪ project packages/apps/Eleven/
+ ▪ 943d43e Eleven: Fix restoring user settings
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 2dd00df30 Email: Fix led notification settings
+
+ ▪ project packages/services/Telephony/
+ ▪ 6e6fe976 Allow to ignore presentation indicator of outgoing calls [3/3]
+
+ ▼ 08/25/2017
+
+
+ ▪ project frameworks/opt/telephony/
+ ▪ b2318153 Allow to ignore presentation indicator of outgoing calls [2/3]
+
+ ▼ 08/24/2017
+
+
+ ▪ project packages/apps/Settings/
+ ▪ 3c8b4d42e4 Responsible arrangement for the Seed device.  (#851)
+
+ ▼ 08/22/2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8998/
+ ▪ eba183ef0 Merge tag 'LA.UM.5.7.r1-10500-8x98.0' into cm-14.1-caf-8998
+
+ ▪ project packages/apps/Jelly/
+ ▪ 2a6aa75 Fix NPE.
+
+ ▼ 08/21/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/ril-caf/
+ ▪ d8290dd ril: Allow targets to disable Clang
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+ ▪ 14513f5e52 Update s7 edge maintainer
+ ▪ 3bb44bbd4d Transfer maintainership of Galaxy S7 series to schwabe93
+
+ ▼ 08/20/2017
+
+
+ ▪ project build/
+ ▪ 6a081e112 envsetup: stop jack server once build completed
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/CMParts/
+ ▪ f763660 CMParts: Add strings for DCI-P3 color profile
+
+ ▪ project packages/apps/Eleven/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/SetupWizard/
+
+ ▪ project packages/apps/Snap/
+
+ ▪ project packages/apps/Terminal/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/UnifiedEmail/
+
+ ▼ 08/19/2017
 
 
  ▪ project bootable/recovery-twrp/
- ▪ 5302ec42 Merge "SHA2: Enable in landscape and watch xml" into android-7.1
+ ▪ c75c8a2e Remove duplicate entries & Improve Chinese translation
 
- ▪ project frameworks/base/
- ▪ 63df1f1fdea PowerManagerService: fix HW button illumination timeout
- ▪ 87a1af4ddbb SystemUI: Fix battery meter view blacklist handling
+ ▪ project device/qcom/sepolicy/
+ ▪ c631819 Use set_prop() macro for property sets
 
- ▪ project hardware/broadcom/wlan/
- ▪ 5ef057d Merge tag 'android-7.1.2_r28' into cm-14.1
-
- ▪ project packages/apps/Snap/
- ▪ 70dbc05d0 Snap: add missing null check on isCamera2Supported
-
- ▼ 08/12/2017
-
-
- ▪ project hardware/qcom/bt-caf/
- ▪ b60954a libbt-qcom: Allow reading BT address from property
-
- ▪ project packages/services/Telephony/
- ▪ 3933dacc VoicemailSettingsActivity: Fix some NPEs
- ▪ f824b46d Telephony: Correct missing italian translation
- ▪ 2c3c9b07 PhoneToggler: Update preferred network mode setting
-
- ▼ 08/11/2017
-
+ ▪ project frameworks/native/
+ ▪ afbd1c126 InputDispatcher: On keypress, deliver keycode to pokeUserActivity
+ ▪ 766d692ba PowerManager.h: Define USER_ACTIVITY_FLAG values
 
  ▪ project packages/apps/Settings/
- ▪ 6a459f6d3d Edit Moto G4 Plus Maintainer name (added full name) (#836)
- ▪ 37c5cff879 Add maintainer for Xiaomi RedMi 3s (#835)
-
- ▼ 08/10/2017
-
-
- ▪ project frameworks/base/
- ▪ 558ad5d39a7 FWB:Single tap tile add switch [1/2]
- ▪ ced649479c5 Allow user to add/remove QS with one click
- ▪ 9059f7a6364 Merge pull request #206 from ashoksoni/dataswitch
- ▪ e5d459fd918 Drop-down data switch through Cellular tile.
- ▪ db1dea31f16 SystemUI: add telephony-ext so that imports can be resolved
-
- ▪ project packages/apps/Jelly/
- ▪ d76965a Jelly: Improve incognito mode privacy
- ▪ 6767c48 Jelly: Enable more HTML5 features
- ▪ 2e53eb0 Jelly: Don't crash on non-http downloads
- ▪ 3347ed4 Jelly: Avoid Url bar interraction when focused
- ▪ f67c692 Jelly: The app should not close when search is active and back-button is pressed.
-
- ▪ project packages/apps/Settings/
- ▪ fabd9ef5ef Settings:Single tap tile add switch [2/2]
- ▪ 0afef7a60e Settings:remove Selinux Switch
+ ▪ 4dccd0d551 Changing Galaxy s7 edge Maintainer (#846)
 
