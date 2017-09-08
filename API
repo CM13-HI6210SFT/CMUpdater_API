@@ -1,0 +1,20 @@
+{
+  "response": [ 
+    {
+      "datetime": 1504735404, 
+      "filename": "RR-N-v5.8.4-20170906-cherryplus-Nightly-b87.zip", 
+      "id": "92dcc93dca", 
+      "romtype": "nightly", 
+      "url": "https://www.dropbox.com/s/l4k2wzul9ji2e70/lineage-13.0-20170821-NIGHTLY-cherryplus.zip?dl=1", 
+      "version": "13.0"
+    },
+    {
+      "datetime": 1504735405, 
+      "filename": "RR-N-v5.8.4-20170906-cherryplus-Nightly-b88.zip", 
+      "md5sum": "ceb58955b03e850372a2b0885abb1fbf", 
+      "romtype": "nightly", 
+      "url": "https://www.dropbox.com/s/gn63rqcwwbwbruu/lineage-13.0-20170826-NIGHTLY-cherryplus.zip?dl=1", 
+      "version": "5.8.4"
+    }
+  ]
+}
