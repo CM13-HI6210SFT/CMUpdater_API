@@ -1,13 +1,5 @@
 {
-  "response": [ 
-    {
-      "datetime": 1504904819, 
-      "filename": "RR-N-v5.8.4-20170908-cherryplus-Nightly-b87.zip", 
-      "md5sum": "8d39157aed181d37355e108bb4727bce", 
-      "romtype": "Nightly", 
-      "url": "https://www.dropbox.com/s/t75fuys7w5d6sw4/RR-N-v5.8.4-20170908-cherryplus-Nightly-b87.zip?dl=1", 
-      "version": "v5.8.4"
-    },
+  "response": [
     {
       "datetime": 1504955184, 
       "filename": "RR-N-v5.8.4-20170909-cherryplus-Nightly-b88.zip", 
