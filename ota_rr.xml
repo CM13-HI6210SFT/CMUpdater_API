@@ -24,7 +24,7 @@
                 title="Gapps"
                 description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
             <HomePage
-                id="4pda"
+                id="homepage"
                 title="4PDA"
                 description="Project home page">https://goo.gl/HtpGtE</HomePage>
 	    </cherryplus>
