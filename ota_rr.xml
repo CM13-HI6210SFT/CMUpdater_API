@@ -15,18 +15,18 @@
             	id="Old_builds"
             	title="Build Folder"
             	description="Build Download Archive">https://yadi.sk/d/y2y4VXFo3KRVwo</OldBuildsUrl>
-            <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
             <TWRP
                 id="twrp"
                 title="TWRP"
                 description="3.1.1">https://goo.gl/PHmPLR</TWRP>
-            <pda
+            <GappsUrl
+                id="gapps"
+                title="Gapps"
+                description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
+            <home
                 id="4pda"
                 title="4PDA"
-                description="Project home page">https://goo.gl/HtpGtE</pda>
+                description="Project home page">https://goo.gl/HtpGtE</home>
 	        </cherryplus>
     </test>
 </SlimOTA>
