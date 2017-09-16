@@ -4,29 +4,58 @@
         <cherryplus>
             <Filename>RR-N-v5.8.4-2017013-cherryplus-Nightly-b88.zip</Filename>
             <RomUrl
-                id="rom"
-                title="Download"
-                description="Latest ResurrectionRemix build">https://goo.gl/AAw7Ds</RomUrl>
+             id="rom"
+             title="Download"
+             description="Latest ResurrectionRemix build">https://goo.gl/AAw7Ds</RomUrl>
             <ChangelogUrl
-                id="changelog"
-                title="Changelog"
-                description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
-            <!--OldBuildsUrl
-            	id="Old_builds"
-            	title="Build Folder"
-            	description="Build Download Archive">https://yadi.sk/d/y2y4VXFo3KRVwo</OldBuildsUrl-->
+             id="changelog"
+             title="Changelog"
+             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
+            <OldBuildsUrl
+             id="Old_builds"
+             title="TWRP"
+             description="3.1.1">https://goo.gl/PHmPLR</OldBuildsUrl>
             <TWRP
-                id="twrp"
-                title="TWRP"
-                description="3.1.1">https://goo.gl/PHmPLR</TWRP>
+             id="twrp"
+             title="TWRP"
+             description="3.1.1">https://goo.gl/PHmPLR</TWRP>
             <GappsUrl
-                id="gapps"
-                title="Gapps"
-                description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
+             id="gapps"
+             title="Gapps"
+             description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
             <HomePage
-                id="homepage"
-                title="4PDA"
-                description="Project home page">https://goo.gl/HtpGtE</HomePage>
-	    </cherryplus>
+             id="homepage"
+             title="4PDA"
+             description="Project home page">https://goo.gl/HtpGtE</HomePage>
+        </cherryplus>
     </test>
+    <Stable>
+        <cherryplus>
+            <Filename>RR-N-v5.8.4-2017013-cherryplus-Nightly-b88.zip</Filename>
+            <RomUrl
+             id="rom"
+             title="Download"
+             description="Latest ResurrectionRemix build">https://goo.gl/AAw7Ds</RomUrl>
+            <ChangelogUrl
+             id="changelog"
+             title="Changelog"
+             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
+            <!--OldBuildsUrl
+             id="Old_builds"
+             title="Build Folder"
+             description="Build Download Archive">https://yadi.sk/d/y2y4VXFo3KRVwo</OldBuildsUrl-->
+            <TWRP
+             id="twrp"
+             title="TWRP"
+             description="3.1.1">https://goo.gl/PHmPLR</TWRP>
+            <GappsUrl
+             id="gapps"
+             title="Gapps"
+             description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
+            <HomePage
+             id="homepage"
+             title="4PDA"
+             description="Project home page">https://goo.gl/HtpGtE</HomePage>
+        </cherryplus>
+    </Stable>
 </SlimOTA>
