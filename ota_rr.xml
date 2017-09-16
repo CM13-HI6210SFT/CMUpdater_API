@@ -11,10 +11,10 @@
                 id="changelog"
                 title="Changelog"
                 description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
-            <OldBuildsUrl
+            <!--OldBuildsUrl
             	id="Old_builds"
             	title="Build Folder"
-            	description="Build Download Archive">https://yadi.sk/d/y2y4VXFo3KRVwo</OldBuildsUrl>
+            	description="Build Download Archive">https://yadi.sk/d/y2y4VXFo3KRVwo</OldBuildsUrl-->
             <TWRP
                 id="twrp"
                 title="TWRP"
@@ -23,10 +23,10 @@
                 id="gapps"
                 title="Gapps"
                 description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
-            <home
+            <HomePage
                 id="4pda"
                 title="4PDA"
-                description="Project home page">https://goo.gl/HtpGtE</home>
-	        </cherryplus>
+                description="Project home page">https://goo.gl/HtpGtE</HomePage>
+	    </cherryplus>
     </test>
 </SlimOTA>
