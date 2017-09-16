@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <test>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-20170913-cherryplus-Nightly-b88.zip</Filename>
+            <Filename>RR-N-v5.8.4-2017013-cherryplus-Nightly-b88.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Download"
@@ -18,7 +18,15 @@
             <GappsUrl
                 id="gapps"
                 title="Gapps"
-                description="ARM64 7.1 pico">http://opengapps.org/?arch=arm64</GappsUrl>
+                description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
+            <TWRP
+                id="twrp"
+                title="TWRP"
+                description="3.1.1">https://goo.gl/PHmPLR</TWRP>
+            <pda
+                id="4pda"
+                title="4PDA"
+                description="Project home page">https://goo.gl/HtpGtE</pda>
 	        </cherryplus>
     </test>
 </SlimOTA>
