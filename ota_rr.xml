@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <test>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-2017013-cherryplus-Nightly-b88.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170913-cherryplus-Nightly-b88.zip</Filename>
             <RomUrl
              id="rom"
              title="Download"
@@ -27,7 +27,7 @@
     </test>
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-2017016-cherryplus-Nightly-b89.zip</Filename>
+            <Filename>RR-N-v5.8.4-20170916-cherryplus-Nightly-b89.zip</Filename>
             <RomUrl
              id="rom"
              title="Download"
