@@ -27,11 +27,11 @@
     </test>
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-2017013-cherryplus-Nightly-b88.zip</Filename>
+            <Filename>RR-N-v5.8.4-2017016-cherryplus-Nightly-b89.zip</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/AAw7Ds</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/F83TJC</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
