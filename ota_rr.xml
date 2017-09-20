@@ -19,6 +19,10 @@
              id="homepage"
              title="4PDA"
              description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk"
+             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
             <TWRPUrl
              id="TWRP"
              title="TWRP"
@@ -44,6 +48,10 @@
              id="homepage"
              title="4PDA"
              description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk"
+             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
             <TWRPUrl
              id="TWRP"
              title="TWRP"
