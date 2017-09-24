@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-7.1.2.build.1.11-NIGHTLY-20170924-1117</Filename>
+            <Filename>Slim-7.1.2.build.1.11-NIGHTLY-20170924-2119</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/</RomUrl>
+             description="Latest Slim build">https://goo.gl/FfoteW</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
