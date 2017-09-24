@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
+    <Stable>
+        <cherryplus>
+            <Filename>Slim-7.1.2.build.1.11-NIGHTLY-20170924-1117</Filename>
+            <RomUrl
+             id="rom"
+             title="Download"
+             description="Latest ResurrectionRemix build">https://goo.gl/</RomUrl>
+            <ChangelogUrl
+             id="changelog"
+             title="Changelog"
+             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/slim/CHANGELOG.mkdn</ChangelogUrl>
+            <GappsUrl
+             id="gapps"
+             title="Gapps"
+             description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
+            <HomePageUrl
+             id="homepage"
+             title="4PDA"
+             description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
+            <!--MagiskUrl
+             id="magisk"
+             title="Magisk"
+             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl-->
+            <TWRPUrl
+             id="TWRP"
+             title="TWRP"
+             description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
+        </cherryplus>
+    </Stable>
+</SlimOTA>
