@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <test>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-20170916-cherryplus-Nightly-b89</Filename>
+            <Filename>RR-N-v5.8.5-20170926-cherryplus-Weekly-b92</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/F83TJC</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/WNVNrH</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
@@ -15,27 +15,31 @@
              id="gapps"
              title="Gapps"
              description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
-            <HomePageUrl
-             id="homepage"
+            <HomePagePUrl
+             id="4pda"
              title="4PDA"
-             description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
-            <MagiskUrl
-             id="magisk"
-             title="Magisk"
-             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
+             description="Project home page on 4PDA">https://goo.gl/HtpGtE</HomePagePUrl>
+            <HomePageXUrl
+             id="xda"
+             title="XDA"
+             description="Project home page on XDA">https://goo.gl/cc4EHv</HomePageXUrl>
             <TWRPUrl
              id="TWRP"
              title="TWRP"
              description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk"
+             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
         </cherryplus>
     </test>
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.4-20170916-cherryplus-Nightly-b89</Filename>
+            <Filename>RR-N-v5.8.5-20170926-cherryplus-Weekly-b92</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/F83TJC</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/WNVNrH</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
@@ -44,18 +48,22 @@
              id="gapps"
              title="Gapps"
              description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
-            <HomePageUrl
-             id="homepage"
+            <HomePagePUrl
+             id="4pda"
              title="4PDA"
-             description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
-            <MagiskUrl
-             id="magisk"
-             title="Magisk"
-             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
+             description="Project home page on 4PDA">https://goo.gl/HtpGtE</HomePagePUrl>
+            <HomePageXUrl
+             id="xda"
+             title="XDA"
+             description="Project home page on XDA">https://goo.gl/cc4EHv</HomePageXUrl>
             <TWRPUrl
              id="TWRP"
              title="TWRP"
              description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk"
+             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
         </cherryplus>
     </Stable>
 </SlimOTA>
