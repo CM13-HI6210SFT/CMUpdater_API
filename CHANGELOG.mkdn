@@ -1,161 +1,123 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.4 (b89) Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.4 (b92) Changelog
 
 
- ▼ 17/09/2017
+ ▼ 25-09-2017
 
 
- ▪ project android/
- ▪ f0c3b1f manifest: switch to our forks of several repos
+ ▪ project external/libnfc-nci/
+ ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
 
- ▪ project build/
- ▪ f6958ef7c Updating Security String to 2017-09-05 Bug:63846344
+ ▼ 24-09-2017
 
- ▪ project external/roboto-fonts/
- ▪ edb1023 Roboto-Light
-
- ▪ project external/skia/
- ▪ 878b9daf0 Defend against ICOs with large BMPs embedded DO NOT MERGE
-
- ▪ project external/sonivox/
- ▪ 188ae17 Fix compiler warnings in sonivox and enable -Werror.
-
- ▪ project frameworks/av/
- ▪ ba289919e k3
- ▪ eeff3f68b Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
 
  ▪ project frameworks/base/
- ▪ 32b5f7f9a59 mtp: stop ocassional crash in MTP Host.
- ▪ bb68d192ec5 Back-port fixes for b/62196835
- ▪ cbce7ff06ac Don't disable the GPS prematurely
- ▪ 8503dcf64cb PrivateStorageInfo: Exclude primary physical volume total space
- ▪ fe5307e3030 Keyguard: Change fingerprint listening behavior
-
- ▪ project frameworks/native/
- ▪ b973fad38 opengl: dont use swap buffers with damage
- ▪ 976f88956 gui: don't use native fence sync
- ▪ a81617a94 Fix deep sleep issue
-
- ▪ project frameworks/opt/telephony/
- ▪ c8243845 fix ussd
- ▪ b4f877b9 fix 2g/3g/LTE switch
-
- ▪ project packages/apps/Camera2/
- ▪ 4f91e9ab2 Camera2: override capture support level
- ▪ 1eb09de00 Camera2: Fix photo snap delay on front cam.
+ ▪ 95ba21f3b27 PhoneWindowManager: Block screenshots when pocket lock is showing
+ ▪ 51c0f6f0df7 PocketService: Adjust light sensor rate to 400ms
+ ▪ 31e374f96d4 ActivityManager: Remove POWER_OFF_ALARM intent leftover
+ ▪ 8cf55f10e32 SystemServer: Don't start widget service when it is alarm boot
+ ▪ 8f62033f257 Recents: Add accessibility descriptions for lock ImageViews
+ ▪ 65748c411e5 SystemUI: Revert some Tuner changes
+ ▪ 71bfe49435a DUtils: Migrate from broadcasts to API for some action handling [1/2]
+ ▪ f99120ed3ae ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
+ ▪ e90fec82c87 Revert "FWB:Update default theme to Pixel Blue [1/2]"
+ ▪ a3d99a684bf Themes: Expose manifest styles for themes
+ ▪ a3dab8dbfaf Bring back Pixel theme [1/2]
+ ▪ 27dc140dc8d BrightnessSlider: Fix Slider thumb not theming to accent color
+ ▪ 90dfe020172 Revert "sysui: New google pixel colors"
+ ▪ ad41af38bcf Revert "Base : Finalize the pixel theme and prepare for theme engine"
+ ▪ 5c1386f3132 Revert "base: New google pixel colors"
+ ▪ ec7bf0d2c59 FWB:Update default theme to Pixel Blue [1/2]
+ ▪ 32ba76a97bf Partially revert "ColorEngine: theme improvements/completeness"
+ ▪ 79a41364ce8 ColorEngine: fix power menu instant theming
+ ▪ 69ca41e8a37 TileAdapter: allow styling tile item decoration background
+ ▪ 98726ae34fd ColorEngine: theme improvements/completeness
+ ▪ 2bf21f4b701 ColorEngine: fwb: keep changed resources footprint low
+ ▪ 17c72a14f59 ColorEngine: fwb: default to default primary/bg color
+ ▪ 3eca4dd4895 ColorEngine: who wants orange if you can have amber [1/2]
+ ▪ 5b5e4996621 ColorEngine: fwb: default to teal color accent everywhere
+ ▪ 453e33b4db6 ColorEngine: default to teal color accent
+ ▪ ba42305f184 Introduce color engine.
+ ▪ d796bc59ca9 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
 
  ▪ project packages/apps/DUI/
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Messaging/
- ▪ e0708ed Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+ ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
- ▪ 6d05ff98c6 Back-port ag/2491664
- ▪ 2214a57188 AppOpsDetails: Generate correct summary when changing list prefs
- ▪ ac086f65af Settings: Allow devices to provide remote gesture preferences
- ▪ 1b1f6ea037 Settings: Fix internal storage summary for non-emulated storage devices
- ▪ 4776440a2c Settings: Always show Privacy Guard permissions
- ▪ 02a6349e6d AppOps: Switch to an HashMap
- ▪ a3bbfda93c Settings: Add a shortcut icon for carrier selection
- ▪ cb1ab8b1c2 AppOps: Redesign
- ▪ 3a0e23858f Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
+ ▪ 523231c8d2 Add Andres to About
+ ▪ 3c520f08a7 Settings:Fix up RR configurations theme with color engine[1/3]
+ ▪ bb8b8d3caf ColorEngine: Settings: keep changed resources footprint low
+ ▪ 62b94cf9af ColorEngine: Settings: default to default primary/bg color
+ ▪ 2244d5d135 ColorEngine: Settings: default to pixel accent everywhere
+ ▪ fe2ff9fc12 Settings: Make shortcut icon colors match settings accent
+ ▪ ec4904760f Settings: PreviewPagerAdapter: copy the full theme
+ ▪ 3bbba44a7e Improve color selection preview
+ ▪ 316b3bb545 ColorEngine settings: show accent color selection on first open
+ ▪ 7c5a01e8e8 Settings: Support color engine
 
- ▪ project system/core/
- ▪ 739423c01 CPU Fix by K4CZP3R
+ ▪ project system/vold/
+ ▪ d8d5e6e Fix bug in cryptfs_verify_passwd with hardware disk encryption
+
+ ▪ project vendor/cm/
+ ▪ 889b570a Merge remote-tracking branch 'rr/nougat' into HEAD
+ ▪ 3b31d8fa Final version for N -> 5.8.5 \m/
+ ▪ 6d81c3db vendor: sepolicy: Add Color Engine policy
+ ▪ 813d0674 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
+ ▪ c0a7af18 Remove all traces of CMTE policy
+
+ ▼ 22-09-2017
 
 
- ▼ 16/09/2017
+ ▪ project packages/apps/ResurrectionStats/
+ ▪ 53fe045 Const: 5.8.5
+
+ ▪ project vendor/cm/
+ ▪ ed3107dd RR: v5.8.5
+
+ ▼ 21-09-2017
 
 
- ▪ project external/libavc/
- ▪ 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
- ▪ 871e2ff Decoder: Fixed overflow in refernce list creation.
- ▪ 73ff61b Initialize DPB structures to valid values.
- ▪ 1a4a25a Added error check for output buffer size.
+ ▪ project frameworks/base/
 
- ▪ project external/libhevc/
- ▪ 2f28765 Limit boundary PU sizes in case of errors
- ▪ 3008a9a Fix array size for hrd parameters
- ▪ d2b7822 Check number of output buffers and sizes
- ▪ 8e3fe3b Return error for invalid crop parameters
+ ▪ project packages/apps/Settings/
 
- ▪ project external/libvpx/
- ▪ 50bde27 DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream
+ ▼ 20-09-2017
 
- ▪ project external/sonivox/
- ▪ afc7e48 Fix interpolator
 
- ▪ project external/sqlite/
- ▪ f55bb7e DO NOT MERGE - fix FTS3 column pointer handling
+ ▪ project hardware/cyanogen/
+ ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
 
- ▪ project external/tremolo/
- ▪ 0000b2b Use heap instead of alloca in res012.c
+ ▼ 19-09-2017
+
 
  ▪ project frameworks/av/
- ▪ be42248d2 MPEG4Source: fix fragmented read.
- ▪ ac561ef45 stagefright: fix crash due to bad timestamp index
- ▪ 47f722845 stagefright: check aac_frame_length to prevent infinite loop
- ▪ 708ca769d MediaPlayerService: fix access of mPlayer in client
- ▪ 20a8bdc5c audio effects: filter reserved effect commands
- ▪ 1f8cd838d MPEG4Extractor: ensure returned status is checked.
- ▪ 09ebf6603 DO NOT MERGE Check frame handle validity before freeing buffer.
- ▪ ae74db2fa Change MPEG2 reinit Error Handling
- ▪ 6e05adf45 Track: Check buffer size of static tracks
- ▪ e0b8295e3 MPEG4Extractor: check size for yrrc box
- ▪ 7a84ae820 AudioFlinger: Fix memory allocation for client-less tracks
- ▪ b1c91bcdf Notify Errors Appropriately from SoftMPEG2
- ▪ 6dff427e4 EffectBundle: Check value size for get preset name
- ▪ 3fcd8acec Fix TOCTOU problem in libstagefright_soft_aacenc
+ ▪ 74ff75ee6 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
 
- ▪ project frameworks/minikin/
- ▪ 440e10a Reject unsorted cmap entries. DO NOT MERGE
+ ▪ project frameworks/native/
+ ▪ 47d722367 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
 
- ▪ project hardware/broadcom/wlan/
- ▪ 71b070f net: wireless: bcmdhd: update bcm4354/4356 FW (7.35.101.8)
+ ▪ project packages/apps/Eleven/
 
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 7a797d40a Equalizer: Check value size for get preset name
+ ▪ project system/extras/su/
+ ▪ 11730a5 correct delivering process return code to caller
 
- ▪ project hardware/qcom/audio-caf/msm8952/
- ▪ 0bf8b308e Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 01e8f3b2a Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ f5a8e83b8 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 7da7e5ea5 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 53c7f7410 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ c736bfe01 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio/default/
- ▪ 3f7e7022a Equalizer: Check value size for get preset name
-
- ▪ project packages/apps/Messaging/
- ▪ 87f81d9 37742976 - Catch bad gifs
-
- ▪ project packages/apps/Nfc/
- ▪ f20aedf Add READ_EXTERNAL_STORAGE for file based Uri while beaming.
-
- ▼ 15/09/2017
+ ▼ 18-09-2017
 
 
- ▪ project system/bt/
- ▪ 215d4340 Add missing extension length check while parsing BNEP control packets
- ▪ a61aaf1e Free p_pending_data from tBNEP_CONN to avoid potential memory leaks
- ▪ 922d50b9 Add a missing check for PAN buffer size before copying data
- ▪ c6f7f867 Add missing packet length checks while parsing BNEP control packets
- ▪ 7e30b79c Add missing continuation offset check for SDP continuation requests
- ▪ 0700e5b5 Disable PAN Reverse Tethering when connection originated by the Remote
- ▪ 8825957c Allocate buffers of the right size when BT_HDR is included
+ ▪ project frameworks/av/
+ ▪ f80e21ac6 audioflinger: Use offloaded effects in case of PCM offload
+
+ ▪ project packages/apps/Settings/
+ ▪ efbb78f0f4 Add moderator tags to about settings
+
+ ▼ 18-09-2017
+
+
+ ▪ project frameworks/av/
+ ▪ f80e21ac6 audioflinger: Use offloaded effects in case of PCM offload
+
+ ▪ project packages/apps/Settings/
+ ▪ efbb78f0f4 Add moderator tags to about settings
 
