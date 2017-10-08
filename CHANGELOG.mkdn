@@ -1,15 +1,219 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.4 (b92) Changelog
+ ▼ Resurrection Remix Nougat Ver 5.8.5 (b96) Changelog
 
 
- ▼ 25-09-2017
+ * enable call recording
+ * fix cts
+ * add 1,5 MHz cpu frequency
+ * add I/O shedulers
+ * update security patch to 2017-10-05
+
+ ▼ 10-07-2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ e91a5f0f5 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.17' into cm-14.1-caf-8994
+
+ ▪ project hardware/ril/
+ ▪ d8fb8ff Fix multi sim support and warnings
+
+ ▪ project hardware/ril-caf/
+ ▪ ef31609 Fix multi sim support and warnings
+
+ ▪ project system/bt/
+ ▪ b882eee2 Fix allocating buffers of the right size when BT_HDR is included
+
+ ▼ 10-05-2017
+
+
+ ▪ project android/
+ ▪ 516714f manifest: track our own dnsmasq and libmpeg2
+ ▪ 6afec8e cm: Remove unused projects
+
+ ▪ project build/
+ ▪ cb361edff [DO NOT MERGE] Update platform security string to 2017-10-05 in nyc-dev Bug:64896113 (cherry picked from commit 1517f3d2da27eae798a3ac765096251914f9b119)
+ ▪ 9727f4f54 [DO NOT MERGE] Update platform security string to 2017-10-01 in nyc-dev Bug:64896113 (cherry picked from commit 73ab80dec9df8966bf660725dc1a942d9c1f324e)
+ ▪ d6b4f42a1 core: config: Use host bison if requested
+ ▪ 68898f07c Fix warning with AAPT2 and LOCAL_STATIC_ANDROID_LIBRARIES
+
+ ▪ project frameworks/av/
+ ▪ f9bce6f48 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ ▪ project frameworks/base/
+ ▪ 04405fc92c6 Fix security hole in GateKeeperResponse.
+ ▪ 7fd68e081bd Enforce policy for camera gesture in keyguard
+ ▪ ff5b93c1552 Revert "Camera: ignore torch status update for aux or compsite camera"
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 2ca0f5d9 PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 3912d1b4 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
+ ▪ 42868f06 PackageInstaller: Add tint mode to icons
+
+ ▪ project packages/apps/Settings/
+ ▪ 25b490dbfa Disabling the activate button when paused
+ ▪ a2ff6658ea AppOpsState: Hide undeclared Privacy Guard OPs
+
+ ▼ 10-03-2017
+
+
+ ▪ project external/dnsmasq/
+ ▪ 41e4b42 Add extra (size_t) cast to avoid compiler warning.
+ ▪ 0b7daf3 Make dnsmasq more stable.
+
+ ▪ project external/libhevc/
+ ▪ 42469df Fix slice decrement for skipped slices
+ ▪ 6f57834 Ensure CTB size > 16 for clips with tiles and width/height >= 4096
+
+ ▪ project external/libmpeg2/
+ ▪ c1edfa4 Fixed Memory Overflow Errors
+
+ ▪ project external/tremolo/
+ ▪ 166d5a3 Fix out of bounds access in codebook processing
+
+ ▪ project frameworks/av/
+ ▪ 019e77c6e Fix 'potential memory leak' compiler warning.
+ ▪ 223131dd8 Check buffer size in useBuffer in software components
+ ▪ 2ca62285a stagefright: avoid buffer overflow in base64 decoder
+ ▪ 49e724e10 Add EFFECT_CMD_SET_PARAM parameter checking to Downmix and Reverb
+ ▪ 8511171f0 Fix memory leak in OggExtractor
+ ▪ f1e2df136 Skip track if verification fails
+
+ ▪ project hardware/ril/
+ ▪ 4609708 DO NOT MERGE Fix security vulnerability in pre-O rild code.
+
+ ▪ project hardware/ril-caf/
+ ▪ cc408d7 DO NOT MERGE Fix security vulnerability in pre-O rild code.
+
+ ▪ project libcore/
+ ▪ aa4fd2ee2 Fix failing FileTest#test_canonicalCachesAreOff()
+ ▪ c1a58e92c Disable File.getCanonicalPath caches.
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ cec631f2 DO NOT MERGE Disable overlays while installer is resumed
+
+ ▼ 10-01-2017
+
+
+ ▪ project android/
+ ▪ 46fafaf manifest: use updated svox tag to fix picotts
+ ▪ 3aef973 Switch deqp, pdfium and speex to our forks
+ ▪ 208f9df cm: Remove libphonenumbergoogle
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 512197fc5 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/display-caf/msm8916/
+ ▪ b9fc74377 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/fm/
+ ▪ 2d2b4b0 Remove obsolete values-be translations
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ 21d80dff8 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 1cc2af6 Remove obsolete values-be translations
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Eleven/
+ ▪ d9cbd6b Remove obsolete values-be translations
+
+ ▪ project packages/apps/Email/
+ ▪ e9bc15187 Remove obsolete values-be translations
+
+ ▪ project packages/apps/Exchange/
+ ▪ 771eb3ad Remove obsolete values-be translations
+
+ ▪ project packages/apps/FMRadio/
+ ▪ 32b0fae Remove obsolete values-be translations
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Profiles/
+ ▪ b41416f Remove obsolete values-be translations
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+ ▪ 4f80840ea2 About: fix Andres email
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ 712fb3a Remove obsolete values-be translations
+
+ ▪ project packages/apps/Snap/
+ ▪ 50d00c0c0 Remove obsolete values-be translations
+
+ ▪ project packages/apps/Terminal/
+ ▪ 736edf7 Remove obsolete values-be translations
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ b49b2b129 Remove obsolete values-be translations
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ b1e649d4e Remove obsolete values-be translations
+
+ ▪ project packages/inputmethods/LatinIME/
+ ▪ 04b2b3e12 Remove obsolete values-be translations
+
+ ▪ project packages/providers/DataUsageProvider/
+ ▪ 6e3ea47 Remove obsolete values-be translations
+
+ ▪ project packages/providers/WeatherProvider/
+ ▪ cc51ba5 Remove obsolete values-be translations
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/qcom/opensource/bluetooth/
+ ▪ cd69373 Remove obsolete values-be translations
+
+ ▼ 09-29-2017
+
+
+ ▪ project frameworks/base/
+ ▪ 3cc1a5aed62 [1/4] SystemUI: add burnIn protection setting
+
+ ▪ project packages/apps/DUI/
+ ▪ 7180a95 DUI: add burnIn protection setting [4/4]
+
+ ▪ project packages/apps/Settings/
+ ▪ 47d0991e67 [2/4] Settings: add burnIn protection setting
+
+ ▼ 09-28-2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 6657fcf7f Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.02.258.033 on remote branch
+
+ ▼ 09-27-2017
+
+
+ ▪ project vendor/cmsdk/
+ ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
+ ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
+ ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
+ ▪ f4da7ec Make CMParts a protected component manager
+ ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
+ ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
+ ▪ cf42384 cmsdk: Disable unused services
+
+ ▼ 09-26-2017
+
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 89274d0bf Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.036 on remote branch
+
+ ▼ 09-25-2017
 
 
  ▪ project external/libnfc-nci/
  ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
-
- ▼ 24-09-2017
-
 
  ▪ project frameworks/base/
  ▪ 95ba21f3b27 PhoneWindowManager: Block screenshots when pocket lock is showing
@@ -66,58 +270,4 @@
  ▪ 6d81c3db vendor: sepolicy: Add Color Engine policy
  ▪ 813d0674 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
  ▪ c0a7af18 Remove all traces of CMTE policy
-
- ▼ 22-09-2017
-
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 53fe045 Const: 5.8.5
-
- ▪ project vendor/cm/
- ▪ ed3107dd RR: v5.8.5
-
- ▼ 21-09-2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
-
- ▼ 20-09-2017
-
-
- ▪ project hardware/cyanogen/
- ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
-
- ▼ 19-09-2017
-
-
- ▪ project frameworks/av/
- ▪ 74ff75ee6 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
-
- ▪ project frameworks/native/
- ▪ 47d722367 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
- ▪ project packages/apps/Eleven/
-
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
- ▼ 18-09-2017
-
-
- ▪ project frameworks/av/
- ▪ f80e21ac6 audioflinger: Use offloaded effects in case of PCM offload
-
- ▪ project packages/apps/Settings/
- ▪ efbb78f0f4 Add moderator tags to about settings
-
- ▼ 18-09-2017
-
-
- ▪ project frameworks/av/
- ▪ f80e21ac6 audioflinger: Use offloaded effects in case of PCM offload
-
- ▪ project packages/apps/Settings/
- ▪ efbb78f0f4 Add moderator tags to about settings
 

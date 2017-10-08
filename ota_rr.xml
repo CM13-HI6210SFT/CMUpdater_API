@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <test>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20170926-cherryplus-Weekly-b92</Filename>
+            <Filename>RR-N-v5.8.5-20171008-cherryplus-Weekly-b96</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/WNVNrH</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/otNGJB</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
@@ -27,19 +27,15 @@
              id="TWRP"
              title="TWRP"
              description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
-            <MagiskUrl
-             id="magisk"
-             title="Magisk"
-             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
         </cherryplus>
     </test>
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20170926-cherryplus-Weekly-b92</Filename>
+            <Filename>RR-N-v5.8.5-20171008-cherryplus-Weekly-b96</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/WNVNrH</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/otNGJB</RomUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
@@ -60,10 +56,6 @@
              id="TWRP"
              title="TWRP"
              description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
-            <MagiskUrl
-             id="magisk"
-             title="Magisk"
-             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl>
         </cherryplus>
     </Stable>
 </SlimOTA>
