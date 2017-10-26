@@ -1,45 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
-    <test>
-        <cherryplus>
-            <Filename>RR-N-v5.8.5-20171008-cherryplus-Weekly-b96</Filename>
-            <RomUrl
-             id="rom"
-             title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/G5huUL</RomUrl>
-            <ChangelogUrl
-             id="changelog"
-             title="Changelog"
-             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
-            <GappsUrl
-             id="gapps"
-             title="Gapps"
-             description="ARM64 7.1 pico">https://goo.gl/rTTUL4</GappsUrl>
-            <HomePagePUrl
-             id="4pda"
-             title="4PDA"
-             description="Project home page on 4PDA">https://goo.gl/HtpGtE</HomePagePUrl>
-            <HomePageXUrl
-             id="xda"
-             title="XDA"
-             description="Project home page on XDA">https://goo.gl/cc4EHv</HomePageXUrl>
-            <TWRPUrl
-             id="TWRP"
-             title="TWRP"
-             description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
-        </cherryplus>
-    </test>
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20171008-cherryplus-Weekly-b96</Filename>
+            <Filename>RR-N-v5.8.5-20171026-cherryplus-Weekly-b101</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/G5huUL</RomUrl>
-            <ChangelogUrl
-             id="changelog"
-             title="Changelog"
-             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/7aTyFV</RomUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk root"
+             description="14.0">http://tiny.cc/latestmagisk</MagiskUrl>
             <GappsUrl
              id="gapps"
              title="Gapps"
@@ -55,7 +26,11 @@
             <TWRPUrl
              id="TWRP"
              title="TWRP"
-             description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
+             description="3.1.1">https://goo.gl/1doFhF</TWRPUrl>
+           <ChangelogUrl
+             id="changelog"
+             title="Changelog"
+             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/rr/CHANGELOG.mkdn</ChangelogUrl>
         </cherryplus>
     </Stable>
 </SlimOTA>
