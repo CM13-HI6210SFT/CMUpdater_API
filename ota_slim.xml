@@ -2,15 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-7.1.2.build.1.11-NIGHTLY-20170924-2119</Filename>
+            <Filename>Slim-cherryplus-7.1.2.build.1.15-Weekly-20171027-b11</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest Slim build">https://goo.gl/FfoteW</RomUrl>
-            <ChangelogUrl
-             id="changelog"
-             title="Changelog"
-             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/slim/CHANGELOG.mkdn</ChangelogUrl>
+             description="Latest Slim build">https://goo.gl/4Do88d</RomUrl>
+            <MagiskUrl
+             id="magisk"
+             title="Magisk root"
+             description="14.0">http://tiny.cc/latestmagisk</MagiskUrl>
             <GappsUrl
              id="gapps"
              title="Gapps"
@@ -18,15 +18,19 @@
             <HomePageUrl
              id="homepage"
              title="4PDA"
-             description="Project home page">https://goo.gl/HtpGtE</HomePageUrl>
-            <!--MagiskUrl
-             id="magisk"
-             title="Magisk"
-             description="v14.0">http://magiskmanager.com/Magisk/Magisk-v14.0.zip</MagiskUrl-->
+             description="Project home page">https://goo.gl/q5Zwpk</HomePageUrl>
+            <HomePageXUrl
+             id="xda"
+             title="XDA"
+             description="Project home page on XDA">https://goo.gl/nsA9Kd</HomePageXUrl>
             <TWRPUrl
              id="TWRP"
              title="TWRP"
-             description="3.1.1">https://goo.gl/PHmPLR</TWRPUrl>
+             description="3.1.1">https://goo.gl/1doFhF</TWRPUrl>
+            <ChangelogUrl
+             id="changelog"
+             title="Changelog"
+             description="View Changelog">https://raw.githubusercontent.com/CM13-HI6210SFT/CMUpdater_API/slim/CHANGELOG.mkdn</ChangelogUrl>
         </cherryplus>
     </Stable>
 </SlimOTA>
