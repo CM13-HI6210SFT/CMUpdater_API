@@ -23,6 +23,14 @@
       "romtype": "nightly", 
       "url": "https://www.dropbox.com/s/keqfkdeyqmjk6sy/lineage-13.0-20171027-NIGHTLY-cherryplus.zip?dl=1", 
       "version": "13.0"
+    },
+    {
+      "datetime": 1512310716, 
+      "filename": "lineage-13.0-20171203-NIGHTLY-cherryplus.zip", 
+      "md5sum": "6f581a59f3a2a34f66110b3ce90603b4", 
+      "romtype": "nightly", 
+      "url": "https://www.dropbox.com/s/jyz3kb7akujxwtj/lineage-13.0-20171203-NIGHTLY-cherryplus.zip?dl=1", 
+      "version": "13.0"
     }
   ]
 }
