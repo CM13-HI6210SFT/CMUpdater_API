@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-cherryplus-7.1.2.build.1.15-Weekly-20171027-b11</Filename>
+            <Filename>Slim-cherryplus-7.1.2.build.1.17-Dec-20171203-b13.zip</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest Slim build">https://goo.gl/4Do88d</RomUrl>
+             description="Latest Slim build">http://goo.gl/Q5hLS5</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
@@ -18,7 +18,7 @@
             <HomePageUrl
              id="homepage"
              title="4PDA"
-             description="Project home page">https://goo.gl/q5Zwpk</HomePageUrl>
+             description="Project home page 4PDA">https://goo.gl/q5Zwpk</HomePageUrl>
             <HomePageXUrl
              id="xda"
              title="XDA"
@@ -26,7 +26,7 @@
             <TWRPUrl
              id="TWRP"
              title="TWRP"
-             description="3.1.1">https://goo.gl/1doFhF</TWRPUrl>
+             description="3.2.0">http://goo.gl/ivarHW</TWRPUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"
