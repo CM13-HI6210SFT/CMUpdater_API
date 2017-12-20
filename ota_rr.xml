@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20171129-cherryplus-Nov-b105</Filename>
+            <Filename>RR-N-v5.8.5-20171220-cherryplus-Dec-b109</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/wD3mQk</RomUrl>
+             description="Latest ResurrectionRemix build">https://goo.gl/SG3xsF</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
