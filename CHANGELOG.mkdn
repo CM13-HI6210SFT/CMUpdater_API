@@ -1,158 +1,76 @@
 
-# Slim7 Version 1.15 Changelog
+# Slim7 Version 1.17 Changelog
 ====================================================
 
-10-20-2017
-============
-
-#### vendor/slim/
-* 3c863f5 Slim7: 1.15
-
-10-18-2017
-============
-
-#### external/dnsmasq/
-* 9aec536 Add extra (size_t) cast to avoid compiler warning.
-* d8dde44 Make dnsmasq more stable.
-
-#### external/libhevc/
-* 768ecf9 Ensure CTB size > 16 for clips with tiles and width/height >= 4096
-* db60eda Fix slice decrement for skipped slices
-
-#### external/libmpeg2/
-* 63a7330 Fixed Memory Overflow Errors
-
-#### external/tremolo/
-* 14590e6 Fix out of bounds access in codebook processing
-
-#### external/wpa_supplicant_8/
-* 153b679 Clear PMK length and check for this when deriving PTK
-* b73cef0 Add debug prints on PMK configuration in WPA supplicant
-* b780e72 WPA: Extra defense against PTK reinstalls in 4-way handshake
-* 3dc57f8 Remove all PeerKey functionality
-* fab6f79 Add MGMT_TX_STATUS_PROCESS command for testing purposes
-* a86ba56 FT: Do not allow multiple Reassociation Response frames
-* 0be5dca WNM: Ignore WNM-Sleep Mode Response without pending request
-* ee6c2e6 TDLS: Reject TPK-TK reconfiguration
-* a6e6da4 Fix PTK rekeying to generate a new ANonce
-* bcfd7ed Prevent installation of an all-zero TK
-* d994adc Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
-* 8fc7163 Prevent reinstallation of an already in-use group key
-* 0e23e32 hostapd: Avoid key reinstallation in FT handshake
-* 3152458 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
-
-#### frameworks/av/
-* 5435e182f Skip track if verification fails
-* ade98a921 Fix memory leak in OggExtractor
-* ced05c8d8 Add EFFECT_CMD_SET_PARAM parameter checking to Downmix and Reverb
-* 9e1d76456 stagefright: avoid buffer overflow in base64 decoder
-* 66c0cd164 Check buffer size in useBuffer in software components
-* 4bc271fc6 Fix 'potential memory leak' compiler warning.
-
-#### frameworks/base/
-* 86c6db7ea1b Enforce policy for camera gesture in keyguard
-* 83a9ba21184 Fix security hole in GateKeeperResponse.
-
-#### hardware/ril/
-* 808f206 DO NOT MERGE Fix security vulnerability in pre-O rild code.
-
-#### hardware/ril-caf/
-* 5d9bb3b DO NOT MERGE Fix security vulnerability in pre-O rild code.
-
-#### libcore/
-* d57ae5738 Fix failing FileTest#test_canonicalCachesAreOff()
-* 478f00ece Disable File.getCanonicalPath caches.
-
-#### packages/apps/Settings/
-* 78a161185 Disabling the activate button when paused
-
-#### platform_manifest/
-* 33724df manifest: fork external_dnsmasq,external_libmpeg2 and PackageInstaller for october asb
-
-#### system/bt/
-* 4c3820ef Fix allocating buffers of the right size when BT_HDR is included
-
-10-14-2017
+12-16-2017
 ============
 
 #### build/
-* 64aa44b39 [DO NOT MERGE] Update platform security string to 2017-10-05 in nyc-dev Bug:64896113 (cherry picked from commit 1517f3d2da27eae798a3ac765096251914f9b119)
-* 27b9678d9 [DO NOT MERGE] Update platform security string to 2017-10-01 in nyc-dev Bug:64896113 (cherry picked from commit 73ab80dec9df8966bf660725dc1a942d9c1f324e)
+* 553b51839 Bump security string to 2017-12-05
 
-10-13-2017
-============
+#### external/libavc/
+* b7226ea Decoder: Fixed hang in the case of dangling field
 
-#### vendor/slim/
-* 2d1d1bc Slim7 1.14
+#### external/libhevc/
+* 9fa4a1e Alloc extra bytes for bits buf for parse optimzation
 
-10-09-2017
-============
+#### external/libmpeg2/
+* 2179adc Update num_mbs_left When mb_x is Reset.
+* 364f566 Fix Error When Input Buffer is Full
+* da8d7e0 Reject Multiple seq_hdr With Different Dimensions
+* 023d8ff DoS error - Bitstream Overflow
 
-#### hardware/qcom/audio-caf/msm8916/
-* 95f82338e audiopolicy: fix compilation issue due to AOSP refresh
+#### external/skia/
+* a7dccd088 Fix SkFILEStream.
+* 55effe5a5 Fix truncated webp images DO NOT MERGE
 
-#### hardware/qcom/audio-caf/msm8937/
-* 7dd687583 Fix security vulnerability: Equalizer setParameter memory overflow
+#### frameworks/av/
+* 6c7068480 Block allocateBufferWithBackup in secure native handle mode
+* 93458438c Fix memory leaks
+* 9da8c3e23 media: Fix a typo in parsing nclc atom.
+* 988d61a11 Soundtrigger service: fix cross deadlock with audio policy service
+* d2ff81941 IMediaExtractor: ensure users to check returned value by getTrack.
+* 6af775235 Fix issues with extractor dumpsys
+* 9bfc80d80 OMXNodeInstance: use a lock around OMX::freeNode
+* 68d48799a Fix information disclosure in mediadrmserver
+* 84361158a m4v_h263: fix global buffer overflow
+* 5193c29e1 AudioPolicyService: Acquire mutex for SoundTriggerSession
 
-#### hardware/qcom/audio-caf/msm8952/
-* 8b7245c59 Fix security vulnerability: Equalizer setParameter memory overflow
-* 7dbb36277 Equalizer: Check value size for get preset name
+#### frameworks/base/
+* 4bb5b4007f1 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
+* 9fcd8078e34 Stop explicitly using kCallerPasses_Ownership
+* d351aff10fa Fix ClipboardService device lock check for cross profile
+* 947885b5981 Prevent getting data from Clipboard if device is locked
+* 3f358ac14ec Clearing up invalid entries when SyncStorageEngine starts
 
-#### hardware/qcom/audio-caf/msm8960/
-* ba3e59c50 aenc-aac: bounds checking
-* 5125a688b Fix security vulnerability: Equalizer setParameter memory overflow
+#### frameworks/minikin/
+* 5b92d57 Drop codepoints that are outside the Unicode range - DO NOT MERGE
 
-#### hardware/qcom/audio-caf/msm8994/
-* c3608b482 audio: Reduce minimum offload fragment size for direct pcm
-* e37c1066e policy_hal: Line up default features with rest of HAL
-* 160f0e372 audio: Fix flac offload not working
-* 2bd7312db msm8992/msm8994: enable DTS TrueMedia
-* b4d8c33d8 aenc-aac: bounds checking
+#### hardware/broadcom/wlan/
+* 2dca3ff net: wireless: bcmdhd: update bcm4358 FW (7.112.201.6) [DO NOT MERGE]
 
-#### hardware/qcom/audio-caf/msm8998/
-* 565d1e223 hal: fix acdb data corruption when both voice and voip are active
+#### hardware/intel/common/omx-components/
+* e78d2fc Rejected the invalid size of input video buffer.
 
-#### hardware/qcom/display-caf/msm8916/
-* 8994b5492 libmemtrack: Fix fd leak in kgsl function
+#### hardware/qcom/media/
+* 7f1494708 mm-video-v4l2: venc: Protect buffer from being freed while accessing
 
-#### hardware/qcom/display-caf/msm8960/
-* ace45fb15 hwcomposer: Fix regression in hwc_sync
-* dc31e065e hwc: return correct color format string while layer dump
+#### packages/apps/PackageInstaller/
+* 9a303cf6 DO NOT MERGE Fixing Install button not enabled on resume
+* 2e3ca487 Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
 
-#### hardware/qcom/display-caf/msm8994/
-* b994f0dde libmemtrack: Fix fd leak in kgsl function
+#### packages/apps/Settings/
+* d4e95eaa4 DO NOT MERGE. ActivityPicker shouldn't grant permissions.
 
-#### hardware/qcom/media-caf/msm8916/
-* 432e76c63 mm-video: Set thumbnail mode to core codec
-* c1e122459 mm-video-v4l2: venc: Advertise correct output-size for meta-mode
+#### packages/apps/Snap/
+* 95226cbd9 Remove obsolete values-be translations
 
-#### hardware/qcom/media-caf/msm8960/
-* 78869d585 BACKPORT: mm-video: venc: Protect buffer from being freed while accessing
-* ab8a51179 BACKPORT: mm-video: vdec: Avoid processing ETBs/FTBs in invalid states
-* f4745388e mm-video-v4l2: vdec: add safety checks for freeing buffers
-* 699d57500 mm-video-v4l2: venc: add safety checks for freeing buffers
+#### platform_manifest/
+* c32ca1c manifest: android-7.1.2_r36
 
-#### hardware/qcom/media-caf/msm8994/
-* 3cbdb3dcc mm-video-v4l2: venc: Advertise correct output-size for meta-mode
-* 85458bb50 mm-video-v4l2: Fix input buffer release in deinit
-* 8ca1f371d mm-video-v4l2: Use correct buffer header while freeing buffers
-* 0c60713db mm-video-v4l2: venc: Protect buffer from being freed while accessing
-* a13e17174 mm-video-v4l2: Protect buffer lifecycle with lock
+#### system/bt/
+* fe5b530e Read the correct amount of attributes
 
-#### hardware/qcom/media-caf/msm8996/
-* 745ae0a53 re-add missing part of makefile cleanup
-* aaea24218 Fix duplicated OMX.qcom.audio.decoder.aac entry
-* 715b84386 media: libOmxSw encoders require prop headers :(
-* 7766451f3 media: Use project pathmap
-* 48998221d mm-video-v4l2: venc: Advertise correct output-size for meta-mode
-* 4ba935e41 mm-video-v4l2: Protect buffer lifecycle with lock
-* ea4cb8e41 mm-video-v4l2 : venc: Protect buffer from being freed while accessing
-* 1c92441fc mm-video-v4l2: vdec: Do not reset c2d init success variable.
-* 3e7aef655 mm-video-v4l2: vdec:Fix delay in thumbnail generation for 4k video
-
-10-08-2017
-============
-
-#### vendor/slim/
-* dd9df78 slim7: 1.13
+#### system/core/
+* 9b61b8513 zip_archive: reject files that don't start with an LFH signature.
 

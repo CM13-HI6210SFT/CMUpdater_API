@@ -2,11 +2,11 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-cherryplus-7.1.2.build.1.17-Dec-20171203-b13.zip</Filename>
+            <Filename>Slim-cherryplus-7.1.2.build.1.17-Dec-20171222-b14</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest Slim build">http://goo.gl/Q5hLS5</RomUrl>
+             description="Latest Slim build">https://goo.gl/1k1Dcc</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
