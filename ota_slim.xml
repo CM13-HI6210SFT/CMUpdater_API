@@ -2,15 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-cherryplus-7.1.2.build.1.17-Dec-20171222-b14</Filename>
+            <Filename>Slim-cherryplus-7.1.2.build.1.17-Jan-20180122-b15</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest Slim build">https://goo.gl/1k1Dcc</RomUrl>
+             description="Latest Slim build">https://goo.gl/p9Ue5U</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
-             description="14.0">http://tiny.cc/latestmagisk</MagiskUrl>
+             description="15.3">http://tiny.cc/latestmagisk</MagiskUrl>
             <GappsUrl
              id="gapps"
              title="Gapps"
@@ -26,7 +26,7 @@
             <TWRPUrl
              id="TWRP"
              title="TWRP"
-             description="3.2.0">http://goo.gl/ivarHW</TWRPUrl>
+             description="3.2.1">https://goo.gl/sjSRPJ</TWRPUrl>
             <ChangelogUrl
              id="changelog"
              title="Changelog"

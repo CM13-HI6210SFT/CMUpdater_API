@@ -2,75 +2,111 @@
 # Slim7 Version 1.17 Changelog
 ====================================================
 
-12-16-2017
+01-18-2018
+============
+
+#### device/qcom/sepolicy/
+* e71a506 Merge tag 'LA.UM.5.6.r1-06200-89xx.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into cm-14.1
+* c38fbf6 msm8974: Do not grant DAC override permission to netmgrd
+
+#### hardware/qcom/audio-caf/msm8916/
+* 910013d8e Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
+* fe5e355d2 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.27' into cm-14.1-caf-8916
+* 6dfc0f0cc Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.26' into cm-14.1-caf-8916
+* 1c5b7eb91 Revert "audiopolicy: fix compilation issue due to AOSP refresh"
+
+#### packages/apps/Snap/
+* d746b2369 Snap: Rip out hdr-need-1x option
+
+#### vendor/slim/
+* fb4a362 extract_utils: Fix up to work on Slim sources
+* fc846fe sensitive_pn: added Belgium & Switzerland
+* 656375e Updated Syma APN
+* 77baee4 overlay: frameworks: allow gms to access persistent data partition
+* 25dedee apns-conf: Update Ukrainian APNs
+* 49163cf apn: Remove "hipri,dun" from Bouygues Telecom
+* 0767c81 Add M-tel (BIH) APN for M-tel Frend data plan
+* 1c477c9 sensitive_pn: Fix typo in sensitive phone number
+* 96d73b4 sensitive_pn: Add some more numbers for Canada
+* f0ada3a sensitive_pn: Sort file
+* 633855e extract_utils: Use temporary folder for system dump
+* 5b2b4c4 extract-files: Bring back old behavior for SRC
+* e2f1842 sensitive_pn: Add BG human trafficking and domestic abuse hotlines
+* 3c7b26d cm: build: kernel: Rework kernel module logic
+* f20bda7 extract_utils: Fix pinning when not cleaning vendor dir
+* 10ff423 Updated apns for device bringup for S4 Mini - serranolteusc
+* bd8fcc1 Added more USA sensitive phone numbers
+* 804a954 extract_utils: Allow to interrupt the extraction
+* f0e8ebf extract_files: Adjust deodex path and tmpdir
+* b5e8a5e extract_utils: implement LOCAL_MODULE_RELATIVE_PATH
+* ac9f4ed qcom_target: Commonize UM target HALs
+
+01-15-2018
 ============
 
 #### build/
-* 553b51839 Bump security string to 2017-12-05
+* 316e310ae Bump security patch level to 2018-01-05
+
+#### external/aac/
+* 3bfd4ad Fix out of bound memory access in lppTransposer
+* 4f7b6a2 DO NOT MERGE Prevent out of bound memory access in GetInvInt
 
 #### external/libavc/
-* b7226ea Decoder: Fixed hang in the case of dangling field
+* 1a6aa2b Decoder: Handle dec_hdl memory allocation failure gracefully
+* 29ce58a Decoder: Fixed incorrect use of mmco parameters.
+* 213e5d5 Decoder: Detect change of mbaff flag in SPS
+* 2b77e30 Decoder: Increased allocation and added checks in sei parsing.
 
 #### external/libhevc/
-* 9fa4a1e Alloc extra bytes for bits buf for parse optimzation
+* cb960f8 Add PUSH-POP of D registers in Arm Neon 32 bit functions
+* e772791 Fixed few issues in SAO arm assemblies
+* 6dd59d7 Decoder: Handle ps_codec_obj memory allocation failure gracefully
+* 69c4a57 Fix prev slice incomplete check
+* ed30a90 Set error skip ctbs as multiple 8x8 pus
+* 14b1472 Fix first frame error return
+* 36e1828 Return error for negative crop parameters
+* 49de429 Consume bytes for sps with unsupported resolution
+* a17209e Fix slice address zero for not first slice in pic
+* 72e4914 Fix incomplete frame error
 
 #### external/libmpeg2/
-* 2179adc Update num_mbs_left When mb_x is Reset.
-* 364f566 Fix Error When Input Buffer is Full
-* da8d7e0 Reject Multiple seq_hdr With Different Dimensions
-* 023d8ff DoS error - Bitstream Overflow
+* 5bbfabc Adding Error Check for f_code Parameters
 
-#### external/skia/
-* a7dccd088 Fix SkFILEStream.
-* 55effe5a5 Fix truncated webp images DO NOT MERGE
+#### external/libvpx/
+* b7e6a2f DO NOT MERGE | libvpx: Fix OOB caused by odd frame width.
 
 #### frameworks/av/
-* 6c7068480 Block allocateBufferWithBackup in secure native handle mode
-* 93458438c Fix memory leaks
-* 9da8c3e23 media: Fix a typo in parsing nclc atom.
-* 988d61a11 Soundtrigger service: fix cross deadlock with audio policy service
-* d2ff81941 IMediaExtractor: ensure users to check returned value by getTrack.
-* 6af775235 Fix issues with extractor dumpsys
-* 9bfc80d80 OMXNodeInstance: use a lock around OMX::freeNode
-* 68d48799a Fix information disclosure in mediadrmserver
-* 84361158a m4v_h263: fix global buffer overflow
-* 5193c29e1 AudioPolicyService: Acquire mutex for SoundTriggerSession
+* 082a947ef Fix the UAF bug caused by a dead stack variable
+* 47813f14e Fix edge case when applying id3 unsynchronization
+* 07b562bf0 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
+* cabcc8cee Validate decryption key length to decrypt function.
+* 29fa023a9 stagefright: MP4Extractor: allow 10% overhead on default sample size
+* ec4cc6af5 Access AVCDEC context after create fail check
+* d6116df30 SoftAVCDec: Handle zero length input without EOS
+* 6380960a1 Access HEVC context after create fail check
 
 #### frameworks/base/
-* 4bb5b4007f1 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
-* 9fcd8078e34 Stop explicitly using kCallerPasses_Ownership
-* d351aff10fa Fix ClipboardService device lock check for cross profile
-* 947885b5981 Prevent getting data from Clipboard if device is locked
-* 3f358ac14ec Clearing up invalid entries when SyncStorageEngine starts
+* 0f74b0d2288 DO NOT MERGE Backporting potential usb tapjacking precaution.
+* b1b373965e4 mtp: fix double free of thumbnail data
+* f82099ca6ac Throw OOME if Bitmap.nativeCreate fails
+* df1700fb0e0 Adjust Uri host parsing to use last instead of first @.
 
-#### frameworks/minikin/
-* 5b92d57 Drop codepoints that are outside the Unicode range - DO NOT MERGE
-
-#### hardware/broadcom/wlan/
-* 2dca3ff net: wireless: bcmdhd: update bcm4358 FW (7.112.201.6) [DO NOT MERGE]
-
-#### hardware/intel/common/omx-components/
-* e78d2fc Rejected the invalid size of input video buffer.
-
-#### hardware/qcom/media/
-* 7f1494708 mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
-#### packages/apps/PackageInstaller/
-* 9a303cf6 DO NOT MERGE Fixing Install button not enabled on resume
-* 2e3ca487 Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
-
-#### packages/apps/Settings/
-* d4e95eaa4 DO NOT MERGE. ActivityPicker shouldn't grant permissions.
-
-#### packages/apps/Snap/
-* 95226cbd9 Remove obsolete values-be translations
+#### frameworks/ex/
+* 9451a94 Skip composition of frames lacking a color map
 
 #### platform_manifest/
-* c32ca1c manifest: android-7.1.2_r36
-
-#### system/bt/
-* fe5b530e Read the correct amount of attributes
+* b5984c4 manifest: Track frameworks_ex
 
 #### system/core/
-* 9b61b8513 zip_archive: reject files that don't start with an LFH signature.
+* 947a34738 libnetutil: Check dhcp respose packet length
+
+#### system/media/
+* 3b71caa0 Camera metadata: Check source metadata size
+
+12-30-2017
+============
+
+#### packages/apps/Snap/
+* 5c45c9464 Snap: add QReader to module switch
+* 41c14286d QuickReader: initial commit
 
