@@ -2,7 +2,7 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>Slim-cherryplus-7.1.2.build.1.17-Jan-20180122-b15</Filename>
+            <Filename>Slim-cherryplus-7.1.2.build.1.17-20180122-Jan-b15</Filename>
             <RomUrl
              id="rom"
              title="Download"
