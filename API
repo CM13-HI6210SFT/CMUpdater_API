@@ -1,35 +1,19 @@
 {
   "response": [ 
     {
-      "datetime": 1503354849, 
-      "filename": "lineage-13.0-20170821-NIGHTLY-cherryplus.zip", 
-      "id": "92dcc93dca", 
-      "romtype": "nightly", 
-      "url": "https://www.dropbox.com/s/l4k2wzul9ji2e70/lineage-13.0-20170821-NIGHTLY-cherryplus.zip?dl=1", 
-      "version": "13.0"
-    },
-    {
-      "datetime": 1503782912, 
-      "filename": "lineage-13.0-20170826-NIGHTLY-cherryplus.zip", 
-      "md5sum": "ceb58955b03e850372a2b0885abb1fbf", 
-      "romtype": "nightly", 
-      "url": "https://www.dropbox.com/s/gn63rqcwwbwbruu/lineage-13.0-20170826-NIGHTLY-cherryplus.zip?dl=1", 
-      "version": "13.0"
-    },
-    {
-      "datetime": 1509126736, 
-      "filename": "lineage-13.0-20171027-NIGHTLY-cherryplus.zip", 
-      "md5sum": "2c143359f08b404b4dcaf70e61f7b1f0", 
-      "romtype": "nightly", 
-      "url": "https://www.dropbox.com/s/keqfkdeyqmjk6sy/lineage-13.0-20171027-NIGHTLY-cherryplus.zip?dl=1", 
-      "version": "13.0"
-    },
-    {
       "datetime": 1512310716, 
       "filename": "lineage-13.0-20171203-NIGHTLY-cherryplus.zip", 
       "md5sum": "6f581a59f3a2a34f66110b3ce90603b4", 
       "romtype": "nightly", 
       "url": "https://www.dropbox.com/s/jyz3kb7akujxwtj/lineage-13.0-20171203-NIGHTLY-cherryplus.zip?dl=1", 
+      "version": "13.0"
+    },
+    {
+      "datetime": 1517074381, 
+      "filename": "lineage-13.0-20180127-NIGHTLY-cherryplus.zip", 
+      "md5sum": "79e9b861d87b1de244244f2daeac4b8e", 
+      "romtype": "nightly", 
+      "url": "https://www.dropbox.com/s/g0dz2vzesy0pbmc/lineage-13.0-20180127-NIGHTLY-cherryplus.zip?dl=1", 
       "version": "13.0"
     }
   ]
