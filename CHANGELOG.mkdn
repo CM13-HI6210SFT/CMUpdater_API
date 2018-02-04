@@ -1,466 +1,327 @@
 
- ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
+# Resurrection Remix Nougat Ver 5.8.5 (b112) Changelog
+====================================================
 
+02-04-2018
+============
 
- ▼ 12/20/2017
+#### hardware/qcom/audio-caf/msm8916/
+* d026b1fda Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.30' into cm-14.1-caf-8916
 
+#### hardware/qcom/media-caf/msm8916/
+* cbb359b1b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.30' into cm-14.1-caf-8916
 
- ▪ project bootable/recovery-twrp/
- ▪ ba192456 cherryplus
+01-29-2018
+============
 
- ▪ project build/
- ▪ 31c2cc00c build
- ▪ 633df57c6 ru
+#### packages/apps/Snap/
+* 6d78d4a13 Snap: Update pano and video icons to be more like photo icons
 
- ▪ project external/roboto-fonts/
- ▪ 88d37ea Roboto-Light
+01-28-2018
+============
 
- ▪ project frameworks/av/
- ▪ d264b1b5c k3
+#### external/toybox/
+* 3125af0 strings tests and bugfixes
+* c766ad3 "printf %x 64" wasn't working right on 32 bit because a variable type was wrong.
 
- ▪ project frameworks/base/
- ▪ effe4b34818 mtp: stop ocassional crash in MTP Host.
+01-27-2018
+============
 
- ▪ project frameworks/native/
- ▪ ea6c395d3 opengl: dont use swap buffers with damage
- ▪ 9d0b36527 gui: don't use native fence sync
- ▪ 87b9c9157 Fix deep sleep issue
+#### hardware/ti/omap4/
+* 2c0550b init: Also try to load OMAPLFB as module
 
- ▪ project frameworks/opt/telephony/
- ▪ 3df1cbca fix ussd
- ▪ 28034ed2 fix 2g/3g/LTE switch
+01-25-2018
+============
 
- ▪ project packages/apps/Camera2/
- ▪ 5d37a4b8e Camera2: override capture support level
- ▪ a671b5f3b Camera2: Fix photo snap delay on front cam.
+#### packages/apps/AudioFX/
+* 4843e7c AudioFX: Remove stray quote
 
- ▪ project packages/apps/Settings/
- ▪ ff72c6b980 fix pie title
- ▪ f79f580fb0 cherryplus maintainer
- ▪ e8230f9d9b add ota
- ▪ b944b5338e Adjust brightness by sliding across the status bar
+#### packages/apps/WallpaperPicker/
+* 0db30c2 WallpaperPicker: Move strings for translation
 
- ▪ project packages/apps/Terminal/
- ▪ 8d76781 Terminal
+01-24-2018
+============
 
- ▪ project packages/apps/Trebuchet/
- ▪ b8fc55e0e my apps
+#### hardware/qcom/audio-caf/msm8916/
+* 5e2afea14 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.043 on remote branch
 
- ▪ project packages/providers/MediaProvider/
- ▪ b04774f fix_mtp
+#### packages/apps/Jelly/
+* f280cab Jelly: Set correct webview visibility on Show/Hide CustomView
 
- ▪ project packages/services/OmniJaws/
- ▪ d6ffbcc enable weather by default
+01-23-2018
+============
 
- ▪ project system/core/
- ▪ f140d3980 CPU Fix by K4CZP3R
+#### packages/apps/Jelly/
+* 77b808b Jelly: add dialog to show SSL certificate info
 
- ▪ project system/sepolicy/
- ▪ 1ad90c9 sepolicy for cherryplus
+01-20-2018
+============
 
- ▪ project vendor/cm/
- ▪ 7319ccb7 vendor
+#### external/toybox/
+* 3db42e9 toybox: Don't generate symlinks for a few tools
 
- ▼ 12/18/2017
+01-19-2018
+============
 
+#### packages/apps/TvSettings/
+* 715d752e Fix setting root option first time
 
- ▪ project packages/apps/AudioFX/
- ▪ 8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
+01-16-2018
+============
 
- ▪ project packages/apps/SetupWizard/
- ▪ e0605c0 Disable SetupWraith, if GMS not present
+#### frameworks/base/
 
- ▼ 12/17/2017
+#### hardware/qcom/audio-caf/msm8916/
+* b7ae67feb configs: msm8909: Add sound model config params
 
+#### packages/apps/Dialer/
 
- ▪ project packages/apps/SetupWizard/
+#### packages/apps/OmniSwitch/
 
- ▼ 12/16/2017
+#### packages/apps/Settings/
 
+01-15-2018
+============
 
- ▪ project hardware/qcom/fm/
+#### packages/apps/Recorder/
+* 23b8146 Recorder: Avoid NPE when screen recording is about to finish
 
- ▪ project packages/apps/AudioFX/
+#### packages/apps/Snap/
+* 8fbb2903f Snap: Add missing thumbnails for filter modes
 
- ▪ project packages/apps/Bluetooth/
+#### vendor/codeaurora/telephony/
+* f1dc793 Merge tag 'LA.UM.5.6.r1-06400-89xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD
 
- ▪ project packages/apps/Calendar/
+01-14-2018
+============
 
- ▪ project packages/apps/Camera2/
+#### external/aac/
+* d807ebc Fix out of bound memory access in lppTransposer
+* c02dd94 DO NOT MERGE Prevent out of bound memory access in GetInvInt
 
- ▪ project packages/apps/CellBroadcastReceiver/
+#### external/libavc/
+* 09900a4 Decoder: Handle dec_hdl memory allocation failure gracefully
+* 25ccb87 Decoder: Fixed incorrect use of mmco parameters.
+* ab3fc20 Decoder: Detect change of mbaff flag in SPS
+* 2c9d1d0 Decoder: Increased allocation and added checks in sei parsing.
 
- ▪ project packages/apps/CertInstaller/
+#### external/libhevc/
+* 2a44132 Add PUSH-POP of D registers in Arm Neon 32 bit functions
+* 03d6532 Fixed few issues in SAO arm assemblies
+* bdbe0fb Decoder: Handle ps_codec_obj memory allocation failure gracefully
+* abcae74 Fix prev slice incomplete check
+* ba420eb Set error skip ctbs as multiple 8x8 pus
+* ea291b4 Fix first frame error return
+* 5defac3 Return error for negative crop parameters
+* 14744f4 Consume bytes for sps with unsupported resolution
+* d88a2f7 Fix slice address zero for not first slice in pic
+* fa44d35 Fix incomplete frame error
 
- ▪ project packages/apps/DeskClock/
+#### external/libmpeg2/
+* d00e1f4 Adding Error Check for f_code Parameters
 
- ▪ project packages/apps/Eleven/
+#### external/libvpx/
+* 7aacdba DO NOT MERGE | libvpx: Fix OOB caused by odd frame width.
 
- ▪ project packages/apps/Email/
+#### packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/EmergencyInfo/
+#### packages/apps/Snap/
 
- ▪ project packages/apps/Exchange/
+#### system/media/
+* 52699539 Camera metadata: Check source metadata size
 
- ▪ project packages/apps/FMRadio/
+01-13-2018
+============
 
- ▪ project packages/apps/FlipFlap/
+#### hardware/qcom/fm/
 
- ▪ project packages/apps/Gallery2/
+#### packages/apps/Bluetooth/
 
- ▪ project packages/apps/HTMLViewer/
+#### packages/apps/Calendar/
 
- ▪ project packages/apps/Jelly/
+#### packages/apps/Camera2/
 
- ▪ project packages/apps/KeyChain/
+#### packages/apps/DeskClock/
 
- ▪ project packages/apps/ManagedProvisioning/
+#### packages/apps/Eleven/
 
- ▪ project packages/apps/Nfc/
+#### packages/apps/Email/
 
- ▪ project packages/apps/Profiles/
+#### packages/apps/EmergencyInfo/
 
- ▪ project packages/apps/Recorder/
+#### packages/apps/Gallery2/
 
- ▪ project packages/apps/SafetyRegulatoryInfo/
+#### packages/apps/HTMLViewer/
 
- ▪ project packages/apps/Snap/
+#### packages/apps/Jelly/
 
- ▪ project packages/apps/Stk/
+#### packages/apps/KeyChain/
 
- ▪ project packages/apps/Tag/
+#### packages/apps/ManagedProvisioning/
 
- ▪ project packages/apps/Terminal/
+#### packages/apps/Nfc/
 
- ▪ project packages/apps/Trebuchet/
+#### packages/apps/Recorder/
 
- ▪ project packages/apps/TvSettings/
+#### packages/apps/SafetyRegulatoryInfo/
 
- ▪ project packages/apps/UnifiedEmail/
+#### packages/apps/Stk/
 
- ▪ project packages/apps/WallpaperPicker/
+#### packages/apps/TvSettings/
 
- ▪ project packages/inputmethods/LatinIME/
+#### packages/apps/UnifiedEmail/
 
- ▪ project packages/providers/BookmarkProvider/
+#### packages/apps/WallpaperPicker/
 
- ▪ project packages/providers/CalendarProvider/
+#### packages/inputmethods/LatinIME/
 
- ▪ project packages/providers/CallLogProvider/
+#### packages/providers/ContactsProvider/
 
- ▪ project packages/providers/ContactsProvider/
+#### packages/providers/DownloadProvider/
 
- ▪ project packages/providers/DataUsageProvider/
+#### packages/providers/MediaProvider/
 
- ▪ project packages/providers/DownloadProvider/
+#### packages/screensavers/Basic/
 
- ▪ project packages/providers/MediaProvider/
+#### packages/screensavers/PhotoTable/
 
- ▪ project packages/providers/TelephonyProvider/
+#### packages/wallpapers/LivePicker/
 
- ▪ project packages/providers/UserDictionaryProvider/
+01-11-2018
+============
 
- ▪ project packages/providers/WeatherProvider/
+#### packages/apps/Calendar/
+* bf888270 calendar: fix first notification after boot
 
- ▪ project packages/resources/devicesettings/
+01-09-2018
+============
 
- ▪ project packages/screensavers/Basic/
+#### hardware/qcom/media-caf/msm8916/
+* 984daed06 libc2dcolorconvert: Initialize surface def to NULL
 
- ▪ project packages/screensavers/PhotoTable/
+#### packages/apps/Snap/
+* 383470abb Snap: Rip out hdr-need-1x option
 
- ▪ project packages/services/CMAudioService/
+01-06-2018
+============
 
- ▪ project packages/services/WeatherService/
+#### hardware/ti/omap4/
+* c04881d omap4: Fix kernel module build
 
- ▪ project packages/wallpapers/LivePicker/
+01-02-2018
+============
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+#### frameworks/opt/telephony/
+* cc70a318 ImsPhoneCallTrackerTest: add missing imports
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+01-01-2018
+============
 
- ▼ 12/15/2017
+#### android/
+* bf7d741 Merge pull request #108 from christopherkardas/nougat
+* 2ef0a78 The future is now
 
+#### vendor/cm/
+* 6a135a91 The future is now
 
- ▪ project frameworks/base/
+12-30-2017
+============
 
- ▪ project packages/apps/DUI/
+#### kernel/OK/
+* 22a176f26 remove wifi wakelocks
 
- ▪ project packages/apps/Dialer/
+12-29-2017
+============
 
- ▪ project packages/apps/OmniSwitch/
+#### bootable/recovery/
+* 3062c1a BACKPORT: Fix a rare failure for imgdiff when random data equals gzip header
 
- ▪ project packages/apps/ResurrectionOTA/
+#### vendor/cm/
+* b87ef4c3 Update Magisk to v15.0 and Magisk Manager to v5.5.1 (#102)
 
- ▪ project packages/apps/ResurrectionStats/
+12-28-2017
+============
 
- ▪ project packages/apps/Settings/
+#### kernel/OK/
+* 4b6e87874 add generic wakelock blocker driver Based on ideas of FranciscoFranco's non-generic driver. driver v1.0.0 updated to v1.1.0 Signed-off-by: andip71 <andreasp@gmx.de>
 
- ▼ 12/13/2017
+12-27-2017
+============
 
+#### kernel/OK/
+* a5ff6e2e8 bcmdhd: update bcm wifi driver to Android N
 
- ▪ project bootable/recovery-twrp/
- ▪ ea4efc6d Fix build error in AOSP 8.1.0 r1 tree
+12-26-2017
+============
 
- ▪ project packages/apps/SetupWizard/
+#### kernel/OK/
+* d4bb4ae47 genirq: Introduce helper irq_desc_get_irq()
+* d6c665e0a wakeup: remove unused function
+* cf252142c mac80211: use constant time comparison with keys
+* 1eef68b92 crypto: memneq - fix for archs without efficient unaligned access
+* f38643310 crypto: more robust crypto_memneq
+* 9458e2a88 mac80211: accept key reinstall without changing anything
+* 5114ceb3f Revert "ALSA: timer: fix NULL pointer dereference in read()/ioctl() race"
+* afb4c0c34 BACKPORT: ALSA: timer: Fix race between read and ioctl
+* 071ee7fdf UPSTREAM: ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
+* 16c05e097 Prevent potential double frees in sg driver
+* 626f6355c sg: O_EXCL and other lock handling
+* 3c5063073 hissc: raise the max volt for 3 pole headset.
+* c84ec844a With two exceptions (drm/qxl and drm/radeon) all vm_operations_struct structs should be constant.
+* b32563d8a remove Huawei binder implementation
+* b4db2b32c clean source
+* 1826f873d cfq-iosched: Allow parent cgroup to preempt its child
+* 5ab2f2ef9 cfq-iosched: Allow sync noidle workloads to preempt each other
+* 9b4c1f9c8 cfq-iosched: Reorder checks in cfq_should_preempt()
+* 2244fdb10 cfq-iosched: Don't group_idle if cfqq has big thinktime
+* 822bd4392  sched/cpuset/pm: Fix cpuset vs. suspend-resume bugs
+* 7db97df90 Optimized Task-Search for upto 6% increase in Performance
+* fceda5859 relaxed: enhance power efficiency Here we are trying to reduce power usage through the use of macros cpu_relaxed_read_short and cpu_relaxed_read.
+* 1a11912db Optimized Console FrameBuffer for upto 70% increase in Performance
+* 2abe1e322 cpu: Defer smpboot kthread unparking until CPU known to scheduler Currently, smpboot_unpark_threads() is invoked before the incoming CPU has been added to the scheduler's runqueue structures.  This might potentially cause the unparked kthread to run on the wrong CPU, since the correct CPU isn't fully set up yet.
+* d4d80abdf scsi:sd: deal with deep-sleep issue The SYNCHRONIZE_CACHE command is a medium write command and hence can fail when the device is write protected. Avoid sending such commands by making sure that write-cache-enable is disabled even though the device claim to support it.
+* 7b5cb8f2b relaxed: improving power efficiency Defining relaxed version of atomic read as cpu_relaxed_read_atomic which will be used for improving power efficiency for arm64.
+* 1acdc64e1 ion: destroy ion handles under client->lock
+* ac9c6175b staging: ion: Fix error handling in ion_buffer_create This patch fixes error handling case when buffer->pages allocation fails. Also, it removes unreachable code of checking ret variable although it is not updated.
+* 8111b0ada staging: ion: fix corruption of ion_import_dma_buf we found this issue but still exit in lastest kernel. Simply keep ion_handle_create under mutex_lock to avoid this race.
+* f5c2ec5d7 ANDROID: ion: Fix uninitialized variable
+* 31d229d57 UPSTREAM: dm ioctl: prevent stack leak in dm ioctl call
+* 9ef72f6cc wakeup: Add the guard condition for len in pm_get_active_wakeup_sources
 
- ▼ 12/12/2017
+12-25-2017
+============
 
+#### external/chromium-webview/
+* ea18916 Update webviews to Chromium 63.0.3239.111
 
- ▪ project bootable/recovery-twrp/
- ▪ aac05c2f Fix android.hidle.base@1.0 rule for various 8.0 trees
+12-24-2017
+============
 
- ▪ project hardware/qcom/fm/
+#### hardware/qcom/audio-caf/msm8916/
+* 08f938880 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
 
- ▪ project hardware/ti/omap4/
- ▪ f5a98d3 Revert "omap4: add local libjhead"
+#### hardware/qcom/audio-caf/msm8994/
+* 4be649f1c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
 
- ▪ project packages/apps/AudioFX/
+#### hardware/qcom/media-caf/msm8916/
+* d92d0487f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
 
- ▪ project packages/apps/Bluetooth/
+#### hardware/qcom/media-caf/msm8994/
+* 1633dd56a Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
 
- ▪ project packages/apps/CMParts/
- ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
- ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
+12-23-2017
+============
 
- ▪ project packages/apps/Calendar/
+#### packages/apps/Snap/
+* c89f3ae74 Snap: add QReader to module switch
+* f0e61e5b9 QuickReader: initial commit
 
- ▪ project packages/apps/Camera2/
+#### system/vold/
+* f902c08 vold: Fix cryptfs changepw parsing
 
- ▪ project packages/apps/CellBroadcastReceiver/
+12-21-2017
+============
 
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/DeskClock/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/FlipFlap/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 12/11/2017
-
-
- ▪ project android/
- ▪ 2c020ba android-7.1.2_r29 -> android-7.1.2_r36
-
- ▪ project build/
- ▪ c2b760425 Bump security string to 2017-12-05
-
- ▪ project external/skia/
- ▪ cc36cbe26 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_external_skia into nougat
- ▪ bf8a04d00 Merge tag 'android-7.1.2_r36' into nougat
-
- ▪ project frameworks/av/
- ▪ b917d0b7e Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ 4d1bd2d54ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into HEAD
- ▪ 1a126b1bc24 DO NOT MERGE. KEY_INTENT shouldn't grant permissions.
- ▪ e5c75f2bc48 Stop explicitly using kCallerPasses_Ownership
- ▪ a146c62c483 Fix ClipboardService device lock check for cross profile
- ▪ 233958f8ccd Prevent getting data from Clipboard if device is locked
- ▪ 1a9fac1bf4c Clearing up invalid entries when SyncStorageEngine starts
- ▪ a86c005c652 SystemUI: Fix title text clipping when task lock button is visible
- ▪ 355e6694104 ZenModeHelper: Allow lights by default
- ▪ 35faa934598 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
-
- ▪ project hardware/ti/omap4/
- ▪ 0f456ee omap4: add local libjhead
-
- ▪ project packages/apps/PackageInstaller/
- ▪ c4735a26 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
- ▪ 81ba4151 DO NOT MERGE Fixing Install button not enabled on resume
- ▪ d65c53a6 Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
-
- ▪ project packages/apps/Settings/
- ▪ 16519cc213 DO NOT MERGE. ActivityPicker shouldn't grant permissions.
- ▪ 13e6a2eb8d BugFix:Correct fullBearer in APNSettings
- ▪ 2f5b6c9af9 Telephony: Fix Crash in SimStatus Fragment
- ▪ 73ee6a27c9 Settings: fix vibrate for calls in Setting app displayed incorrect issue
- ▪ c2ccc72d68 Settings: back icon doesn't work in format SD as portable page.
- ▪ 8bea2b71c6 Settings: Fix settings force close
- ▪ 184c68f844 Settings: Fix crash when disconnect wifi
- ▪ 67dd9f7c42 Settings: Strings: Modify a few german summaries
-
- ▪ project system/core/
- ▪ 9ed022649 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
-
- ▼ 12/10/2017
-
-
- ▪ project packages/apps/Jelly/
- ▪ c4a6bf8 Jelly: Use try-with-resources in downloadSuggestionsForQuery
-
- ▼ 12/09/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ 2af13795 TWRP Bugfix release
-
- ▪ project external/chromium-webview/
- ▪ 4aff972 Update webviews to Chromium 63.0.3239.83
-
- ▪ project external/skia/
- ▪ e0a4c4794 Fix SkFILEStream.
- ▪ 680eaf05e Fix truncated webp images DO NOT MERGE
-
- ▪ project frameworks/av/
- ▪ 3e16c556f Block allocateBufferWithBackup in secure native handle mode
- ▪ 66c9362f1 Fix memory leaks
- ▪ 2102b4d2b media: Fix a typo in parsing nclc atom.
- ▪ acbbfff8d Soundtrigger service: fix cross deadlock with audio policy service
- ▪ 787001779 IMediaExtractor: ensure users to check returned value by getTrack.
- ▪ cb0c13867 Fix issues with extractor dumpsys
-
- ▪ project frameworks/minikin/
- ▪ 369826a Drop codepoints that are outside the Unicode range - DO NOT MERGE
-
- ▪ project hardware/broadcom/wlan/
- ▪ 7d31a89 net: wireless: bcmdhd: update bcm4358 FW (7.112.201.6) [DO NOT MERGE]
-
- ▪ project hardware/intel/common/omx-components/
- ▪ e9ffbbc Rejected the invalid size of input video buffer.
-
- ▪ project hardware/qcom/media/
- ▪ 92e736a0b mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
- ▪ project packages/apps/Jelly/
- ▪ 6904728 Jelly: Allow to dismiss HTTP auth dialog
- ▪ c42034e Jelly: Implementing favorite management through a ContentProvider.
-
- ▪ project system/core/
- ▪ 0d3d72fb7 zip_archive: reject files that don't start with an LFH signature.
-
- ▼ 12/08/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ adae336c Default to device backup/restore vs. adb backup/restore
-
- ▼ 12/06/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ e17b78ad Merge "Fix stuck on 'black' screen entering recovery" into android-8.0
-
- ▪ project external/libavc/
- ▪ 8f141f1 Decoder: Fixed hang in the case of dangling field
-
- ▪ project external/libhevc/
- ▪ 3254798 Alloc extra bytes for bits buf for parse optimzation
-
- ▪ project external/libmpeg2/
- ▪ 382741b Update num_mbs_left When mb_x is Reset.
- ▪ 70d2de5 Fix Error When Input Buffer is Full
- ▪ 813a0af Reject Multiple seq_hdr With Different Dimensions
- ▪ 0e297f2 DoS error - Bitstream Overflow
-
- ▪ project frameworks/av/
- ▪ bc1e3691c OMXNodeInstance: use a lock around OMX::freeNode
- ▪ d61d33f52 Fix information disclosure in mediadrmserver
- ▪ bd3bfec51 m4v_h263: fix global buffer overflow
- ▪ 7bf6a4234 AudioPolicyService: Acquire mutex for SoundTriggerSession
-
- ▪ project frameworks/base/
- ▪ ae1ad8cdb89 Fix systemUI FC when using the Language QS tile (#212)
-
- ▪ project system/bt/
- ▪ 9844cd64 Read the correct amount of attributes
-
- ▼ 12/05/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ 04156c3f Fix the inconsistencies in the spelling of SD card
-
- ▼ 12/04/2017
-
-
- ▪ project bootable/recovery-twrp/
- ▪ a2341b0c Fix stuck on 'black' screen entering recovery
-
- ▪ project vendor/cm/
- ▪ ac4262be prebuilt: Update included apk's to latest versions
- ▪ 46aadf25 Update include method for prebuilt apks
- ▪ bb1146a7 Update Magisk to v14.5
- ▪ 8640fc10 Update Changelog to v5.8.5
+#### hardware/cyanogen/
+* f66b300 cmhw: Remove duplicate class
 
