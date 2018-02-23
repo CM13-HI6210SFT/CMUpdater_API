@@ -1,327 +1,67 @@
 
-# Resurrection Remix Nougat Ver 5.8.5 (b112) Changelog
+# Resurrection Remix Nougat Ver 5.8.5 (b114) Changelog
 ====================================================
 
-02-04-2018
+02-19-2018
 ============
 
-#### hardware/qcom/audio-caf/msm8916/
-* d026b1fda Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.30' into cm-14.1-caf-8916
+#### hardware/libhardware_legacy/
+* a79094a wifi: add flag to wait for kernel driver to get ready
 
-#### hardware/qcom/media-caf/msm8916/
-* cbb359b1b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.30' into cm-14.1-caf-8916
+#### hardware/qcom/display-caf/msm8998/
+* 3f485baa3 Fix duplicate copy file rules
+* 3ee5f23c4 hwc: Set ioprio for vsync thread
+* c78e081a2 tonemapper: Depend on kernel headers
 
-01-29-2018
+02-18-2018
 ============
 
-#### packages/apps/Snap/
-* 6d78d4a13 Snap: Update pano and video icons to be more like photo icons
-
-01-28-2018
-============
-
-#### external/toybox/
-* 3125af0 strings tests and bugfixes
-* c766ad3 "printf %x 64" wasn't working right on 32 bit because a variable type was wrong.
-
-01-27-2018
-============
-
-#### hardware/ti/omap4/
-* 2c0550b init: Also try to load OMAPLFB as module
-
-01-25-2018
-============
+#### external/chromium-webview/
+* 110d08a Update webviews to Chromium 64.0.3282.137
 
 #### packages/apps/AudioFX/
-* 4843e7c AudioFX: Remove stray quote
-
-#### packages/apps/WallpaperPicker/
-* 0db30c2 WallpaperPicker: Move strings for translation
-
-01-24-2018
-============
-
-#### hardware/qcom/audio-caf/msm8916/
-* 5e2afea14 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.043 on remote branch
-
-#### packages/apps/Jelly/
-* f280cab Jelly: Set correct webview visibility on Show/Hide CustomView
-
-01-23-2018
-============
-
-#### packages/apps/Jelly/
-* 77b808b Jelly: add dialog to show SSL certificate info
-
-01-20-2018
-============
-
-#### external/toybox/
-* 3db42e9 toybox: Don't generate symlinks for a few tools
-
-01-19-2018
-============
-
-#### packages/apps/TvSettings/
-* 715d752e Fix setting root option first time
-
-01-16-2018
-============
-
-#### frameworks/base/
-
-#### hardware/qcom/audio-caf/msm8916/
-* b7ae67feb configs: msm8909: Add sound model config params
-
-#### packages/apps/Dialer/
-
-#### packages/apps/OmniSwitch/
-
-#### packages/apps/Settings/
-
-01-15-2018
-============
-
-#### packages/apps/Recorder/
-* 23b8146 Recorder: Avoid NPE when screen recording is about to finish
-
-#### packages/apps/Snap/
-* 8fbb2903f Snap: Add missing thumbnails for filter modes
-
-#### vendor/codeaurora/telephony/
-* f1dc793 Merge tag 'LA.UM.5.6.r1-06400-89xx.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into HEAD
-
-01-14-2018
-============
-
-#### external/aac/
-* d807ebc Fix out of bound memory access in lppTransposer
-* c02dd94 DO NOT MERGE Prevent out of bound memory access in GetInvInt
-
-#### external/libavc/
-* 09900a4 Decoder: Handle dec_hdl memory allocation failure gracefully
-* 25ccb87 Decoder: Fixed incorrect use of mmco parameters.
-* ab3fc20 Decoder: Detect change of mbaff flag in SPS
-* 2c9d1d0 Decoder: Increased allocation and added checks in sei parsing.
-
-#### external/libhevc/
-* 2a44132 Add PUSH-POP of D registers in Arm Neon 32 bit functions
-* 03d6532 Fixed few issues in SAO arm assemblies
-* bdbe0fb Decoder: Handle ps_codec_obj memory allocation failure gracefully
-* abcae74 Fix prev slice incomplete check
-* ba420eb Set error skip ctbs as multiple 8x8 pus
-* ea291b4 Fix first frame error return
-* 5defac3 Return error for negative crop parameters
-* 14744f4 Consume bytes for sps with unsupported resolution
-* d88a2f7 Fix slice address zero for not first slice in pic
-* fa44d35 Fix incomplete frame error
-
-#### external/libmpeg2/
-* d00e1f4 Adding Error Check for f_code Parameters
-
-#### external/libvpx/
-* 7aacdba DO NOT MERGE | libvpx: Fix OOB caused by odd frame width.
-
-#### packages/apps/CellBroadcastReceiver/
-
-#### packages/apps/Snap/
-
-#### system/media/
-* 52699539 Camera metadata: Check source metadata size
-
-01-13-2018
-============
-
-#### hardware/qcom/fm/
-
-#### packages/apps/Bluetooth/
 
 #### packages/apps/Calendar/
 
-#### packages/apps/Camera2/
+#### packages/apps/CellBroadcastReceiver/
 
 #### packages/apps/DeskClock/
 
-#### packages/apps/Eleven/
-
-#### packages/apps/Email/
-
-#### packages/apps/EmergencyInfo/
-
 #### packages/apps/Gallery2/
 
-#### packages/apps/HTMLViewer/
+#### packages/apps/SetupWizard/
 
-#### packages/apps/Jelly/
+#### packages/apps/Snap/
 
-#### packages/apps/KeyChain/
-
-#### packages/apps/ManagedProvisioning/
-
-#### packages/apps/Nfc/
-
-#### packages/apps/Recorder/
-
-#### packages/apps/SafetyRegulatoryInfo/
-
-#### packages/apps/Stk/
-
-#### packages/apps/TvSettings/
+#### packages/apps/Trebuchet/
 
 #### packages/apps/UnifiedEmail/
 
 #### packages/apps/WallpaperPicker/
 
-#### packages/inputmethods/LatinIME/
-
-#### packages/providers/ContactsProvider/
-
-#### packages/providers/DownloadProvider/
-
-#### packages/providers/MediaProvider/
-
-#### packages/screensavers/Basic/
-
-#### packages/screensavers/PhotoTable/
-
-#### packages/wallpapers/LivePicker/
-
-01-11-2018
+02-13-2018
 ============
 
-#### packages/apps/Calendar/
-* bf888270 calendar: fix first notification after boot
+#### vendor/cm/
+* 4556b6c8 Update Magisk to 15.3 and MagiskManager to 5.5.5 (#105)
 
-01-09-2018
+02-12-2018
 ============
 
-#### hardware/qcom/media-caf/msm8916/
-* 984daed06 libc2dcolorconvert: Initialize surface def to NULL
-
-#### packages/apps/Snap/
-* 383470abb Snap: Rip out hdr-need-1x option
-
-01-06-2018
-============
+#### hardware/qcom/audio-caf/msm8998/
+* 79d3517a8 hal: Fix soft reboots due to proximity sensor
 
 #### hardware/ti/omap4/
-* c04881d omap4: Fix kernel module build
+* d31d876 pvr-km: pass BOARD_USE_TI_LIBION to make
 
-01-02-2018
-============
-
-#### frameworks/opt/telephony/
-* cc70a318 ImsPhoneCallTrackerTest: add missing imports
-
-01-01-2018
+02-10-2018
 ============
 
 #### android/
-* bf7d741 Merge pull request #108 from christopherkardas/nougat
-* 2ef0a78 The future is now
+* 557c7b1 Update README.mkdn
+* 1e5494f Update README.mkdn
+* 7f5d30e Update README.mkdn
 
-#### vendor/cm/
-* 6a135a91 The future is now
-
-12-30-2017
-============
-
-#### kernel/OK/
-* 22a176f26 remove wifi wakelocks
-
-12-29-2017
-============
-
-#### bootable/recovery/
-* 3062c1a BACKPORT: Fix a rare failure for imgdiff when random data equals gzip header
-
-#### vendor/cm/
-* b87ef4c3 Update Magisk to v15.0 and Magisk Manager to v5.5.1 (#102)
-
-12-28-2017
-============
-
-#### kernel/OK/
-* 4b6e87874 add generic wakelock blocker driver Based on ideas of FranciscoFranco's non-generic driver. driver v1.0.0 updated to v1.1.0 Signed-off-by: andip71 <andreasp@gmx.de>
-
-12-27-2017
-============
-
-#### kernel/OK/
-* a5ff6e2e8 bcmdhd: update bcm wifi driver to Android N
-
-12-26-2017
-============
-
-#### kernel/OK/
-* d4bb4ae47 genirq: Introduce helper irq_desc_get_irq()
-* d6c665e0a wakeup: remove unused function
-* cf252142c mac80211: use constant time comparison with keys
-* 1eef68b92 crypto: memneq - fix for archs without efficient unaligned access
-* f38643310 crypto: more robust crypto_memneq
-* 9458e2a88 mac80211: accept key reinstall without changing anything
-* 5114ceb3f Revert "ALSA: timer: fix NULL pointer dereference in read()/ioctl() race"
-* afb4c0c34 BACKPORT: ALSA: timer: Fix race between read and ioctl
-* 071ee7fdf UPSTREAM: ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
-* 16c05e097 Prevent potential double frees in sg driver
-* 626f6355c sg: O_EXCL and other lock handling
-* 3c5063073 hissc: raise the max volt for 3 pole headset.
-* c84ec844a With two exceptions (drm/qxl and drm/radeon) all vm_operations_struct structs should be constant.
-* b32563d8a remove Huawei binder implementation
-* b4db2b32c clean source
-* 1826f873d cfq-iosched: Allow parent cgroup to preempt its child
-* 5ab2f2ef9 cfq-iosched: Allow sync noidle workloads to preempt each other
-* 9b4c1f9c8 cfq-iosched: Reorder checks in cfq_should_preempt()
-* 2244fdb10 cfq-iosched: Don't group_idle if cfqq has big thinktime
-* 822bd4392  sched/cpuset/pm: Fix cpuset vs. suspend-resume bugs
-* 7db97df90 Optimized Task-Search for upto 6% increase in Performance
-* fceda5859 relaxed: enhance power efficiency Here we are trying to reduce power usage through the use of macros cpu_relaxed_read_short and cpu_relaxed_read.
-* 1a11912db Optimized Console FrameBuffer for upto 70% increase in Performance
-* 2abe1e322 cpu: Defer smpboot kthread unparking until CPU known to scheduler Currently, smpboot_unpark_threads() is invoked before the incoming CPU has been added to the scheduler's runqueue structures.  This might potentially cause the unparked kthread to run on the wrong CPU, since the correct CPU isn't fully set up yet.
-* d4d80abdf scsi:sd: deal with deep-sleep issue The SYNCHRONIZE_CACHE command is a medium write command and hence can fail when the device is write protected. Avoid sending such commands by making sure that write-cache-enable is disabled even though the device claim to support it.
-* 7b5cb8f2b relaxed: improving power efficiency Defining relaxed version of atomic read as cpu_relaxed_read_atomic which will be used for improving power efficiency for arm64.
-* 1acdc64e1 ion: destroy ion handles under client->lock
-* ac9c6175b staging: ion: Fix error handling in ion_buffer_create This patch fixes error handling case when buffer->pages allocation fails. Also, it removes unreachable code of checking ret variable although it is not updated.
-* 8111b0ada staging: ion: fix corruption of ion_import_dma_buf we found this issue but still exit in lastest kernel. Simply keep ion_handle_create under mutex_lock to avoid this race.
-* f5c2ec5d7 ANDROID: ion: Fix uninitialized variable
-* 31d229d57 UPSTREAM: dm ioctl: prevent stack leak in dm ioctl call
-* 9ef72f6cc wakeup: Add the guard condition for len in pm_get_active_wakeup_sources
-
-12-25-2017
-============
-
-#### external/chromium-webview/
-* ea18916 Update webviews to Chromium 63.0.3239.111
-
-12-24-2017
-============
-
-#### hardware/qcom/audio-caf/msm8916/
-* 08f938880 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
-#### hardware/qcom/audio-caf/msm8994/
-* 4be649f1c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
-#### hardware/qcom/media-caf/msm8916/
-* d92d0487f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.29' into cm-14.1-caf-8916
-
-#### hardware/qcom/media-caf/msm8994/
-* 1633dd56a Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.18' into cm-14.1-caf-8994
-
-12-23-2017
-============
-
-#### packages/apps/Snap/
-* c89f3ae74 Snap: add QReader to module switch
-* f0e61e5b9 QuickReader: initial commit
-
-#### system/vold/
-* f902c08 vold: Fix cryptfs changepw parsing
-
-12-21-2017
-============
-
-#### hardware/cyanogen/
-* f66b300 cmhw: Remove duplicate class
+#### hardware/qcom/audio-caf/msm8998/
+* f3b169058 msm8998: ultrasound: Initial open source hal for Elliptic Ultrasound
 
