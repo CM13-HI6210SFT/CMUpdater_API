@@ -1,0 +1,196 @@
+
+# AEX Version 4.6 Changelog
+====================================================
+
+03-24-2018
+============
+
+#### build/
+* 27b4eb695 build
+
+#### external/roboto-fonts/
+* 9e134c4 Roboto-Light
+
+#### frameworks/av/
+* 706f11313 k3
+
+#### frameworks/base/
+* caf2d4503bd keyguard: Welcome to the new DotOS Lockscreen!
+* 87da06e84b4 mtp: stop ocassional crash in MTP Host.
+
+#### frameworks/native/
+* c45a25993 opengl: dont use swap buffers with damage
+* 21488ae20 gui: don't use native fence sync
+* defb31362 Fix deep sleep issue
+
+#### frameworks/opt/telephony/
+* a8ceae81 fix ussd
+* b6f88760 fix 2g/3g/LTE switch
+
+#### packages/apps/Camera2/
+* de449f2f3 Camera2: override capture support level
+* 8aae2be20 Camera2: Fix photo snap delay on front cam.
+
+#### packages/apps/Dialer/
+* d46b705e5 add round icon support for settings
+
+#### packages/apps/Extensions/
+* bc7fa58 patch
+
+#### packages/providers/MediaProvider/
+* e3f6a03 fix_mtp
+
+#### packages/services/OmniJaws/
+* ac07439 enable weather by default
+
+#### system/sepolicy/
+* 1bf9840 sepolicy for cherryplus
+
+#### vendor/aosp/
+* 590cf5e vendor
+
+03-22-2018
+============
+
+#### frameworks/base/
+* 310458a12fb Add toggle for face auto unlock (1/2)
+
+#### vendor/aosp/
+* 083e03d extract_utils.sh: Fix smali path for AOSP
+
+03-21-2018
+============
+
+#### frameworks/base/
+* 29470ef7c0d Revert "pocket lock: Remove fingerprint events and gestures disabling it causes random bug with fp unlocking"
+* c29f3b5f165 base: KeyguardHostView.java: Dismiss keyguard automatically when face is recognized
+* 8a5693bbc30 Revert "Fix incorrect signatures"
+
+#### packages/apps/Extensions/
+* 6c68c65 Add toggle for face auto unlock (2/2)
+
+03-20-2018
+============
+
+#### frameworks/base/
+* 98ae075dba3 Revert "add PreventRunning"
+* 99fe7b5e272 Revert "Add brevent patch"
+
+#### vendor/aosp/
+* 3c9383b Rename selective-spn-conf.xml to spn-conf.xml
+* 9d77e8d mk: update Chinese spn name
+* 10c408c Update SPN override for China Telecom
+* 811ef55 Add new Tuenti MNC SPN override name
+* aa975d9 SIM card setting: fixed Smartfren SPN override name
+* db9d7dd updated NOS/MEO apn names
+* 5f9ff02 Remove duplicate <!-- Azerbaijan -->
+* 54b4290 Remove duplicate value for Sweden 2G
+* ac02acd cm: add selective based spn (2/2)
+* 27be954 Changes for china mobile carrier settings
+* c061fc3 Use apn-conf.xml from NitrogenOS
+* 2ef2c6b extract_utils.sh: Bring in line with LOS 14.1
+* 8d65508 extract_utils: Use temporary folder for system dump
+* 41a5645 extract_utils: Fix pinning when not cleaning vendor dir
+* f8d3ed7 extract_utils: Allow to interrupt the extraction
+* 369bb1d extract_files: Adjust deodex path and tmpdir
+* 55084f5 extract_utils: implement LOCAL_MODULE_RELATIVE_PATH
+* f1de80e Fix extract_utils when not using blob sections
+* bc761ac extract_files: Add support for paths without system/
+* 1e15446 extract_files: Add support for specifying blob sections
+* af292c9 extract_utils: support extracting directly from an ota zip
+* 1287eb4 extract_utils: Fix locale issue with sort
+* 92120ea extract_utils: fix extracting XML files containing binary characters
+* 042077f build: Update smali and baksmali to 2.2.1
+* c0ba79f extract_utils: Fix cleanup variables assigment
+* 1dfbd0e build: Update smali and baksmali to 2.2.0
+* bfb36ba extract_utils: Update smali/backsmali to v2.2b4
+* d73b767 Extract Utils: implement oat2dex from CM
+* eb3fcb9 Add extract utils script from CM
+
+03-19-2018
+============
+
+#### build/
+* 1b43f7d55 Bump security patch level to 2018-03-05
+
+#### frameworks/av/
+* 6a6523de5 AACExtractor: check bounds during seek
+
+#### frameworks/base/
+* f673fd2ad1a pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
+* b9ca636f1f4 pocket: Close sysfs resource after every write
+* d3e29b4961e Enhance wakelock for IPReachabilityMonitor
+* 946ad95a4c3 Fix incorrect signatures Chrome Stable and Google Webview had incorrect signatures. That was due to an incorrect method of determining the right signature.
+* 0e724b403eb pocket lock: Remove fingerprint events and gestures disabling it causes random bug with fp unlocking
+* ecaf7b7500e Add brevent patch Thanks to liudongmiao. Source: https://github.com/SudaMod/android_frameworks_base/commit/0e2f26fd5b97e9d5cd0375de2ee6da387d60f91e
+* 3f010287b71 add PreventRunning
+* 3d5732a1232 Improving Pie date for simplified Chinese
+* 17efa3385ac Improving simplified Chinese Translation
+
+#### packages/apps/ContactsCommon/
+* 700670e4 Update Chinese Simplified translation
+
+#### packages/apps/Extensions/
+* dac70b9 Improving simplified Chinese Translation
+
+#### packages/apps/Messaging/
+* c795370 Add missing res/values/cm_strings.xml
+* 5615127 Fix string "Swipe right deletes conversation" not using translation
+* 4f2a1b4 Messaging: Enable swipe at archive mode
+* 29f67d7 Messaging: show snackbar instead of toast when deleting conversation
+* ba75349 Messaging: Swipe right to delete conversation
+* 840a2bb Messaging: Implement option for swipe to delete.
+
+#### system/bt/
+* 774c650a BNEP: Check received frame type
+* 14bcd458 Remove memory reference to invalid mem in error log
+* 357ea334 SDP: Include the offset in sdp_disc_server_rsp
+* 2c9eb037 SDP: Pass the bounds to process_service_*_rsp
+* a0bf78c3 Fix unexpected behavior in reading BNEP packets
+* 52ebba01 PAN: Fix Use-after-free in bta_pan_data_buf_ind_cback
+* 48f52f79 AVRCP: Check the number of text attributes requested
+* d64cd19d Allocate/free the SDP connection timers only during stack startup/shutdown
+* 68b38026 Removed alarm callback execution statistics
+* e2640b88 Fix unexpected behavior in SDP
+
+#### vendor/aosp/
+* 8fa3fd7 prebuilt: update prebuilt apks and zip
+
+03-08-2018
+============
+
+#### external/libavc/
+* 04c9906 Decoder: Adding Error Check for Output Buffer Size in Shared Display Mode.
+* db6bf49 Decoder: Fixed memory overflow in shared display mode.
+
+#### external/libmpeg2/
+* 98beb25 Fixing Underflow of ps_dec->u2_num_mbs_left
+* 6337ea6 Adding Error Check for Output Buffer Size
+* d63479b Correcting Buffer Allocation for Shared Display
+
+#### frameworks/base/
+* 521bbf12c8e Revert "base: silent mode is back"
+
+03-01-2018
+============
+
+#### bootable/recovery/
+* 04d5d8b BACKPORT: Fix a rare failure for imgdiff when random data equals gzip header
+* a5510c7 update_verifier: Set the success flag if dm-verity is not enabled.
+* 90c2465 recovery: Complete project pathmap usage
+
+#### build/
+* 5ddb914fb build: copy recovery.img to BOOTABLE_IMAGES only when it's actually used
+
+#### manifest/
+* 57c982e Update manifest
+
+#### packages/apps/Settings/
+* 52dcb3257e Add Xiaomi Mi A1 Maintainer (#229)
+
+02-24-2018
+============
+
+#### hardware/qcom/audio-caf/msm8998/
+* 5539e4c hal: Haxed header
+
