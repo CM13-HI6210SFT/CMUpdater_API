@@ -2,7 +2,7 @@
 <ROM>
   <!-- Your ROM Name -->
   <RomName>AospExtended-ROM</RomName>
-  <VersionName>AospExtended-v4.6-20180425-1734-10</VersionName>
+  <VersionName>AospExtended-v4.6-20180324-1824-10</VersionName>
   <!-- Your ROM version. MUST be incrementally larger than previous versions -->
   <!-- Do NOT use letters in your version number. Integers only -->
   <!-- Previous version will be read from the build.prop -->
@@ -14,15 +14,15 @@
     <!-- HTTP link will open a web page -->
     <!-- Direct Link overrides HTTP link -->
   <DirectUrl>https://www.dropbox.com/s/k7r41kxfiujtbze/AospExtended-v4.6-cherryplus-20180324-1824-10.zip?dl=1</DirectUrl>
-  <HttpUrl>https://goo.gl/DJVT8B</HttpUrl>
+  <HttpUrl nil="true" />
   <!-- What version are you issuing? -->
   <Android>7.1.2</Android>
   <!-- Providing File Checking for direct downloads. You SHOULD offer this for your users whether using HTTP or Direct -->
   <!-- OPTIONAL: Enter <CheckMD5 nil="true" /> offer MD5 checking -->
-  <CheckMD5>39a838f148bac60ad11495dcdd9683b5</CheckMD5>
+  <CheckMD5>24a3943b3673a6b9f2c6cf984a10cc43</CheckMD5>
   <!-- The filesize of your ROM -->
   <!-- Please enter this in BYTES only. Otherwise an incorrect value will be shown -->
-  <FileSize type="integer">569446436</FileSize>
+  <FileSize type="integer">557117684</FileSize>
   <!-- Developer or Team name. You can put anything here, even a couple of names -->
   <!-- OPTIONAL: Enter <Developer nil="true" /> to hide this -->
   <Developer>ksrt12</Developer>
@@ -34,33 +34,127 @@
   <DonateURL>https://www.paypal.me/ksrt12</DonateURL>
   <!-- Put the changelog here... Use Markdown to format it -->
   <!-- Again, surround special characters with the CDATA tags or your XML will NOT parse -->
-  <Changelog>### Changelog 20180525
-====================
-     02-25-2018
-====================
+  <Changelog>### Changelog 20180425
+03-22-2018
+============
 
-   * build/
-1faa7c3a9  build  [Kazakov Stepan]
-   * external/roboto-fonts/
-bbdf785  Roboto-Light  [Kazakov Stepan]
-   * frameworks/base/
-ccd28a639d5  mtp: stop ocassional crash in MTP Host.  [Kazakov Stepan]
-   * frameworks/native/
-5b9fad14f  opengl: dont use swap buffers with damage  [Kazakov Stepan]
-e69f4c43b  gui: don't use native fence sync  [Kazakov Stepan]
-409c60988  Fix deep sleep issue  [Kazakov Stepan]
-   * frameworks/opt/telephony/
-5b31b433  fix ussd  [Kazakov Stepan]
-c98c1bb2  fix 2g/3g/LTE switch  [Kazakov Stepan]
-   * packages/apps/Camera2/
-a0d025e04  Camera2: override capture support level  [Kazakov Stepan]
-983ba63a0  Camera2: Fix photo snap delay on front cam.  [Kazakov Stepan]
-   * packages/apps/Dialer/
-2fa77741d  add round icon support for settings  [Kazakov Stepan]
-   * packages/providers/MediaProvider/
-454cb8a  fix_mtp  [Kazakov Stepan]
-   * packages/services/OmniJaws/
-d21fa40  enable weather by default  [Kazakov Stepan]
-   * system/sepolicy/
-8015794  sepolicy for cherryplus  [Kazakov Stepan]</Changelog>
+#### frameworks/base/
+* 310458a12fb Add toggle for face auto unlock (1/2)
+
+#### vendor/aosp/
+* 083e03d extract_utils.sh: Fix smali path for AOSP
+
+03-21-2018
+============
+
+#### frameworks/base/
+* 29470ef7c0d Revert "pocket lock: Remove fingerprint events and gestures disabling it causes random bug with fp unlocking"
+* c29f3b5f165 base: KeyguardHostView.java: Dismiss keyguard automatically when face is recognized
+* 8a5693bbc30 Revert "Fix incorrect signatures"
+
+#### packages/apps/Extensions/
+* 6c68c65 Add toggle for face auto unlock (2/2)
+
+03-20-2018
+============
+
+#### frameworks/base/
+* 98ae075dba3 Revert "add PreventRunning"
+* 99fe7b5e272 Revert "Add brevent patch"
+
+#### vendor/aosp/
+* 3c9383b Rename selective-spn-conf.xml to spn-conf.xml
+* 9d77e8d mk: update Chinese spn name
+* 10c408c Update SPN override for China Telecom
+* 811ef55 Add new Tuenti MNC SPN override name
+* aa975d9 SIM card setting: fixed Smartfren SPN override name
+* db9d7dd updated NOS/MEO apn names
+* 5f9ff02 Remove duplicate <!-- Azerbaijan -->
+* 54b4290 Remove duplicate value for Sweden 2G
+* ac02acd cm: add selective based spn (2/2)
+* 27be954 Changes for china mobile carrier settings
+* c061fc3 Use apn-conf.xml from NitrogenOS
+* 2ef2c6b extract_utils.sh: Bring in line with LOS 14.1
+* 8d65508 extract_utils: Use temporary folder for system dump
+* 41a5645 extract_utils: Fix pinning when not cleaning vendor dir
+* f8d3ed7 extract_utils: Allow to interrupt the extraction
+* 369bb1d extract_files: Adjust deodex path and tmpdir
+* 55084f5 extract_utils: implement LOCAL_MODULE_RELATIVE_PATH
+* f1de80e Fix extract_utils when not using blob sections
+* bc761ac extract_files: Add support for paths without system/
+* 1e15446 extract_files: Add support for specifying blob sections
+* af292c9 extract_utils: support extracting directly from an ota zip
+* 1287eb4 extract_utils: Fix locale issue with sort
+* 92120ea extract_utils: fix extracting XML files containing binary characters
+* 042077f build: Update smali and baksmali to 2.2.1
+* c0ba79f extract_utils: Fix cleanup variables assigment
+* 1dfbd0e build: Update smali and baksmali to 2.2.0
+* bfb36ba extract_utils: Update smali/backsmali to v2.2b4
+* d73b767 Extract Utils: implement oat2dex from CM
+* eb3fcb9 Add extract utils script from CM
+
+03-19-2018
+============
+
+#### build/
+* 1b43f7d55 Bump security patch level to 2018-03-05
+
+#### frameworks/av/
+* 6a6523de5 AACExtractor: check bounds during seek
+
+#### frameworks/base/
+* f673fd2ad1a pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
+* b9ca636f1f4 pocket: Close sysfs resource after every write
+* d3e29b4961e Enhance wakelock for IPReachabilityMonitor
+* 946ad95a4c3 Fix incorrect signatures Chrome Stable and Google Webview had incorrect signatures. That was due to an incorrect method of determining the right signature.
+* 0e724b403eb pocket lock: Remove fingerprint events and gestures disabling it causes random bug with fp unlocking
+* ecaf7b7500e Add brevent patch Thanks to liudongmiao. Source: https://github.com/SudaMod/android_frameworks_base/commit/0e2f26fd5b97e9d5cd0375de2ee6da387d60f91e
+* 3f010287b71 add PreventRunning
+* 3d5732a1232 Improving Pie date for simplified Chinese
+* 17efa3385ac Improving simplified Chinese Translation
+
+#### packages/apps/ContactsCommon/
+* 700670e4 Update Chinese Simplified translation
+
+#### packages/apps/Extensions/
+* dac70b9 Improving simplified Chinese Translation
+
+#### packages/apps/Messaging/
+* c795370 Add missing res/values/cm_strings.xml
+* 5615127 Fix string "Swipe right deletes conversation" not using translation
+* 4f2a1b4 Messaging: Enable swipe at archive mode
+* 29f67d7 Messaging: show snackbar instead of toast when deleting conversation
+* ba75349 Messaging: Swipe right to delete conversation
+* 840a2bb Messaging: Implement option for swipe to delete.
+
+#### system/bt/
+* 774c650a BNEP: Check received frame type
+* 14bcd458 Remove memory reference to invalid mem in error log
+* 357ea334 SDP: Include the offset in sdp_disc_server_rsp
+* 2c9eb037 SDP: Pass the bounds to process_service_*_rsp
+* a0bf78c3 Fix unexpected behavior in reading BNEP packets
+* 52ebba01 PAN: Fix Use-after-free in bta_pan_data_buf_ind_cback
+* 48f52f79 AVRCP: Check the number of text attributes requested
+* d64cd19d Allocate/free the SDP connection timers only during stack startup/shutdown
+* 68b38026 Removed alarm callback execution statistics
+* e2640b88 Fix unexpected behavior in SDP
+
+#### vendor/aosp/
+* 8fa3fd7 prebuilt: update prebuilt apks and zip
+
+03-08-2018
+============
+
+#### external/libavc/
+* 04c9906 Decoder: Adding Error Check for Output Buffer Size in Shared Display Mode.
+* db6bf49 Decoder: Fixed memory overflow in shared display mode.
+
+#### external/libmpeg2/
+* 98beb25 Fixing Underflow of ps_dec->u2_num_mbs_left
+* 6337ea6 Adding Error Check for Output Buffer Size
+* d63479b Correcting Buffer Allocation for Shared Display
+
+#### frameworks/base/
+* 521bbf12c8e Revert "base: silent mode is back"
+</Changelog>
 </ROM>
