@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROM>
+  <!-- Your ROM Name -->
+  <RomName>AospExtended-ROM</RomName>
+  <VersionName>ROM VERSION</VersionName>
+  <!-- Your ROM version. MUST be incrementally larger than previous versions -->
+  <!-- Do NOT use letters in your version number. Integers only -->
+  <!-- Previous version will be read from the build.prop -->
+  <VersionNumber type="integer">20180225</VersionNumber>
+  <!-- Linking to your files -->
+    <!-- <DirectUrl><![CDATA[http://www.example.com?file=file.zip?somethingelse&anotherthing]]></DirectUrl> -->
+    <!-- Use the above format if your URL has special characters in then, like an (&) ampersand -->
+    <!-- Enter <DirectUrl nil="true /> or <HttpUrl nil="true /> to indicate you won't be using a type of URL -->
+    <!-- HTTP link will open a web page -->
+    <!-- Direct Link overrides HTTP link -->
+  <DirectUrl>https://goo.gl/DJVT8B</DirectUrl>
+  <HttpUrl nil="true" />
+  <!-- What version are you issuing? -->
+  <Android>7.1.2</Android>
+  <!-- Providing File Checking for direct downloads. You SHOULD offer this for your users whether using HTTP or Direct -->
+  <!-- OPTIONAL: Enter <CheckMD5 nil="true" /> offer MD5 checking -->
+  <CheckMD5>39a838f148bac60ad11495dcdd9683b5</CheckMD5>
+  <!-- The filesize of your ROM -->
+  <!-- Please enter this in BYTES only. Otherwise an incorrect value will be shown -->
+  <FileSize type="integer">569446436</FileSize>
+  <!-- Developer or Team name. You can put anything here, even a couple of names -->
+  <!-- OPTIONAL: Enter <Developer nil="true" /> to hide this -->
+  <Developer>ksrt12</Developer>
+  <!-- Your ROM or Developer Website. Can be a personal site or your XDA/forum thread -->
+  <!-- OPTIONAL: Enter <Website nil="true" /> to hide this -->
+  <WebsiteURL>https://forum.xda-developers.com/honor-4x/development/aex-v4-6-honor-4x-che2-l11-kirin-620-t3755942</WebsiteURL>
+  <!-- Your Donate URL -->
+  <!-- OPTIONAL: Enter <DonateURL nil="true" /> to hide this -->
+  <DonateURL>https://www.paypal.me/ksrt12</DonateURL>
+  <!-- Put the changelog here... Use Markdown to format it -->
+  <!-- Again, surround special characters with the CDATA tags or your XML will NOT parse -->
+  <Changelog>### Changelog 20180525
+====================
+     02-25-2018
+====================
+
+   * build/
+1faa7c3a9  build  [Kazakov Stepan]
+   * external/roboto-fonts/
+bbdf785  Roboto-Light  [Kazakov Stepan]
+   * frameworks/base/
+ccd28a639d5  mtp: stop ocassional crash in MTP Host.  [Kazakov Stepan]
+   * frameworks/native/
+5b9fad14f  opengl: dont use swap buffers with damage  [Kazakov Stepan]
+e69f4c43b  gui: don't use native fence sync  [Kazakov Stepan]
+409c60988  Fix deep sleep issue  [Kazakov Stepan]
+   * frameworks/opt/telephony/
+5b31b433  fix ussd  [Kazakov Stepan]
+c98c1bb2  fix 2g/3g/LTE switch  [Kazakov Stepan]
+   * packages/apps/Camera2/
+a0d025e04  Camera2: override capture support level  [Kazakov Stepan]
+983ba63a0  Camera2: Fix photo snap delay on front cam.  [Kazakov Stepan]
+   * packages/apps/Dialer/
+2fa77741d  add round icon support for settings  [Kazakov Stepan]
+   * packages/providers/MediaProvider/
+454cb8a  fix_mtp  [Kazakov Stepan]
+   * packages/services/OmniJaws/
+d21fa40  enable weather by default  [Kazakov Stepan]
+   * system/sepolicy/
+8015794  sepolicy for cherryplus  [Kazakov Stepan]</Changelog>
+</ROM>
