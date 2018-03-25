@@ -2,39 +2,17 @@
 <ROM>
   <!-- Your ROM Name -->
   <RomName>AospExtended-ROM</RomName>
-  <VersionName>AospExtended-v4.6-20180324-1824-10</VersionName>
-  <!-- Your ROM version. MUST be incrementally larger than previous versions -->
-  <!-- Do NOT use letters in your version number. Integers only -->
-  <!-- Previous version will be read from the build.prop -->
-  <VersionNumber type="integer">20180425</VersionNumber>
-  <!-- Linking to your files -->
-    <!-- <DirectUrl><![CDATA[http://www.example.com?file=file.zip?somethingelse&anotherthing]]></DirectUrl> -->
-    <!-- Use the above format if your URL has special characters in then, like an (&) ampersand -->
-    <!-- Enter <DirectUrl nil="true /> or <HttpUrl nil="true /> to indicate you won't be using a type of URL -->
-    <!-- HTTP link will open a web page -->
-    <!-- Direct Link overrides HTTP link -->
-  <DirectUrl>https://www.dropbox.com/s/k7r41kxfiujtbze/AospExtended-v4.6-cherryplus-20180324-1824-10.zip?dl=1</DirectUrl>
+  <VersionName>AospExtended-v4.6-20180324-2147-10</VersionName>
+  <VersionNumber type="integer">20180324</VersionNumber>
+  <DirectUrl>https://www.dropbox.com/s/17u3ptunu88q8fg/AospExtended-v4.6-cherryplus-20180324-2147-10.zip?dl=1</DirectUrl>
   <HttpUrl nil="true" />
-  <!-- What version are you issuing? -->
   <Android>7.1.2</Android>
-  <!-- Providing File Checking for direct downloads. You SHOULD offer this for your users whether using HTTP or Direct -->
-  <!-- OPTIONAL: Enter <CheckMD5 nil="true" /> offer MD5 checking -->
-  <CheckMD5>24a3943b3673a6b9f2c6cf984a10cc43</CheckMD5>
-  <!-- The filesize of your ROM -->
-  <!-- Please enter this in BYTES only. Otherwise an incorrect value will be shown -->
-  <FileSize type="integer">557117684</FileSize>
-  <!-- Developer or Team name. You can put anything here, even a couple of names -->
-  <!-- OPTIONAL: Enter <Developer nil="true" /> to hide this -->
-  <Developer>ksrt12</Developer>
-  <!-- Your ROM or Developer Website. Can be a personal site or your XDA/forum thread -->
-  <!-- OPTIONAL: Enter <Website nil="true" /> to hide this -->
+  <CheckMD5>faeab7e14640b54e5da8fb8e706d1658</CheckMD5>
+  <FileSize type="integer">556211519</FileSize>
+  <Developer>ksrt12 (Kazakov Stepan)</Developer>
   <WebsiteURL>https://forum.xda-developers.com/honor-4x/development/aex-v4-6-honor-4x-che2-l11-kirin-620-t3755942</WebsiteURL>
-  <!-- Your Donate URL -->
-  <!-- OPTIONAL: Enter <DonateURL nil="true" /> to hide this -->
   <DonateURL>https://www.paypal.me/ksrt12</DonateURL>
-  <!-- Put the changelog here... Use Markdown to format it -->
-  <!-- Again, surround special characters with the CDATA tags or your XML will NOT parse -->
-  <Changelog>### Changelog 20180425
+  <Changelog>
 03-22-2018
 ============
 
