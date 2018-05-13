@@ -2,15 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20180223-cherryplus-Feb-b114</Filename>
+            <Filename>RR-N-v5.8.5-20180513-cherryplus-May-b5</Filename>
             <RomUrl
              id="rom"
              title="Download"
-             description="Latest ResurrectionRemix build">https://goo.gl/7Q9CFf</RomUrl>
+             description="Latest ResurrectionRemix build">http://bit.ly/RR20180513Mayb5</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
-             description="15.3">http://tiny.cc/latestmagisk</MagiskUrl>
+             description="16.0">http://tiny.cc/latestmagisk</MagiskUrl>
             <GappsUrl
              id="gapps"
              title="Gapps"
