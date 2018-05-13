@@ -10,7 +10,7 @@
             <RomUrl8lite
              id="rom8lite"
              title="RR-N-v5.8.5-20180512-cherryplus-May-b4"
-             description="for devices with P8Lite partitions markup">http://bit.ly/RR20180513Mayb4</RomUrl>
+             description="for devices with P8Lite partitions markup">http://bit.ly/RR20180513Mayb4</RomUrl8lite>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
