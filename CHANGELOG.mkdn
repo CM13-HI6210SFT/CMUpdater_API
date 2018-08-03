@@ -1,414 +1,159 @@
 
-# Resurrection Remix Nougat Version 5.8.5 Changelog
-====================================================
-
-05-13-2018
-============
-
-#### build/
-* 771b09528 ru_RU
-* 0d8b1877d Bump security patch level to 2018-04-05
-* f6dbd7237 Bump security patch level to 2018-03-05
-* f70f6e922 Bump security patch level to 2018-02-05
-* 53d502eea Bump security patch level to 2018-01-05
-
-#### external/roboto-fonts/
-* bc940cd Roboto-Light
-
-#### frameworks/av/
-* b6e59478a Refactor MediaPlayerBase's notify
-* 09e6b06ca libmediaplayerservice:Fix deadlock on gapless start failure
-* acfe1f221 Revert "libmediaplayerservice: fix deadlock on gapless start failure"
-* 01bc6e396 Prevent MediaPlayerService::Client's use-after-free
-* d27834ebd Check NAL size before looking inside
-* cf58776b6 M3UParser: detect variant streams without EXT-X-STREAM-INF
-* cd24ce8ba AACExtractor: check bounds during seek
-* 4d2418f8c httplive: check for malformed EXT-X-STREAM-INF
-* 51298022c Apply input buffer validation also to AVC and MPEG4 encoders
-* d9018f4f7 IAudioPolicyService: Add attribute tags sanitization
-* 01cd6a364 Fix the UAF bug caused by a dead stack variable
-* d2cf78b0a Fix edge case when applying id3 unsynchronization
-* d917ff0f4 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
-* 26d2fd691 Validate decryption key length to decrypt function.
-* ae483a933 stagefright: MP4Extractor: allow 10% overhead on default sample size
-* 418f62d6b Access AVCDEC context after create fail check
-* 8960ad929 SoftAVCDec: Handle zero length input without EOS
-* 4d20c626d Access HEVC context after create fail check
-* 95d70c8c2 k3
+ ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
+
+
+ ▼ 07/28/2018
+
+
+ ▪ project build/
+ ▪ c7a5e88bb Bump security string to 2018-07-05
+ ▪ 9a167d9c4 Bump security string to 2018-06-05
+ ▪ 1699f8f8a Bump security patch level to 2018-05-05
+ ▪ 4e25cb27a Bump security patch level to 2018-04-05
+ ▪ 78cf6ddd8 Bump security patch level to 2018-03-05
+ ▪ 071a43092 Bump security patch level to 2018-02-05
+ ▪ 4ed90bf5c Bump security patch level to 2018-01-05
+ ▪ ad8c065ec build
+ ▪ e92e95552 ru_RU
+
+ ▪ project external/roboto-fonts/
+ ▪ 84573c8 Roboto-Light
+
+ ▪ project frameworks/av/
+ ▪ fd29ad8fa Speed up id3v2 unsynchronization
+ ▪ 8586241c6 EffectsFactory: add debug and trace wrappers for NXP LifeVibes
+ ▪ 3c7d08088 Add check preventing div0 issue
+ ▪ daa9aca99 Sanitize effect descriptors for AudioPolicyService binder calls.
+ ▪ 8223a8565 Init gain config to prevent uninit leak.
+ ▪ c1aad228b audioflinger: Fix effect creation handling
+ ▪ 23e07a275 Handle bad bitrate index in mp3dec.
+ ▪ ba3eae9c9 better mpeg2 TS elementary stream Access Unit parsing
+ ▪ 5524dd293 Refactor MediaPlayerBase's notify
+ ▪ 5742cc556 libmediaplayerservice:Fix deadlock on gapless start failure
+ ▪ 53d40272a Revert "libmediaplayerservice: fix deadlock on gapless start failure"
+ ▪ 8875bd8b8 Prevent MediaPlayerService::Client's use-after-free
+ ▪ e1ca6ef80 Check NAL size before looking inside
+ ▪ dce66ef03 M3UParser: detect variant streams without EXT-X-STREAM-INF
+ ▪ f58ddc616 AACExtractor: check bounds during seek
+ ▪ df8eda70a httplive: check for malformed EXT-X-STREAM-INF
+ ▪ 99b1aec62 Apply input buffer validation also to AVC and MPEG4 encoders
+ ▪ a4351f9d3 IAudioPolicyService: Add attribute tags sanitization
+ ▪ f1346dc6a Fix the UAF bug caused by a dead stack variable
+ ▪ 925554adf Fix edge case when applying id3 unsynchronization
+ ▪ 5760040e8 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
+ ▪ 39eccb508 Validate decryption key length to decrypt function.
+ ▪ 16459e18f stagefright: MP4Extractor: allow 10% overhead on default sample size
+ ▪ 5ea2da2a6 Access AVCDEC context after create fail check
+ ▪ c0b0c7b15 SoftAVCDec: Handle zero length input without EOS
+ ▪ b170320d6 Access HEVC context after create fail check
+ ▪ 460e77f63 k3
+
+ ▪ project frameworks/base/
+ ▪ 64f45d561f2 Add NETWORK_STACK permission
+ ▪ bae704f8a6a Copy PermissionChecker from support lib and use in RcognitionService
+ ▪ 78ca0ae9353 Fixed Security Vulnerability of DcParamObject
+ ▪ 7a75bea1003 Add permission check to setAllowOnlyVpnForUids
+ ▪ da40c435414 Verify last array's length in readFromParcel
+ ▪ 580fc710bae keyguard: Welcome to the new DotOS Lockscreen!
+ ▪ 21ed2bcb318 Add signature Spoofing permission
+ ▪ 5c1c8ebc4e5 SettingsProvider: Remove deprecated def_force_disable_navkeys default
+ ▪ 452d7ff3804 Use calling user ID when calling isDeviceLocked
+ ▪ 9858ff5ea45 Adjust URI host parsing to stop on \ character.
+ ▪ 98343f11803 Check for null-terminator in ResStringPool::string8At
+ ▪ ccd7385edcc ParcelableRttResults parcel code fix
+ ▪ 1a0beacd1c0 Fix VerifyCredentialResponse parcelling code
+ ▪ 3a90bd3bc8b SystemUI: Fix LiveDisplay tile off color
+ ▪ cc7e82e5e64 livedisplay: Allow tile creation before boot completed phase [2/2]
+ ▪ e059c4e3db9 fw: GlobalActions: Always dismiss any existing dialog
+ ▪ a863039e2c2 Keyguard: Don't apply input restriction if disabled by profile
+ ▪ 7eb1689e419 DO NOT MERGE Backporting potential usb tapjacking precaution.
+ ▪ 4ae5e4979fa mtp: fix double free of thumbnail data
+ ▪ b1ec4efbfe3 Throw OOME if Bitmap.nativeCreate fails
+ ▪ 67a060e7649 Adjust Uri host parsing to use last instead of first @.
+ ▪ f34cfa0c732 SysUI: Add Russian translation for accessibility_battery_level_charging
+ ▪ 9c83f46704b SystemUI: Recents: Improve code for long app titles being overlapped
+ ▪ a9ab8a79225 We don't want to feel deprecated...
+ ▪ 2e9c5dce912 mtp: stop ocassional crash in MTP Host.
+
+ ▪ project frameworks/native/
+ ▪ ee2c6b0ce Increment when attempting to read protected Parcel Data
+ ▪ f790e3f61 Disallow reading object data from Parcels with non-object reads
+ ▪ a61fddddb Don't pad before calling writeInPlace().
+ ▪ 004f57678 Handle glGetString returning NULL
+ ▪ 7a4d810be opengl: dont use swap buffers with damage
+ ▪ 07acab919 gui: don't use native fence sync
+ ▪ 667bb2dd1 Fix deep sleep issue
+
+ ▪ project frameworks/opt/telephony/
+ ▪ 2958da1a fix ussd
+ ▪ 2c058f14 fix 2g/3g/LTE switch
+
+ ▪ project hardware/qcom/display-caf/msm8974/
+ ▪ 966a222f0 libgralloc: Fix adding offset to the mapped base address
+
+ ▪ project packages/apps/Camera2/
+ ▪ b81f8b879 Camera2: override capture support level
+ ▪ 21628347d Camera2: Fix photo snap delay on front cam.
+
+ ▪ project packages/apps/Dialer/
+ ▪ e27507ee1 add round icon support for settings
+
+ ▪ project packages/apps/Settings/
+ ▪ 041083d0f3 add ota
 
-#### frameworks/base/
-* 6d20a7f6e7f keyguard: Welcome to the new DotOS Lockscreen!
-* 35620983122 Add signature Spoofing permission
-* 324a4c3f5d7 SettingsProvider: Remove deprecated def_force_disable_navkeys default
-* 1f60ac00aad Use calling user ID when calling isDeviceLocked
-* 7bb628651cb Adjust URI host parsing to stop on \ character.
-* a6a53bcd50c Check for null-terminator in ResStringPool::string8At
-* 6aa8841e05d ParcelableRttResults parcel code fix
-* 69dc6986cd5 Fix VerifyCredentialResponse parcelling code
-* 2baf2133774 SystemUI: Fix LiveDisplay tile off color
-* f88eef282e4 livedisplay: Allow tile creation before boot completed phase [2/2]
-* 64205cdab50 fw: GlobalActions: Always dismiss any existing dialog
-* 7d8667e3c25 Keyguard: Don't apply input restriction if disabled by profile
-* 6c48d6fc26e DO NOT MERGE Backporting potential usb tapjacking precaution.
-* 19045b8959b mtp: fix double free of thumbnail data
-* 6ee02f41941 Throw OOME if Bitmap.nativeCreate fails
-* d0335d6d1b5 Adjust Uri host parsing to use last instead of first @.
-* 3ef47701c58 SysUI: Add Russian translation for accessibility_battery_level_charging
-* f46f4338cf2 SystemUI: Recents: Improve code for long app titles being overlapped
-* ba3d54e3bf6 We don't want to feel deprecated...
-* 33756babc00 mtp: stop ocassional crash in MTP Host.
+ ▪ project packages/apps/Terminal/
+ ▪ 1c80255 Terminal
 
-#### frameworks/native/
-* 7093ace6b Handle glGetString returning NULL
-* 3a0c7120d opengl: dont use swap buffers with damage
-* d49689e39 gui: don't use native fence sync
-* 3b2779393 Fix deep sleep issue
+ ▪ project packages/apps/Trebuchet/
+ ▪ 4d9164987 my apps
 
-#### frameworks/opt/telephony/
-* 178c49ee fix ussd
-* d818448f fix 2g/3g/LTE switch
+ ▪ project packages/providers/MediaProvider/
+ ▪ 4f71dc8 fix_mtp
 
-#### packages/apps/Camera2/
-* 815d1d427 Camera2: override capture support level
-* 7a9378d2d Camera2: Fix photo snap delay on front cam.
+ ▪ project packages/services/OmniJaws/
+ ▪ aff373a enable weather by default
 
-#### packages/apps/Dialer/
-* ad283771d add round icon support for settings
+ ▪ project system/core/
+ ▪ e6eb73b2d init.rc: move load_system_props to beginning of 'on fs'
+ ▪ d54bfc41b String16: remove integer overflows
+ ▪ e9a57355a libnetutil: Check dhcp respose packet length
 
-#### packages/apps/Settings/
-* 0c566da099 add ota
+ ▪ project system/sepolicy/
+ ▪ 160fc9f sepolicy for cherryplus
 
-#### packages/providers/MediaProvider/
-* 51e0fe6 fix_mtp
+ ▪ project vendor/cm/
+ ▪ 873bc8ea vendor
 
-#### packages/services/OmniJaws/
-* ba3053e enable weather by default
+ ▪ project vendor/cmsdk/
+ ▪ 3d13a9e livedisplay: Allow tile creation before boot completed phase [1/2]
+ ▪ aee4a45 cmsdk: fix picture adjustment from depending on color balance
+ ▪ 38d7f16 CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
 
-#### system/core/
-* 6f21cf6ce libnetutil: Check dhcp respose packet length
+ ▼ 07/27/2018
 
-#### system/sepolicy/
-* 1085e6c sepolicy for cherryplus
 
-#### vendor/cm/
-* 45371be6 vendor
+ ▪ project system/bt/
+ ▪ 4f80959c DO NOT MERGE SMP: Validate remote elliptic curve points
 
-#### vendor/cmsdk/
-* 69675ae livedisplay: Allow tile creation before boot completed phase [1/2]
-* c1e70f2 cmsdk: fix picture adjustment from depending on color balance
-* 2259cba CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
+ ▼ 07/17/2018
 
-05-06-2018
-============
 
-#### external/chromium-webview/
-* b3b69b3 Update webviews to Chromium 66.0.3359.139
+ ▪ project packages/apps/Bluetooth/
+ ▪ b533e631 Make sure server response doesn't exceed maximum allowable length
 
-#### hardware/qcom/fm/
+ ▪ project system/bt/
+ ▪ d1016466 DO NOT MERGE Prevent stack overflow in btif_storage
+ ▪ ae9d7f81 DO NOT MERGE: Check number of attributes before writing to a buffer
+ ▪ b78f1357 DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE
+ ▪ 01a38f18 Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ
+ ▪ 7e67b02f DO NOT MERGE Fix unexpected behavior in smp_sm_event
 
-#### packages/apps/AudioFX/
+ ▼ 07/16/2018
 
-#### packages/apps/Bluetooth/
 
-#### packages/apps/Calendar/
+ ▪ project external/libhevc/
+ ▪ 47cf32b Return error for invalid st/lt sps parameters
 
-#### packages/apps/CellBroadcastReceiver/
-
-#### packages/apps/Eleven/
-
-#### packages/apps/FMRadio/
-
-#### packages/apps/Gallery2/
-
-#### packages/apps/Jelly/
-
-#### packages/apps/Profiles/
-
-#### packages/apps/Recorder/
-
-#### packages/apps/SetupWizard/
-
-#### packages/apps/Snap/
-
-#### packages/apps/Terminal/
-
-#### packages/apps/Trebuchet/
-
-#### packages/apps/UnifiedEmail/
-
-#### packages/inputmethods/LatinIME/
-
-#### packages/providers/DataUsageProvider/
-
-#### packages/providers/DownloadProvider/
-
-04-26-2018
-============
-
-#### vendor/qcom/opensource/cryptfs_hw/
-* 5e14a55 cryptfs_hw: add missing logging tag
-
-04-20-2018
-============
-
-#### packages/apps/FMRadio/
-
-#### packages/apps/Jelly/
-
-04-19-2018
-============
-
-#### hardware/qcom/audio-caf/msm8996/
-* 16a572a6f Merge tag 'LA.UM.5.6.r1-07500-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/audio into cm-14.1-caf-8996
-
-#### hardware/qcom/display-caf/msm8996/
-* 3a068b86d Merge tag 'LA.UM.5.6.r1-07500-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into cm-14.1-caf-8996
-
-#### hardware/qcom/media-caf/msm8996/
-* 15b3a0c6e Merge tag 'LA.UM.5.6.r1-07500-89xx.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/media into cm-14.1-caf-8996
-
-04-15-2018
-============
-
-#### hardware/qcom/media-caf/msm8974/
-* 58207a2ea mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
-* 2a2ce7e55 mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
-
-04-14-2018
-============
-
-#### hardware/qcom/audio-caf/msm8996/
-* 4696c087c Merge d309c19d4ce9243a432c3d351f50e46d6a15b30c on remote branch
-
-#### hardware/qcom/media-caf/apq8084/
-* 566e8db8b mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
-* 51ca80b59 mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
-
-04-11-2018
-============
-
-#### hardware/qcom/audio-caf/msm8996/
-* d309c19d4 Promotion of audio-userspace.lnx.2.1.c1-00042.
-
-04-10-2018
-============
-
-#### system/security/
-* 6d708c7 key_store:Using euid instead of uid when upgrade wifi blobs
-
-04-09-2018
-============
-
-#### system/bt/
-* 7f631604 AVRCP: Initialize buffer for attribute values to be written to
-* 57ca41c4 SDP: Check p_req_end before reading from p_req
-* 648fe19a DO NOT MERGE Truncate new line characters when adding string to config
-
-04-08-2018
-============
-
-#### system/bt/
-* e50c514d AVRCP: Check the number of text value attributes requested
-* dfba2a4f AVRCP: Check number of text attribute values in response
-* b4edda54 AVRCP: Check number of text attributes in response
-
-04-07-2018
-============
-
-#### external/aac/
-* 3e74d9b MPEG-4 AAC Decoder: check against invalid height info
-
-#### external/libavc/
-* c75adf7 Decoder: Set prev slice type for I slice.
-* da8176d Decoder: Fixed reset values in parse sps.
-
-#### external/libhevc/
-* fbf3c39 Fix output buffer size check
-* 80d2511 Check limits for log2_max_pic_order_cnt_lsb_minus4 in sps
-
-#### hardware/qcom/audio-caf/msm8996/
-* cf39ce0ac hal: Use call state to ensure voice call start
-
-#### packages/apps/Email/
-* b3978f149 Disallow attaching files from our own EmailAttachmentProvider.
-
-#### packages/apps/UnifiedEmail/
-* ec01df7f1 Disallow attaching files from our own EmailAttachmentProvider.
-
-04-04-2018
-============
-
-#### system/bt/
-* ad9879d1 bt: Fix 32k sbc_codec.sampling_rate
-
-03-29-2018
-============
-
-#### hardware/qcom/media-caf/msm8996/
-* 953155e60 Merge 5cfb5939e4f03e41ec506f5b358eb561c03d405e on remote branch
-
-03-28-2018
-============
-
-#### hardware/qcom/fm/
-
-#### packages/apps/AudioFX/
-
-#### packages/apps/Bluetooth/
-
-#### packages/apps/Calendar/
-
-#### packages/apps/Camera2/
-
-#### packages/apps/CellBroadcastReceiver/
-
-#### packages/apps/CertInstaller/
-
-#### packages/apps/Eleven/
-
-#### packages/apps/Email/
-
-#### packages/apps/Exchange/
-
-#### packages/apps/FMRadio/
-
-#### packages/apps/Gallery2/
-
-#### packages/apps/Jelly/
-
-#### packages/apps/Nfc/
-
-#### packages/apps/Recorder/
-
-#### packages/apps/SetupWizard/
-
-#### packages/apps/Snap/
-
-#### packages/apps/Tag/
-
-#### packages/apps/Terminal/
-
-#### packages/apps/Trebuchet/
-
-#### packages/apps/TvSettings/
-
-#### packages/apps/UnifiedEmail/
-
-#### packages/apps/WallpaperPicker/
-
-#### packages/inputmethods/LatinIME/
-
-#### packages/providers/BlockedNumberProvider/
-
-#### packages/providers/CalendarProvider/
-
-#### packages/providers/DownloadProvider/
-
-#### packages/providers/TvProvider/
-
-#### packages/screensavers/Basic/
-
-#### system/security/
-* 162d94c keystore: add upgradeKeyBlob call into keystore exportKey.
-* 1d02c81 Fix issue: upgradeKeyBlob call always return PERMISSION_DENIED.
-
-03-21-2018
-============
-
-#### hardware/qcom/media-caf/msm8996/
-* 863a549fd mm-video-v4l2: Protect buffer access and increase input buffer size
-
-03-17-2018
-============
-
-#### hardware/qcom/media-caf/msm8996/
-* 5cfb5939e Promotion of video-userspace.lnx.2.1.c1-00067.
-
-03-15-2018
-============
-
-#### hardware/qcom/media-caf/msm8996/
-* 85b1e131f mm-video-v4l2: Protect buffer access and increase input buffer size
-
-03-09-2018
-============
-
-#### external/libavc/
-* 04c9906 Decoder: Adding Error Check for Output Buffer Size in Shared Display Mode.
-* db6bf49 Decoder: Fixed memory overflow in shared display mode.
-
-#### external/libmpeg2/
-* 98beb25 Fixing Underflow of ps_dec->u2_num_mbs_left
-* 6337ea6 Adding Error Check for Output Buffer Size
-* d63479b Correcting Buffer Allocation for Shared Display
-
-#### system/bt/
-* a9c3c6df BNEP: Check received frame type
-* 9e46a39e Remove memory reference to invalid mem in error log
-* 3ee82f71 SDP: Include the offset in sdp_disc_server_rsp
-* 2f7820f8 SDP: Pass the bounds to process_service_*_rsp
-* c7c58243 Fix unexpected behavior in reading BNEP packets
-* 7705a32f PAN: Fix Use-after-free in bta_pan_data_buf_ind_cback
-* e0e8df01 AVRCP: Check the number of text attributes requested
-* abab1328 Allocate/free the SDP connection timers only during stack startup/shutdown
-* a5ececa1 Removed alarm callback execution statistics
-* 1b2d48c7 Fix unexpected behavior in SDP
-
-03-05-2018
-============
-
-#### packages/apps/ResurrectionOTA/
-* 6d414a0 Merge pull request #21 from anoop44/nougat
-
-02-25-2018
-============
-
-#### hardware/qcom/audio-caf/msm8998/
-* 5539e4c84 hal: Haxed header
-
-02-19-2018
-============
-
-#### hardware/libhardware_legacy/
-* a79094a wifi: add flag to wait for kernel driver to get ready
-
-#### hardware/qcom/display-caf/msm8998/
-* 3f485baa3 Fix duplicate copy file rules
-* 3ee5f23c4 hwc: Set ioprio for vsync thread
-* c78e081a2 tonemapper: Depend on kernel headers
-
-02-18-2018
-============
-
-#### packages/apps/AudioFX/
-
-#### packages/apps/Calendar/
-
-#### packages/apps/CellBroadcastReceiver/
-
-#### packages/apps/Gallery2/
-
-#### packages/apps/Jelly/
-
-#### packages/apps/SetupWizard/
-
-#### packages/apps/Snap/
-
-#### packages/apps/Trebuchet/
-
-#### packages/apps/UnifiedEmail/
-
-#### packages/apps/WallpaperPicker/
-
-02-17-2018
-============
-
-#### hardware/qcom/display-caf/msm8996/
-* 9c7947cec Merge 3cdcc449ec653cf8232a2ebb7144488720563385 on remote branch
-
-02-13-2018
-============
-
-#### vendor/cm/
-* 4556b6c8 Update Magisk to 15.3 and MagiskManager to 5.5.5 (#105)
+ ▪ project system/media/
+ ▪ 81033a2c Merge commit 'f9e3022c474619c69a46ae7dbe11b5b531dbad57' into am-0d58d39a-0539-474e-b9c8-36cc976d15e8
 
