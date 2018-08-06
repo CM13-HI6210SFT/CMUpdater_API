@@ -2,14 +2,14 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20180730-cherryplus-b7</Filename>
+            <Filename>RR-N-v5.8.5-20180729-cherryplus-b7</Filename>
             <RomUrl
              id="rom"
              title="RR-N-v5.8.5-20180801-cherryplus-Aug-b7"
              description="for devices with standart partitions markup">http://bit.ly/RR20180801b7</RomUrl>
             <Rom8liteUrl
              id="rom8lite"
-             title="RR-N-v5.8.5-20180730-cherryplus-Jul-b7"
+             title="RR-N-v5.8.5-20180729-cherryplus-Jul-b7"
              description="for devices with P8Lite partitions markup">http://bit.ly/RR20180730b7</Rom8liteUrl>
             <MagiskUrl
              id="magisk"
