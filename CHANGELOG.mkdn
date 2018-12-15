@@ -2,158 +2,243 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 07/28/2018
+ ▼ 12/14/2018
 
 
  ▪ project build/
- ▪ c7a5e88bb Bump security string to 2018-07-05
- ▪ 9a167d9c4 Bump security string to 2018-06-05
- ▪ 1699f8f8a Bump security patch level to 2018-05-05
- ▪ 4e25cb27a Bump security patch level to 2018-04-05
- ▪ 78cf6ddd8 Bump security patch level to 2018-03-05
- ▪ 071a43092 Bump security patch level to 2018-02-05
- ▪ 4ed90bf5c Bump security patch level to 2018-01-05
- ▪ ad8c065ec build
- ▪ e92e95552 ru_RU
+ ▪ 182842a19 Security string to 2018-11-05
+ ▪ 82e55ebba Security string to 2018-10-05
+ ▪ 8d7a2786b Security string to 2018-09-05
+ ▪ 3c2ba59d7 Security string to 2018-08-05
+ ▪ 92cadbaf1 Security string to 2018-07-05
+ ▪ 27cf357b2 Bump security string to 2018-06-05
+ ▪ 3dfc732ba Bump security patch level to 2018-05-05
+ ▪ ce9969361 Bump security patch level to 2018-04-05
+ ▪ 57a0bfbbf Bump security patch level to 2018-03-05
+ ▪ bbf2a0016 Bump security patch level to 2018-02-05
+ ▪ 7aa07973f Bump security patch level to 2018-01-05
 
  ▪ project external/roboto-fonts/
- ▪ 84573c8 Roboto-Light
+ ▪ 4621cf9 Roboto-Light
 
  ▪ project frameworks/av/
- ▪ fd29ad8fa Speed up id3v2 unsynchronization
- ▪ 8586241c6 EffectsFactory: add debug and trace wrappers for NXP LifeVibes
- ▪ 3c7d08088 Add check preventing div0 issue
- ▪ daa9aca99 Sanitize effect descriptors for AudioPolicyService binder calls.
- ▪ 8223a8565 Init gain config to prevent uninit leak.
- ▪ c1aad228b audioflinger: Fix effect creation handling
- ▪ 23e07a275 Handle bad bitrate index in mp3dec.
- ▪ ba3eae9c9 better mpeg2 TS elementary stream Access Unit parsing
- ▪ 5524dd293 Refactor MediaPlayerBase's notify
- ▪ 5742cc556 libmediaplayerservice:Fix deadlock on gapless start failure
- ▪ 53d40272a Revert "libmediaplayerservice: fix deadlock on gapless start failure"
- ▪ 8875bd8b8 Prevent MediaPlayerService::Client's use-after-free
- ▪ e1ca6ef80 Check NAL size before looking inside
- ▪ dce66ef03 M3UParser: detect variant streams without EXT-X-STREAM-INF
- ▪ f58ddc616 AACExtractor: check bounds during seek
- ▪ df8eda70a httplive: check for malformed EXT-X-STREAM-INF
- ▪ 99b1aec62 Apply input buffer validation also to AVC and MPEG4 encoders
- ▪ a4351f9d3 IAudioPolicyService: Add attribute tags sanitization
- ▪ f1346dc6a Fix the UAF bug caused by a dead stack variable
- ▪ 925554adf Fix edge case when applying id3 unsynchronization
- ▪ 5760040e8 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
- ▪ 39eccb508 Validate decryption key length to decrypt function.
- ▪ 16459e18f stagefright: MP4Extractor: allow 10% overhead on default sample size
- ▪ 5ea2da2a6 Access AVCDEC context after create fail check
- ▪ c0b0c7b15 SoftAVCDec: Handle zero length input without EOS
- ▪ b170320d6 Access HEVC context after create fail check
- ▪ 460e77f63 k3
+ ▪ 6e8a3eed6 MediaExtractor: stop rendering when an error occurs
+ ▪ 5422a5e33 Fix information disclosure in mediadrmserver
+ ▪ 231a6b8fe Check for overflow of crypto size
+ ▪ bab877f5e M3UParser: handle missing EXT-X-MEDIA URIs
+ ▪ fdee87388 M3UParser: make url on demand
+ ▪ 79761f6cc Fix possible out of bounds read
+ ▪ 33317f873 Speed up id3v2 unsynchronization
+ ▪ 7c129c59c EffectsFactory: add debug and trace wrappers for NXP LifeVibes
+ ▪ 86a07a655 Add check preventing div0 issue
+ ▪ a8ea28013 Sanitize effect descriptors for AudioPolicyService binder calls.
+ ▪ a987554a2 Init gain config to prevent uninit leak.
+ ▪ af1f42595 audioflinger: Fix effect creation handling
+ ▪ 93851a652 Handle bad bitrate index in mp3dec.
+ ▪ 29e6200e0 better mpeg2 TS elementary stream Access Unit parsing
+ ▪ 22197f4af Refactor MediaPlayerBase's notify
+ ▪ 9559e76cf libmediaplayerservice:Fix deadlock on gapless start failure
+ ▪ 101e30fe2 Revert "libmediaplayerservice: fix deadlock on gapless start failure"
+ ▪ 5ba4376c6 Prevent MediaPlayerService::Client's use-after-free
+ ▪ 29d82a1df Check NAL size before looking inside
+ ▪ 4ca48192b M3UParser: detect variant streams without EXT-X-STREAM-INF
+ ▪ 90f3fceba AACExtractor: check bounds during seek
+ ▪ c7c535f89 httplive: check for malformed EXT-X-STREAM-INF
+ ▪ c1919edf1 Apply input buffer validation also to AVC and MPEG4 encoders
+ ▪ 6871cc820 IAudioPolicyService: Add attribute tags sanitization
+ ▪ 9a63da5bb Fix the UAF bug caused by a dead stack variable
+ ▪ c789b5c21 Fix edge case when applying id3 unsynchronization
+ ▪ 6abf2f7b6 Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
+ ▪ 7ad34f5a3 Validate decryption key length to decrypt function.
+ ▪ 5b86c0607 stagefright: MP4Extractor: allow 10% overhead on default sample size
+ ▪ a094ee499 Access AVCDEC context after create fail check
+ ▪ fb9c22193 SoftAVCDec: Handle zero length input without EOS
+ ▪ 076e57ee6 Access HEVC context after create fail check
+ ▪ 59b050750 k3
 
  ▪ project frameworks/base/
- ▪ 64f45d561f2 Add NETWORK_STACK permission
- ▪ bae704f8a6a Copy PermissionChecker from support lib and use in RcognitionService
- ▪ 78ca0ae9353 Fixed Security Vulnerability of DcParamObject
- ▪ 7a75bea1003 Add permission check to setAllowOnlyVpnForUids
- ▪ da40c435414 Verify last array's length in readFromParcel
- ▪ 580fc710bae keyguard: Welcome to the new DotOS Lockscreen!
- ▪ 21ed2bcb318 Add signature Spoofing permission
- ▪ 5c1c8ebc4e5 SettingsProvider: Remove deprecated def_force_disable_navkeys default
- ▪ 452d7ff3804 Use calling user ID when calling isDeviceLocked
- ▪ 9858ff5ea45 Adjust URI host parsing to stop on \ character.
- ▪ 98343f11803 Check for null-terminator in ResStringPool::string8At
- ▪ ccd7385edcc ParcelableRttResults parcel code fix
- ▪ 1a0beacd1c0 Fix VerifyCredentialResponse parcelling code
- ▪ 3a90bd3bc8b SystemUI: Fix LiveDisplay tile off color
- ▪ cc7e82e5e64 livedisplay: Allow tile creation before boot completed phase [2/2]
- ▪ e059c4e3db9 fw: GlobalActions: Always dismiss any existing dialog
- ▪ a863039e2c2 Keyguard: Don't apply input restriction if disabled by profile
- ▪ 7eb1689e419 DO NOT MERGE Backporting potential usb tapjacking precaution.
- ▪ 4ae5e4979fa mtp: fix double free of thumbnail data
- ▪ b1ec4efbfe3 Throw OOME if Bitmap.nativeCreate fails
- ▪ 67a060e7649 Adjust Uri host parsing to use last instead of first @.
- ▪ f34cfa0c732 SysUI: Add Russian translation for accessibility_battery_level_charging
- ▪ 9c83f46704b SystemUI: Recents: Improve code for long app titles being overlapped
- ▪ a9ab8a79225 We don't want to feel deprecated...
- ▪ 2e9c5dce912 mtp: stop ocassional crash in MTP Host.
+ ▪ 46ad86d3369 Make adb use a custom prop for adb root
+ ▪ a3296d177da Verify number of Map entries written to Parcel
+ ▪ 6616a68177e RESTRICT AUTOMERGE: Hide overlay windows when requesting media projection permission.
+ ▪ 8ed3d656881 Fix crash during cursor moving on BiDi text
+ ▪ 642d8afcc5c DO NOT MERGE. Persistable Uri grants still require permissions.
+ ▪ 26d14a18f31 Always create grant structures when persistable.
+ ▪ 6280264ff2a Optimise the hit test algorithm
+ ▪ d268c0b4216 Add support for search in DownloadManager.
+ ▪ af1fc1efff3 DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.
+ ▪ 65c4ef297dc DO NOT MERGE. Execute "strict" queries with extra parentheses.
+ ▪ bbcb9b3e55d Backport Prevent shortcut info package name spoofing
+ ▪ a7441033bd6 Fix TrackInfo parcel write
+ ▪ 038d1d959dc Resolve inconsistent parcel read in NanoAppFilter
+ ▪ f75f1306841 Make safe label more safe
+ ▪ b00f91d45e5 ResStringPool: Prevenet boot loop from se fix
+ ▪ 90fe496efe0 Fix DynamicRefTable::load security bug
+ ▪ a2b531d9490 Remove unnecessary casts in postUpdateSlider()
+ ▪ 6c6f8fcc159 Fix the "Alarm volume" icon is displayed incorrectly
+ ▪ 8e9fc4313a9 Fix an error with hardware keyboard shortcuts
+ ▪ 86f8a7a5b69 DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name
+ ▪ 85eb915f797 keyguard: Handle left icon visibility properly with wifi only devices
+ ▪ 2855edf43e8 SystemUI: Toggle USB tethering only when USB is connected
+ ▪ 7f4e38ae73a Rework thumbnail cleanup
+ ▪ cdda63a4fb1 ResStringPool: Fix security vulnerability
+ ▪ eb1af263be9 ConnectivityService: move reportNetworkConnectivity to handler
+ ▪ 9b5f1d0943d ConnectivityService: safer locking
+ ▪ ecd89a0ef89 Revert "Prevent deadlock when using always-on legacy VPNs"
+ ▪ 9bb567c5403 Add NETWORK_STACK permission
+ ▪ 037ab0286c3 Copy PermissionChecker from support lib and use in RcognitionService
+ ▪ 80597cd2674 Fixed Security Vulnerability of DcParamObject
+ ▪ 86c6d1f31d7 Add permission check to setAllowOnlyVpnForUids
+ ▪ 029d6685820 Verify last array's length in readFromParcel
+ ▪ e3c3cb042a1 keyguard: Welcome to the new DotOS Lockscreen!
+ ▪ e18aa2af561 Add signature Spoofing permission
+ ▪ 2d68226f889 SettingsProvider: Remove deprecated def_force_disable_navkeys default
+ ▪ 8011fd25db1 Use calling user ID when calling isDeviceLocked
+ ▪ ca030c41a5d Adjust URI host parsing to stop on \ character.
+ ▪ 9916e6dd197 Check for null-terminator in ResStringPool::string8At
+ ▪ 7d1a1dd6c6c ParcelableRttResults parcel code fix
+ ▪ 60819e33872 Fix VerifyCredentialResponse parcelling code
+ ▪ d19c1288630 SystemUI: Fix LiveDisplay tile off color
+ ▪ d12927c9481 livedisplay: Allow tile creation before boot completed phase [2/2]
+ ▪ e1f8de789c5 fw: GlobalActions: Always dismiss any existing dialog
+ ▪ 86537937391 Keyguard: Don't apply input restriction if disabled by profile
+ ▪ 1990c64b6d5 DO NOT MERGE Backporting potential usb tapjacking precaution.
+ ▪ 0898d123136 mtp: fix double free of thumbnail data
+ ▪ ece2bc3947f Throw OOME if Bitmap.nativeCreate fails
+ ▪ 6c27301b489 Adjust Uri host parsing to use last instead of first @.
+ ▪ 2f8689b60ae SysUI: Add Russian translation for accessibility_battery_level_charging
+ ▪ cd326261ad8 SystemUI: Recents: Improve code for long app titles being overlapped
+ ▪ 218bcebf247 We don't want to feel deprecated...
 
  ▪ project frameworks/native/
- ▪ ee2c6b0ce Increment when attempting to read protected Parcel Data
- ▪ f790e3f61 Disallow reading object data from Parcels with non-object reads
- ▪ a61fddddb Don't pad before calling writeInPlace().
- ▪ 004f57678 Handle glGetString returning NULL
- ▪ 7a4d810be opengl: dont use swap buffers with damage
- ▪ 07acab919 gui: don't use native fence sync
- ▪ 667bb2dd1 Fix deep sleep issue
+ ▪ 67f9aef56 Increment when attempting to read protected Parcel Data
+ ▪ 1466fb8d3 Disallow reading object data from Parcels with non-object reads
+ ▪ 23319f557 Don't pad before calling writeInPlace().
+ ▪ 02437fae3 Handle glGetString returning NULL
+ ▪ d0bf80dca opengl: dont use swap buffers with damage
+ ▪ 5caa2b3bf gui: don't use native fence sync
+ ▪ 816674796 Fix deep sleep issue
 
  ▪ project frameworks/opt/telephony/
- ▪ 2958da1a fix ussd
- ▪ 2c058f14 fix 2g/3g/LTE switch
-
- ▪ project hardware/qcom/display-caf/msm8974/
- ▪ 966a222f0 libgralloc: Fix adding offset to the mapped base address
+ ▪ 2929ddaa fix ussd
+ ▪ d63756f9 fix 2g/3g/LTE switch
 
  ▪ project packages/apps/Camera2/
- ▪ b81f8b879 Camera2: override capture support level
- ▪ 21628347d Camera2: Fix photo snap delay on front cam.
-
- ▪ project packages/apps/Dialer/
- ▪ e27507ee1 add round icon support for settings
+ ▪ 73863e4e3 Camera2: override capture support level
+ ▪ 42f73f78e Camera2: Fix photo snap delay on front cam.
 
  ▪ project packages/apps/Settings/
- ▪ 041083d0f3 add ota
-
- ▪ project packages/apps/Terminal/
- ▪ 1c80255 Terminal
-
- ▪ project packages/apps/Trebuchet/
- ▪ 4d9164987 my apps
+ ▪ 0d95c21e7d add ota
 
  ▪ project packages/providers/MediaProvider/
- ▪ 4f71dc8 fix_mtp
-
- ▪ project packages/services/OmniJaws/
- ▪ aff373a enable weather by default
+ ▪ d2545c3 fix_mtp
 
  ▪ project system/core/
- ▪ e6eb73b2d init.rc: move load_system_props to beginning of 'on fs'
- ▪ d54bfc41b String16: remove integer overflows
- ▪ e9a57355a libnetutil: Check dhcp respose packet length
+ ▪ 295720758 Make adb use a custom prop for adb root
+ ▪ 89f04285b init: add install_keyring for TWRP FBE decrypt
+ ▪ 07b94421f init.rc: Lock down access to /proc/net/fib_trie
+ ▪ 4f5425620 init.rc: move load_system_props to beginning of 'on fs'
+ ▪ e6b3ebda1 String16: remove integer overflows
+ ▪ 2e19123b5 libnetutil: Check dhcp respose packet length
 
  ▪ project system/sepolicy/
- ▪ 160fc9f sepolicy for cherryplus
+ ▪ 11785e8 sepolicy for cherryplus
 
  ▪ project vendor/cm/
- ▪ 873bc8ea vendor
+ ▪ 7e5a02fd vendor
 
  ▪ project vendor/cmsdk/
- ▪ 3d13a9e livedisplay: Allow tile creation before boot completed phase [1/2]
- ▪ aee4a45 cmsdk: fix picture adjustment from depending on color balance
- ▪ 38d7f16 CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
+ ▪ 753b6032 livedisplay: Allow tile creation before boot completed phase [1/2]
+ ▪ 16eaca6c cmsdk: fix picture adjustment from depending on color balance
+ ▪ e5699f83 CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
 
- ▼ 07/27/2018
+ ▼ 11/27/2018
+
+
+ ▪ project bootable/recovery/
+ ▪ 2baec0b Fix making adb use a custom prop for adb root
+ ▪ 5627c60 Make adb use a custom prop for adb root
+
+ ▼ 11/25/2018
+
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 5b7dabe2 Make adb use a custom prop for adb root
+
+ ▼ 11/24/2018
+
+
+ ▪ project external/aac/
+ ▪ fccf2d6 Add sampling rate sanity check
+ ▪ d999306 Break audio element loop in case element_count becomes too large.
+
+ ▼ 11/19/2018
+
+
+ ▪ project external/aac/
+ ▪ f6822e4 Prevent bit buffer counter overflow.
+
+ ▼ 11/13/2018
 
 
  ▪ project system/bt/
- ▪ 4f80959c DO NOT MERGE SMP: Validate remote elliptic curve points
+ ▪ 9f58bf01 Check data length when parsing AVRCP vendor specific command responses
+ ▪ 6562ba76 AVRCP: unify Get{Element,Item}Attributes response.
 
- ▼ 07/17/2018
+ ▼ 11/11/2018
 
 
- ▪ project packages/apps/Bluetooth/
- ▪ b533e631 Make sure server response doesn't exceed maximum allowable length
+ ▪ project libcore/
+ ▪ e8f9b6857 ZoneInfo: Exclude boundary tz transitions
+
+ ▼ 11/08/2018
+
 
  ▪ project system/bt/
- ▪ d1016466 DO NOT MERGE Prevent stack overflow in btif_storage
- ▪ ae9d7f81 DO NOT MERGE: Check number of attributes before writing to a buffer
- ▪ b78f1357 DO NOT MERGE AVRC: Add bound check for AVRC_EVT_APP_SETTING_CHANGE
- ▪ 01a38f18 Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ
- ▪ 7e67b02f DO NOT MERGE Fix unexpected behavior in smp_sm_event
+ ▪ 84055cd4 Check AVRCP data length when parsing inside avrc_ctrl_pars_vendor_rsp()
 
- ▼ 07/16/2018
+ ▼ 11/07/2018
 
 
- ▪ project external/libhevc/
- ▪ 47cf32b Return error for invalid st/lt sps parameters
+ ▪ project external/sonivox/
+ ▪ 1450edd sonivox: prevent rejection of good but large MIDI files
+ ▪ 0bca4fc sonivox: prevent infinite loop in OTA ringtones
 
- ▪ project system/media/
- ▪ 81033a2c Merge commit 'f9e3022c474619c69a46ae7dbe11b5b531dbad57' into am-0d58d39a-0539-474e-b9c8-36cc976d15e8
+ ▪ project external/tremolo/
+ ▪ c951533 Fix OOB access in Tremolo
+
+ ▼ 10/31/2018
+
+
+ ▪ project packages/providers/DownloadProvider/
+ ▪ 715c24a DO NOT MERGE. All untrusted selections must go through builder.
+ ▪ b132242 Enable search for Downloads.
+
+ ▼ 10/28/2018
+
+
+ ▪ project bionic/
+ ▪ 1f7e6daed zoneinfo: Update tzdata to 2018g
+
+ ▪ project external/icu/
+ ▪ 7809bc24 icu: Update tzdata to 2018g
+
+ ▼ 10/27/2018
+
+
+ ▪ project external/chromium-webview/
+ ▪ 2bbd3e5 Update webviews to Chromium 69.0.3497.109
+
+ ▼ 10/22/2018
+
+
+ ▪ project bionic/
+ ▪ 232a0ab3d zoneinfo: Update tzdata to 2018f
+
+ ▪ project external/icu/
+ ▪ 1241992c icu: Update tzdata to 2018f
+
+ ▼ 10/16/2018
+
+
+ ▪ project packages/apps/Calendar/
 
