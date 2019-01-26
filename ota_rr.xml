@@ -2,15 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20181215-cherryplus-Dec</Filename>
+            <Filename>RR-N-v5.8.5-20190126-cherryplus-Jan</Filename>
             <RomUrl
              id="rom"
-             title="RR-N-v5.8.5-20181215-cherryplus-Dec"
-             description="for devices with standart partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20181215-cherryplus-Dec.zip/download</RomUrl>
+             title="RR-N-v5.8.5-20190126-cherryplus-Jan"
+             description="for devices with standart partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20190126-cherryplus-Jan.zip/download</RomUrl>
             <Rom8liteUrl
              id="rom8lite"
-             title="RR-N-v5.8.5-20181215-cherryplus-Dec-P8LS"
-             description="for devices with P8Lite partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20181215-cherryplus-Dec-P8LS.zip/download</Rom8liteUrl>
+             title="RR-N-v5.8.5-20190126-cherryplus-Jan-P8LS"
+             description="for devices with P8Lite partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20190126-cherryplus-Jan-P8LS.zip/download</Rom8liteUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
