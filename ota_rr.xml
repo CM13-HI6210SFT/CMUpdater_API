@@ -2,19 +2,15 @@
 <SlimOTA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ota.xsd">
     <Stable>
         <cherryplus>
-            <Filename>RR-N-v5.8.5-20190126-cherryplus-Jan</Filename>
+            <Filename>RR-N-v5.8.5-20190224-cherryplus-Feb.zip</Filename>
             <RomUrl
              id="rom"
-             title="RR-N-v5.8.5-20190126-cherryplus-Jan"
-             description="for devices with standart partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20190126-cherryplus-Jan.zip/download</RomUrl>
-            <Rom8liteUrl
-             id="rom8lite"
-             title="RR-N-v5.8.5-20190126-cherryplus-Jan-P8LS"
-             description="for devices with P8Lite partitions markup">https://sourceforge.net/projects/havoc-gemini/files/RR-N-v5.8.5-20190126-cherryplus-Jan-P8LS.zip/download</Rom8liteUrl>
+             title="RR-N-v5.8.5-20190224-cherryplus-Feb"
+             description="Latest RR build">https://sourceforge.net/projects/havoc-gemini/files/cherryplus/RR-N-v5.8.5-20190224-cherryplus-Feb.zip/download</RomUrl>
             <MagiskUrl
              id="magisk"
              title="Magisk root"
-             description="18.0">https://github.com/topjohnwu/Magisk/releases/download/v18.0/Magisk-v18.0.zip</MagiskUrl>
+             description="18.0">https://github.com/topjohnwu/Magisk/releases/download/v18.1/Magisk-v18.1.zip</MagiskUrl>
             <GappsUrl
              id="gapps"
              title="Gapps"
