@@ -2,347 +2,580 @@
  ▼ Resurrection Remix Nougat Ver 5.8.5 Changelog
 
 
- ▼ 05/03/2019
+▼ 08/17/2019
 
+
+ ▪ project art/
+ ▪ 6db300804 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_art into HEAD
 
  ▪ project build/
- ▪ 25a69e865 build
- ▪ b7e739c4a ru_RU
- ▪ c6ae82a3a Merge remote-tracking branch 'cm/cm-14.1' into HEAD
-
- ▪ project frameworks/av/
- ▪ 5895edb94 CTS error while media dump()
- ▪ 5e637aad6 MediaExtractor: stop rendering when an error occurs
- ▪ 74f4f67b5 Fix information disclosure in mediadrmserver
- ▪ 9dac16060 Check for overflow of crypto size
- ▪ 1d4471085 M3UParser: handle missing EXT-X-MEDIA URIs
- ▪ 40690c9c4 M3UParser: make url on demand
- ▪ 4a23ca8e9 Fix possible out of bounds read
- ▪ de1320aa2 Speed up id3v2 unsynchronization
- ▪ 637d89b51 EffectsFactory: add debug and trace wrappers for NXP LifeVibes
- ▪ 78ae09621 Add check preventing div0 issue
- ▪ 05a2098f4 Sanitize effect descriptors for AudioPolicyService binder calls.
- ▪ 8f8e45d52 Init gain config to prevent uninit leak.
- ▪ bca222118 audioflinger: Fix effect creation handling
- ▪ e46703e58 Handle bad bitrate index in mp3dec.
- ▪ bee489921 better mpeg2 TS elementary stream Access Unit parsing
- ▪ 3910c8f12 Refactor MediaPlayerBase's notify
- ▪ 92cc7b0d7 libmediaplayerservice:Fix deadlock on gapless start failure
- ▪ bd2df5b06 Revert "libmediaplayerservice: fix deadlock on gapless start failure"
- ▪ 174a81abe Prevent MediaPlayerService::Client's use-after-free
- ▪ 1b0183915 Check NAL size before looking inside
- ▪ 9248abfd8 M3UParser: detect variant streams without EXT-X-STREAM-INF
- ▪ ac7868a24 AACExtractor: check bounds during seek
- ▪ 50a18624b httplive: check for malformed EXT-X-STREAM-INF
- ▪ a47eba6ab Apply input buffer validation also to AVC and MPEG4 encoders
- ▪ e4a4ba002 IAudioPolicyService: Add attribute tags sanitization
- ▪ 859fe335a Fix the UAF bug caused by a dead stack variable
- ▪ 224e900b5 Fix edge case when applying id3 unsynchronization
- ▪ f923f583f Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
- ▪ 0d1c6cd66 Validate decryption key length to decrypt function.
- ▪ 3400cfa4f stagefright: MP4Extractor: allow 10% overhead on default sample size
- ▪ aed135010 Access AVCDEC context after create fail check
- ▪ debdd02ff SoftAVCDec: Handle zero length input without EOS
- ▪ 635df0b0e Access HEVC context after create fail check
- ▪ 46d6b4b66 k3
+ ▪ 3e94dc191 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_build into HEAD
 
  ▪ project frameworks/base/
- ▪ 4508727562f Select only preinstalled Spell Checker Services
- ▪ e17c84969ce RESTRICT AUTOMERGE Do not linkify text with RLO/LRO characters.
- ▪ 9b4fc7b304a Return WiFi data usage for WiFi-only devices
- ▪ c0f2543254a RESTRICT AUTOMERGE: Recover shady content:// paths.
- ▪ d7c1ccc5995 Pass userId through to singleton ContentProviders
- ▪ 70a2e38e943 Changing SUPL_ES=1 for SUPL end point control
- ▪ a1697bc4a63 Make adb use a custom prop for adb root
- ▪ 7343e68414f Verify number of Map entries written to Parcel
- ▪ a1c881fd7b1 RESTRICT AUTOMERGE: Hide overlay windows when requesting media projection permission.
- ▪ c034f81570b Fix crash during cursor moving on BiDi text
- ▪ 4789e07ece7 DO NOT MERGE. Persistable Uri grants still require permissions.
- ▪ 14823a05b23 Always create grant structures when persistable.
- ▪ af7f911c769 Optimise the hit test algorithm
- ▪ c72fe26fe44 Add support for search in DownloadManager.
- ▪ 50d4b996d05 DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.
- ▪ ebdc541fb34 DO NOT MERGE. Execute "strict" queries with extra parentheses.
- ▪ 539505064f2 Backport Prevent shortcut info package name spoofing
- ▪ da8012482b6 Fix TrackInfo parcel write
- ▪ 9a830418746 Resolve inconsistent parcel read in NanoAppFilter
- ▪ 2d538dc659f Make safe label more safe
- ▪ c172d0fbebc ResStringPool: Prevenet boot loop from se fix
- ▪ daf363b5032 Fix DynamicRefTable::load security bug
- ▪ f1c7108f335 Remove unnecessary casts in postUpdateSlider()
- ▪ 2d2cf925f19 Fix the "Alarm volume" icon is displayed incorrectly
- ▪ 2f493b41aff Fix an error with hardware keyboard shortcuts
- ▪ 9d3b9b25c93 DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name
- ▪ 9131042eb2d keyguard: Handle left icon visibility properly with wifi only devices
- ▪ 41c3ec6f3a8 SystemUI: Toggle USB tethering only when USB is connected
- ▪ c2effd150ac Rework thumbnail cleanup
- ▪ db7b65d2c37 ResStringPool: Fix security vulnerability
- ▪ 804a36f50a1 ConnectivityService: move reportNetworkConnectivity to handler
- ▪ d85b2d37836 ConnectivityService: safer locking
- ▪ 56590b133c6 Revert "Prevent deadlock when using always-on legacy VPNs"
- ▪ 0680c926eb1 Add NETWORK_STACK permission
- ▪ caac2a348c2 Copy PermissionChecker from support lib and use in RcognitionService
- ▪ 078b3e34a17 Fixed Security Vulnerability of DcParamObject
- ▪ 099d11791e8 Add permission check to setAllowOnlyVpnForUids
- ▪ 5f63d328087 Verify last array's length in readFromParcel
- ▪ b938fd91407 keyguard: Welcome to the new DotOS Lockscreen!
- ▪ 4f3ef12c3da Add signature Spoofing permission
- ▪ 6376d5a3235 SettingsProvider: Remove deprecated def_force_disable_navkeys default
- ▪ 24a65dfcf24 Use calling user ID when calling isDeviceLocked
- ▪ 9a32ce14102 Adjust URI host parsing to stop on \ character.
- ▪ b457b2a9497 Check for null-terminator in ResStringPool::string8At
- ▪ 89372ce4d05 ParcelableRttResults parcel code fix
- ▪ 224617e4938 Fix VerifyCredentialResponse parcelling code
- ▪ b307dee9927 SystemUI: Fix LiveDisplay tile off color
- ▪ de2966841b4 livedisplay: Allow tile creation before boot completed phase [2/2]
- ▪ 58af12952e6 fw: GlobalActions: Always dismiss any existing dialog
- ▪ 834005ca8be Keyguard: Don't apply input restriction if disabled by profile
- ▪ ae41bafaf5e DO NOT MERGE Backporting potential usb tapjacking precaution.
- ▪ 3dd21a2e1ba mtp: fix double free of thumbnail data
- ▪ 63d38d96560 Throw OOME if Bitmap.nativeCreate fails
- ▪ 0c89e839f19 Adjust Uri host parsing to use last instead of first @.
- ▪ 00cbacaae85 SysUI: Add Russian translation for accessibility_battery_level_charging
- ▪ 5be9136d786 SystemUI: Recents: Improve code for long app titles being overlapped
- ▪ befece4a7b8 We don't want to feel deprecated...
- ▪ c84d4d4a8a0 mtp: stop ocassional crash in MTP Host.
+ ▪ ee4d82b473a RESTRICT AUTOMERGE: Recover shady content:// paths.
+ ▪ 8912b457ae2 Select only preinstalled Spell Checker Services
+ ▪ 9d712831316 Clean up screenshot if nothing selected
+ ▪ ace238ccb2f DO NOT MERGE - SUPL ES Extension - Safer Init and Not After Boot
+ ▪ cc5028f8029 Added missing permission check to isPackageDeviceAdminOnAnyUser
+ ▪ 1b6301cf243 Limit IsSeparateProfileChallengeAllowed to system callers
 
  ▪ project frameworks/native/
- ▪ 2e5619566 Sanitize InputMessage before sending
- ▪ badae91a9 Increment when attempting to read protected Parcel Data
- ▪ 5fdbc1d4b Disallow reading object data from Parcels with non-object reads
- ▪ 41f98dc48 Don't pad before calling writeInPlace().
- ▪ 480454dd5 Handle glGetString returning NULL
- ▪ a6ce11386 opengl: dont use swap buffers with damage
- ▪ 1eefd4220 gui: don't use native fence sync
- ▪ 864d60957 Fix deep sleep issue
+ ▪ e496e10fd libbinder: Status: check dataPosition sets.
+ ▪ 13049a4ca libbinder: readCString: no ubsan sub-overflow
 
- ▪ project frameworks/opt/telephony/
- ▪ f2571ab7 fix ussd
- ▪ c6a78d3c fix 2g/3g/LTE switch
+ ▼ 08/07/2019
 
- ▪ project packages/apps/Camera2/
- ▪ 1b1b7f425 Camera2: override capture support level
- ▪ b79c1bf4c Camera2: Fix photo snap delay on front cam.
+
+ ▪ project build/
+ ▪ be817f016 Bump Security String to 2019-08-05
+
+ ▼ 08/06/2019
+
+
+ ▪ project art/
+ ▪ 8806236ac Use conservative permissions when creating files in ART
+
+ ▼ 07/26/2019
+
+
+ ▪ project external/nano/
+ ▪ 54de1b3a nano: Zero entire struct termios
+ ▪ 7793a838 nano: don't spam warnings as errors
+ ▪ e3633544 nano: Zero entire struct sigaction struct
+ ▪ 408cbeaa nano: fix another implicit declaration of time()
+ ▪ 64e338e5 Adjust config.h for Nougat:
+ ▪ b1a0eea4 nano: Update config.h for 4.3
+ ▪ 4e504237 nano: Regenerate config.h
+ ▪ c817bc9c Merge tag 'v4.3' into lineage-15.1_v4.3-merge
+
+ ▼ 07/14/2019
+
+
+ ▪ project frameworks/base/
+ ▪ 5190fdc4e7d [BACKPORT]NetworkManagement : Add ability to restrict app vpn usage
+ ▪ 503616eccd9 Adding SUPL NI Emergency Extension Time
+ ▪ 940c89b6813 Add cross user permission check - areNotificationsEnabledForPackage
+ ▪ 3e3a2a12c63 Limit IsSeparateProfileChallengeAllowed to system callers
+ ▪ 42ca779ecd9 Permission Check For DPM.getPermittedAccessibilityServices
+ ▪ 380e3df100e Added missing permission check to isPackageDeviceAdminOnAnyUser.
+
+ ▼ 07/12/2019
+
+
+ ▪ project external/vim/
+ ▪ b1f019d5e Adjust src/auto/config,h for Nougat
+
+ ▼ 07/02/2019
+
+
+ ▪ project build/
+ ▪ a052b2687 Bump Security String to 2019-07-05
+
+ ▼ 06/30/2019
+
+
+ ▪ project build/
+ ▪ cbc86ea94 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_build into HEAD
+
+ ▼ 06/12/2019
+
+
+ ▪ project external/vim/
+ ▪ fc4e70ca5 vimrc.android: Set nomodeline
+
+ ▼ 06/10/2019
+
+
+ ▪ project external/vim/
+ ▪ 00fa77daa vim: Add spacehi plugin
+ ▪ 96dfaad56 vim: Update xml plugin
+ ▪ 1a97a0904 vim/syntax: Add android logcat syntax
+ ▪ c1e3494c6 vim: Add autogenerated configs
+ ▪ 1f66998d1 vim: Don't ingore generated configs
+ ▪ dad7e0af5 vim: Import Android makefiles
+
+ ▼ 06/09/2019
+
+
+ ▪ project external/vim/
+ ▪ ac2450a9a patch 8.1.1511: matches in a popup window are not displayed properly
+ ▪ 80dad48c5 patch 8.1.1510: a plugin cannot easily expand a command like done internally
+ ▪ 954bb0636 patch 8.1.1509: cmdline_row can become negative, causing a crash
+ ▪ 541faf7a7 patch 8.1.1508: sound keeps failing on Travis
+ ▪ a90998d93 patch 8.1.1507: sound test still fails on Travis
+ ▪ b29cfb8c2 patch 8.1.1506: syntax error in Travis config
+ ▪ 8ed75cb0b patch 8.1.1505: running "make clean" twice gives errors
+ ▪ ef23c527b patch 8.1.1504: sound test still fails on Travis
+ ▪ ffa60dda0 patch 8.1.1503: sound test fails on Travis
+ ▪ 427f5b66c patch 8.1.1502: cannot play any sound
+ ▪ 260addf79 patch 8.1.1501: new behavior of b:changedtick not tested
+ ▪ 21f8d93c7 patch 8.1.1500: wrong shell command when building with VIMDLL and "!" in 'go'
+
+ ▼ 06/08/2019
+
+
+ ▪ project external/vim/
+ ▪ 24a5ac5d4 patch 8.1.1499: ruler not updated after popup window was removed
+ ▪ c024b4667 patch 8.1.1498: ":write" increments b:changedtick even though nothing changed
+ ▪ aef5c62a6 patch 8.1.1497: accessing memory beyond allocated space
+ ▪ acc682bd7 patch 8.1.1496: popup window height is not recomputed
+ ▪ 1748c7f77 patch 8.1.1495: memory access error
+ ▪ 6c009a397 patch 8.1.1494: build failure
+ ▪ 33796b39b patch 8.1.1493: redrawing with popups is slow and causes flicker
+ ▪ 7c348bb5a patch 8.1.1492: MS-Windows: when "!" is in 'guioptions' ":!start" fails
+ ▪ 606407384 patch 8.1.1491: when skipping over code a function call may cause trouble
+ ▪ 4e0bf8462 patch 8.1.1490: when a single test fails the exit code is not set
+ ▪ 64416127f patch 8.1.1489: sign order wrong when priority was changed
+ ▪ 150f0550f patch 8.1.1488: summary of tests has incorrect failed count
+ ▪ 62a88f498 patch 8.1.1487: older msgfmt cannot generate proper .desktop file
+
+ ▼ 06/07/2019
+
+
+ ▪ project external/vim/
+ ▪ 125370459 patch 8.1.1486: a listener change is merged even when it adds a line
+ ▪ 773a97c25 Update runtime files - Add typescript syntax and indent.
+
+ ▼ 06/06/2019
+
+
+ ▪ project build/
+ ▪ 59ab13b0e Bump Security String to 2019-06-05
+
+ ▪ project external/vim/
+ ▪ c07f67ad0 patch 8.1.1485: double free when garbage_collect() is used in autocommand
+ ▪ 75ee544f9 patch 8.1.1484: some tests are slow
+ ▪ 5d30ff196 patch 8.1.1483: skipped tests are not properly listed
+ ▪ f6d50f1da patch 8.1.1482: no test for wincol() depending on the 'number' option
+ ▪ 12e71eb8a patch 8.1.1481: length for two-digit rgb termresponse is off by one
+ ▪ 8e228e21c patch 8.1.1480: desktop file check doesn't run on CI
+ ▪ 133c73735 patch 8.1.1479: change included for debugging only
+ ▪ 18250e291 patch 8.1.1478: still an error when running tests with the tiny version
+ ▪ c7500f9cb patch 8.1.1477: test summary fails in the tiny version
+ ▪ 9c0cec65f patch 8.1.1476: no statistics displayed after running tests
+ ▪ db294adc6 patch 8.1.1475: search string not displayed when 'rightleft' is set
+ ▪ 9aeb33639 patch 8.1.1474: 'ttybuiltin' is not tested
+ ▪ 4a792c87b patch 8.1.1473: new resolve() implementation causes problem for plugins
+ ▪ 61da1bfa6 Update runtime files.
+ ▪ de6dbb452 patch 8.1.1472: add_termcap_entry() is not tested
+ ▪ 32e197701 patch 8.1.1471: 'background' not correctly set for 2-digit rgb termresponse
+ ▪ 6d718c4c3 patch 8.1.1470: new Unicode character U32FF missing from double-width table
+ ▪ 66761db11 patch 8.1.1469: no test for checking the cursor style response
+ ▪ d0380dc78 patch 8.1.1468: the generated desktop files may be invalid
+
+ ▼ 06/05/2019
+
+
+ ▪ project external/vim/
+ ▪ d6ec1730b patch 8.1.1467: cscope test fails
+ ▪ 58a7f87c8 patch 8.1.1466: not updating priority on existing sign
+ ▪ a37833dbd patch 8.1.1465: allocating wrong amount of memory
+ ▪ cea254f5a patch 8.1.1464: only 4-digit rgb termresponse is recognized
+
+ ▼ 06/04/2019
+
+
+ ▪ project external/vim/
+ ▪ 277e79adc patch 8.1.1463: gcc warns for uninitialized variable
+ ▪ c974022c3 patch 8.1.1462: MS-Windows: using special character requires quoting
+ ▪ ddd330878 patch 8.1.1461: tests do not run or are not reliable on some systems
+ ▪ 02e15072b patch 8.1.1460: popup window border characters may be wrong
+ ▪ 3f6aeba18 patch 8.1.1459: popup window border looks bad when 'ambiwidth' is "double"
+ ▪ 0b4c9eddb patch 8.1.1458: crash when using gtags
+ ▪ 87abab92f patch 8.1.1457: cannot reuse a buffer when loading a screen dump
+
+ ▼ 06/03/2019
+
+
+ ▪ project external/vim/
+ ▪ 98fb65cb0 patch 8.1.1456: WinBar not redrawn after scrolling one line
+
+ ▼ 06/02/2019
+
+
+ ▪ project external/vim/
+ ▪ 1762731f2 patch 8.1.1455: popup_atcursor() not completely implemented
+ ▪ 6116b6abb patch 8.1.1454: build failure without the conceal feature
+ ▪ 3397f74ac patch 8.1.1453: popup window "moved" property not implemented yet
+ ▪ b0ebbda06 patch 8.1.1452: line and col property of popup windows not properly checked
+ ▪ ca2f7037c patch 8.1.1451: CTRL-L does not clear screen with a popup window
+ ▪ 399d898ac patch 8.1.1450: popup window positioning wrong when using padding or borders
+ ▪ 042fb4b44 patch 8.1.1449: popup text truncated at end of screen
+ ▪ 988c43310 patch 8.1.1448: statusline is sometimes drawn on top of popup
+ ▪ 7b29dd850 patch 8.1.1447: not allowed to create an empty popup
+ ▪ 9eaac8965 patch 8.1.1446: popup window callback not implemented yet
+ ▪ 790498b50 patch 8.1.1445: popup window border highlight not implemented yet
+ ▪ 3bfd04e67 patch 8.1.1444: not using double line characters for popup border
+ ▪ 2fd8e35e1 patch 8.1.1443: popup window padding and border not implemented yet
+
+ ▼ 06/01/2019
+
+
+ ▪ project external/vim/
+ ▪ 8caaf8256 patch 8.1.1442: popup windows not considered when the Vim window is resized
+ ▪ bf0eff0b7 patch 8.1.1441: popup window filter not yet implemented
+ ▪ 2d247849c patch 8.1.1440: win_execute() test fails
+ ▪ c47ed44be patch 8.1.1439: json_encode() is very slow for large results
+ ▪ 815b76bff patch 8.1.1438: some commands cause trouble in a popup window
+ ▪ 3a97bb3f0 patch 8.1.1437: code to handle callbacks is duplicated
+ ▪ 7dd64a3e5 Update runtime files.
+ ▪ c28cb5b16 patch 8.1.1436: writefile test fails when run under /tmp
+ ▪ 5d508dd39 patch 8.1.1435: memory usage test is a bit too flaky
+
+ ▼ 05/31/2019
+
+
+ ▪ project external/vim/
+ ▪ 1ab74a5af patch 8.1.1434: test 3 is old style
+ ▪ eea169983 patch 8.1.1433: win_execute() may leave popup window focused
+ ▪ ccd6e3471 patch 8.1.1432: can't build with eval feature
+ ▪ c6896e20f patch 8.1.1431: popup window listed as "Scratch"
+ ▪ 402502d0e patch 8.1.1430: popup window option "wrap" not supported
+ ▪ ac1f1bc22 patch 8.1.1429: "pos" option of popup window not supported yet
+
+ ▼ 05/30/2019
+
+
+ ▪ project external/vim/
+ ▪ cc31ad9f9 patch 8.1.1428: popup_atcursor() not implemented yet
+ ▪ 54fabd4b5 patch 8.1.1427: popup window screenshot test fails
+ ▪ b42301247 patch 8.1.1426: no test for syntax highlight in popup window
+ ▪ 89adc3a13 patch 8.1.1425: win_execute() does not set window pointers properly
+ ▪ 5c3fb0462 patch 8.1.1424: crash when popup menu is deleted while waiting for char
+ ▪ cacc6a5c9 patch 8.1.1423: popup windows use options from current window and buffer
+ ▪ 8c2a600f7 patch 8.1.1422: popup_getoptions() not implemented yet
+ ▪ 171469660 patch 8.1.1421: drawing "~" line in popup window
+ ▪ 88c4e1f06 patch 8.1.1420: popup window size only uses first line length
+ ▪ 68a4b04a8 patch 8.1.1419: listener callbacks may be called recursively
+ ▪ 868b7b671 patch 8.1.1418: win_execute() is not implemented yet
+ ▪ 1bbebab52 patch 8.1.1417: MS-Windows: resolve() does not resolve all components of path
+ ▪ bc133543b patch 8.1.1416: popup_getposition() not implemented yet
+
+ ▼ 05/29/2019
+
+
+ ▪ project external/vim/
+ ▪ 59edb00e2 patch 8.1.1415: build error in MS-Windows GUI
+ ▪ c799fe206 patch 8.1.1414: alloc() returning "char_u *" causes a lot of type casts
+
+ ▼ 05/28/2019
+
+
+ ▪ project external/vim/
+ ▪ b58a4b938 patch 8.1.1413: error when the drive of the swap file was disconnected
+ ▪ 72fcf07b0 patch 8.1.1412: test 30 is old style
+ ▪ 7833dab73 patch 8.1.1411: Coverity warns for divide by zero
+ ▪ 60cdb3004 patch 8.1.1410: popup_move() is not implemented yet
+
+ ▼ 05/27/2019
+
+
+ ▪ project external/vim/
+ ▪ b43683729 patch 8.1.1409: Coverity warns for using uninitialized memory
+ ▪ bf0ecb2cb patch 8.1.1408: PFL_HIDDEN conflicts with system header file
+ ▪ 7a8d0278b patch 8.1.1407: popup_create() does not support text properties
+ ▪ 2cd0dce89 patch 8.1.1406: popup_hide() and popup_show() not implemented yet
+ ▪ 68e6560b8 Update runtime files.
+ ▪ 20c023aee patch 8.1.1405: "highlight" option of popup windows not supported
+ ▪ 9d591525a patch 8.1.1404: cannot change the patch level when building with NSIS
+ ▪ 35d5af6c0 patch 8.1.1403: cannot build without the timer feature
+
+ ▼ 05/26/2019
+
+
+ ▪ project external/vim/
+ ▪ 51fe3b14f patch 8.1.1402: "timer" option of popup windows not supported
+ ▪ 076073950 patch 8.1.1401: misspelled mkspellmem as makespellmem
+ ▪ 9c27b1c6d patch 8.1.1400: using global pointer for tab-local popups is clumsy
+ ▪ ec58384af patch 8.1.1399: popup windows not adjusted when switching tabs
+ ▪ a8c99fb78 patch 8.1.1398: duplicate line in MSVC build file
+ ▪ 80f95425c patch 8.1.1397: build fails in tiny version
+ ▪ 193ffd1d9 patch 8.1.1396: 'wincolor' does not apply to lines below the buffer
+ ▪ adfde115d patch 8.1.1395: saving for undo may access invalid memory
+ ▪ a5e44600e patch 8.1.1394: not restoring t_F2 in registers test
+ ▪ 51e14387f patch 8.1.1393: unnecessary type casts
+
+ ▼ 05/25/2019
+
+
+ ▪ project build/
+ ▪ 3a02cabe7 Merge tag 'android-7.1.2_r36' of https://android.googlesource.com/platform/build into HEAD
+ ▪ 74f2ba15f build
+ ▪ 36fd5a67b ru_RU
+
+ ▪ project external/vim/
+ ▪ 682725c14 patch 8.1.1392: build failure in tiny version
+ ▪ 4d784b21d patch 8.1.1391: no popup window support
+ ▪ 8f46e4c4b patch 8.1.1390: search stats are off when using count or offset
+ ▪ 7b31a181c patch 8.1.1389: changes are not flushed when end and start overlap
+ ▪ f0884c5f3 patch 8.1.1388: errors when calling prop_remove() for an unloaded buffer
+ ▪ d79eef2eb patch 8.1.1387: calling prop_add() in an empty buffer doesn't work
+
+ ▪ project frameworks/base/
+ ▪ 08f9d2d3b97 DO NOT MERGE - SUPL ES Extension - Safer Init and Not After Boot
+ ▪ 4b4661e5fe6 Clean up screenshot if nothing selected
+ ▪ d49aae5ed9f Select only preinstalled Spell Checker Services
+ ▪ 6915944c2b2 RESTRICT AUTOMERGE Do not linkify text with RLO/LRO characters.
+ ▪ 5961a43da64 Return WiFi data usage for WiFi-only devices
+ ▪ f73eec143f9 RESTRICT AUTOMERGE: Recover shady content:// paths.
+ ▪ cd4fe4ac0a0 Pass userId through to singleton ContentProviders
+ ▪ fe4c6330a2e Changing SUPL_ES=1 for SUPL end point control
+ ▪ 21a1ef9fc20 Make adb use a custom prop for adb root
+ ▪ 69fabbeb740 Verify number of Map entries written to Parcel
+ ▪ 61a40bc673d RESTRICT AUTOMERGE: Hide overlay windows when requesting media projection permission.
+ ▪ 78d99f7c3c7 Fix crash during cursor moving on BiDi text
+ ▪ 60781d0ccef DO NOT MERGE. Persistable Uri grants still require permissions.
+ ▪ 45247449e5d Always create grant structures when persistable.
+ ▪ a47804f8e74 Optimise the hit test algorithm
+ ▪ ffbd872d937 Add support for search in DownloadManager.
+ ▪ 6be732ff60e DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.
+ ▪ bd2c5503cd9 DO NOT MERGE. Execute "strict" queries with extra parentheses.
+ ▪ 95dace9f300 Backport Prevent shortcut info package name spoofing
+ ▪ 6b3a7de7408 Fix TrackInfo parcel write
+ ▪ 2cd68db64d6 Resolve inconsistent parcel read in NanoAppFilter
+ ▪ 7721b480935 Make safe label more safe
+ ▪ 00f7b9dcbeb ResStringPool: Prevenet boot loop from se fix
+ ▪ 9f927097f6b Fix DynamicRefTable::load security bug
+ ▪ 288ce119c25 Remove unnecessary casts in postUpdateSlider()
+ ▪ 8c2cdda0067 Fix the "Alarm volume" icon is displayed incorrectly
+ ▪ a9a900ba75c Fix an error with hardware keyboard shortcuts
+ ▪ 6f74f36086d DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name
+ ▪ 972d3878aa1 keyguard: Handle left icon visibility properly with wifi only devices
+ ▪ edf4e8a9b3c SystemUI: Toggle USB tethering only when USB is connected
+ ▪ 40e5871151a Rework thumbnail cleanup
+ ▪ 49f6d43f6f9 ResStringPool: Fix security vulnerability
+ ▪ 6e0a9fb2f2e ConnectivityService: move reportNetworkConnectivity to handler
+ ▪ 7ff9c698c2b ConnectivityService: safer locking
+ ▪ af551f7690a Revert "Prevent deadlock when using always-on legacy VPNs"
+ ▪ cc4c7d616b4 Add NETWORK_STACK permission
+ ▪ 91553317857 Copy PermissionChecker from support lib and use in RcognitionService
+ ▪ c981fddef6c Fixed Security Vulnerability of DcParamObject
+ ▪ 4ad134c23da Add permission check to setAllowOnlyVpnForUids
+ ▪ 6b3a0ac4484 Verify last array's length in readFromParcel
+ ▪ 2cc637bc688 keyguard: Welcome to the new DotOS Lockscreen!
 
  ▪ project packages/apps/Dialer/
- ▪ 95320471b add round icon support for settings
-
- ▪ project packages/apps/Settings/
- ▪ 00b482eeb0 add ota
+ ▪ e0ed2d66d add round icon support for settings
 
  ▪ project packages/apps/Terminal/
- ▪ 79bb0d1 Terminal
-
- ▪ project packages/apps/Trebuchet/
- ▪ 69016e331 my apps
-
- ▪ project packages/providers/MediaProvider/
- ▪ bd400e1 fix_mtp
+ ▪ 0c4b776 Terminal
 
  ▪ project packages/services/OmniJaws/
- ▪ 4f9af6e enable weather by default
+ ▪ dc2bb45 enable weather by default
 
- ▪ project system/core/
- ▪ d159afc50 Allow adb root even in no debuggable builds
- ▪ d5973892b Make adb use a custom prop for adb root
- ▪ 054f60434 init: add install_keyring for TWRP FBE decrypt
- ▪ ce2b54ac1 init.rc: Lock down access to /proc/net/fib_trie
- ▪ 45925ee76 init.rc: move load_system_props to beginning of 'on fs'
- ▪ 0c85b85ec String16: remove integer overflows
- ▪ d189ed1d6 libnetutil: Check dhcp respose packet length
-
- ▪ project system/sepolicy/
- ▪ 7798869 sepolicy for cherryplus
-
- ▪ project vendor/cm/
- ▪ 2c621329 sepolicy: Allow adbd to set a system_prop
- ▪ 70ade8d8 Label cm.service.adb.root as system prop
- ▪ 91ea87a4 RJIO: Change Roaming protocal to IPV4V6.
- ▪ eaf6321f apns: update RJIO APNs
- ▪ e2bf5345 sensitive_pn: Add sensitive phone number for Macedonia
- ▪ 2cc34f3e cm: Set TARGET_CRYPTFS_HW_PATH if HW crypto is enabled
- ▪ bec7cbcc prebuilts: Fix Telfort apn
- ▪ c9549328 cm: extract_utils: Fix rootfs targets after 72765e4cc950d90abb730bc62e3f5f9eeba5aa4e
- ▪ 08f7d864 Fix Android "Work Profiles" also known as AfW 'Android for Work'
- ▪ 8b5a3ead write_makefiles: fix paths in BUILD_PREBUILT with destination
- ▪ f7168c97 apn: Add APN for spusu MVNO
- ▪ a181d2d0 update magisk
- ▪ e566c423 vendor
-
- ▪ project vendor/cmsdk/
- ▪ 3569beef livedisplay: Allow tile creation before boot completed phase [1/2]
- ▪ 343e5f23 cmsdk: fix picture adjustment from depending on color balance
- ▪ 7f5d50d9 CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
-
- ▼ 04/07/2019
-
-
- ▪ project external/libnfc-nci/
- ▪ 6d668d7 Prevent OOB error in rw_i93_sm_update_ndef()
- ▪ 2dae787 Prevent OOB error in rw_i93_sm_read_ndef()
- ▪ ab26885 Prevent OOB error in rw_i93_sm_detect_ndef()
- ▪ acad75e Prevent OOB read in rw_i93_process_sys_info()
- ▪ 0ccd688 Prevent integer underflow in rw_t3t_act_handle_check_ndef_rsp()
-
- ▼ 04/04/2019
+ ▼ 05/24/2019
 
 
  ▪ project build/
- ▪ d640c05a7 Bump Security String to 2019-04-05
+ ▪ e18c60584 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_build into HEAD
 
- ▪ project external/libmpeg2/
- ▪ e1e802a Add push-pop for Neon D8-D15 registers
+ ▪ project external/vim/
+ ▪ 18a4ba29a patch 8.1.1386: unessesary type casts for lalloc()
+ ▪ 71de720c2 patch 8.1.1385: signed/unsigned compiler warning
+ ▪ 964b3746b patch 8.1.1384: using "int" for alloc() often results in compiler warnings
+ ▪ d33a76412 patch 8.1.1383: warning for size_t/int mixup
+ ▪ 3020a87cb patch 8.1.1382: error when editing test file
+ ▪ d22a6f8aa patch 8.1.1381: MS-Windows: missing build dependency
+ ▪ fa8f86195 patch 8.1.1380: MS-Windows building VIMDLL with MSVC: SUBSYSTEM is not set
+ ▪ 8239c6206 patch 8.1.1379: filechanged test hangs
+ ▪ 701ff0a3e patch 8.1.1378: delete() can not handle a file name that looks like a pattern
+ ▪ fcc4d921d patch 8.1.1377: MS-Windows GUI uses wrong shell command for bash
+ ▪ e2ad826f4 patch 8.1.1376: warnings for size_t/int mixups
+ ▪ 984f031fb patch 8.1.1375: without "TS" in 'shortmess' get a hit-enter prompt often
+ ▪ c97582b02 patch 8.1.1374: check for file changed triggers too often
+ ▪ 0ab190c05 patch 8.1.1373: "[p" in Visual mode puts in wrong line
+ ▪ 1c6fd1e10 patch 8.1.1372: when evaluating 'statusline' the current window is unknown
+ ▪ 99499b1c0 patch 8.1.1371: cannot recover from a swap file
+ ▪ 05b8b07e2 patch 8.1.1370: not using the new github feature for donations
 
- ▪ project external/tremolo/
- ▪ 474c4d4 Add some error/overflow checks in codebook handling
+ ▪ project frameworks/av/
+ ▪ 71b3011fd Reserve enough space for RTSP CSD
+ ▪ d9a957f4a CTS error while media dump()
+ ▪ b0d776d16 MediaExtractor: stop rendering when an error occurs
+ ▪ 6ce964561 Fix information disclosure in mediadrmserver
+ ▪ 77298f593 Check for overflow of crypto size
+ ▪ dd9b4ea1b M3UParser: handle missing EXT-X-MEDIA URIs
+ ▪ 5101773eb M3UParser: make url on demand
+ ▪ fee1d898b Fix possible out of bounds read
+ ▪ 9cec275aa Speed up id3v2 unsynchronization
+ ▪ 88e93b6fe EffectsFactory: add debug and trace wrappers for NXP LifeVibes
+ ▪ aa5094e55 Add check preventing div0 issue
+ ▪ 460ad87ea Sanitize effect descriptors for AudioPolicyService binder calls.
+ ▪ 86174e7df Init gain config to prevent uninit leak.
+ ▪ 40609148b audioflinger: Fix effect creation handling
+ ▪ e6b68f21b Handle bad bitrate index in mp3dec.
+ ▪ 24e548dfd better mpeg2 TS elementary stream Access Unit parsing
+ ▪ b8e9bfb05 Refactor MediaPlayerBase's notify
+ ▪ 2ae6bc29f libmediaplayerservice:Fix deadlock on gapless start failure
+ ▪ 42984826d Revert "libmediaplayerservice: fix deadlock on gapless start failure"
+ ▪ 9540e0ec7 Prevent MediaPlayerService::Client's use-after-free
+ ▪ 85a1d9d23 Check NAL size before looking inside
+ ▪ ce177ff97 M3UParser: detect variant streams without EXT-X-STREAM-INF
+ ▪ 35b1866bc AACExtractor: check bounds during seek
+ ▪ 2da6a08ba httplive: check for malformed EXT-X-STREAM-INF
+ ▪ ea0d0dd3a Apply input buffer validation also to AVC and MPEG4 encoders
+ ▪ 4dd2b1e79 IAudioPolicyService: Add attribute tags sanitization
+ ▪ cd90d0a03 Fix the UAF bug caused by a dead stack variable
+ ▪ 0ad6a7b45 Fix edge case when applying id3 unsynchronization
+ ▪ 43bc9b7ef Add EFFECT_CMD_SET_PARAM parameter checking to Preset Reverb
+ ▪ 490cf2e4c Validate decryption key length to decrypt function.
+ ▪ 0e6c84ddc stagefright: MP4Extractor: allow 10% overhead on default sample size
+ ▪ 492be2ddb Access AVCDEC context after create fail check
+ ▪ c616fc6f8 SoftAVCDec: Handle zero length input without EOS
+ ▪ 889a463e1 Access HEVC context after create fail check
+ ▪ a0f0f4180 k3
 
- ▪ project system/bt/
- ▪ 7526f67d btm_proc_smp_cback: Don't access p_dev_rec if freed
- ▪ 5b836f34 process_l2cap_cmd: Fix OOB
+ ▪ project frameworks/base/
+ ▪ 2664d81b6ab Add signature Spoofing permission
+ ▪ 49e64847fe9 SettingsProvider: Remove deprecated def_force_disable_navkeys default
+ ▪ a80e903a516 Use calling user ID when calling isDeviceLocked
+ ▪ e5dacaeaad6 Adjust URI host parsing to stop on \ character.
+ ▪ 4b24e3e7c42 Check for null-terminator in ResStringPool::string8At
+ ▪ c92b9f80c95 ParcelableRttResults parcel code fix
+ ▪ 1c40c912a34 Fix VerifyCredentialResponse parcelling code
+ ▪ 50f24aeb210 SystemUI: Fix LiveDisplay tile off color
+ ▪ e4f16aec155 livedisplay: Allow tile creation before boot completed phase [2/2]
+ ▪ 4858be0324b fw: GlobalActions: Always dismiss any existing dialog
+ ▪ 2b9d830debf Keyguard: Don't apply input restriction if disabled by profile
+ ▪ b82d81eec03 DO NOT MERGE Backporting potential usb tapjacking precaution.
+ ▪ eca8c11b629 mtp: fix double free of thumbnail data
+ ▪ 5cddf94dc11 Throw OOME if Bitmap.nativeCreate fails
+ ▪ 0807214b5b6 Adjust Uri host parsing to use last instead of first @.
+ ▪ 8775b41e92c SysUI: Add Russian translation for accessibility_battery_level_charging
+ ▪ 8bf77fe6c7e SystemUI: Recents: Improve code for long app titles being overlapped
+ ▪ d65e940b794 We don't want to feel deprecated...
+ ▪ 8270c28c909 mtp: stop ocassional crash in MTP Host.
 
- ▼ 04/02/2019
+ ▪ project frameworks/native/
+ ▪ 940b76683 Sanitize InputMessage before sending
+ ▪ 11545a2ce Increment when attempting to read protected Parcel Data
+ ▪ 406fe22b4 Disallow reading object data from Parcels with non-object reads
+ ▪ 84c939f6b Don't pad before calling writeInPlace().
+ ▪ e29c46f29 Handle glGetString returning NULL
+ ▪ 0b0929883 opengl: dont use swap buffers with damage
+ ▪ 30fb7230e gui: don't use native fence sync
+ ▪ 847046c35 Fix deep sleep issue
 
-
- ▪ project bionic/
- ▪ 3f2cf45a2 zoneinfo: Update tzdata to 2019a
-
- ▪ project external/icu/
- ▪ 014c4b22 icu: Update tzdata to 2019a
-
- ▼ 03/19/2019
-
-
- ▪ project packages/apps/Jelly/
- ▪ a71a039 Jelly: Add support for multiple windows
-
- ▼ 03/11/2019
-
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
-
- ▪ project packages/apps/Calendar/
+ ▪ project frameworks/opt/telephony/
+ ▪ 0e9424ce fix ussd
+ ▪ 3ba20e4f fix 2g/3g/LTE switch
 
  ▪ project packages/apps/Camera2/
+ ▪ aa8cf36fc Camera2: override capture support level
+ ▪ 6d739987f Camera2: Fix photo snap delay on front cam.
 
- ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ project packages/apps/Settings/
+ ▪ 082638bf5e add ota
 
- ▪ project packages/apps/CertInstaller/
+ ▪ project packages/providers/MediaProvider/
+ ▪ 5cfafe3 fix_mtp
 
- ▪ project packages/apps/Eleven/
+ ▪ project system/core/
+ ▪ 7ae043c7f Allow adb root even in no debuggable builds
+ ▪ 77996ddec Make adb use a custom prop for adb root
+ ▪ 0c657c65c init: add install_keyring for TWRP FBE decrypt
+ ▪ e7a739a20 init.rc: Lock down access to /proc/net/fib_trie
+ ▪ 846c7f074 init.rc: move load_system_props to beginning of 'on fs'
+ ▪ 2a93c2305 String16: remove integer overflows
+ ▪ 5e9dedcc8 libnetutil: Check dhcp respose packet length
 
- ▪ project packages/apps/Email/
+ ▪ project system/sepolicy/
+ ▪ c8cbe57 sepolicy for cherryplus
 
- ▪ project packages/apps/EmergencyInfo/
+ ▪ project vendor/cm/
+ ▪ 30a8e40a sepolicy: Allow adbd to set a system_prop
+ ▪ f7c86378 Label cm.service.adb.root as system prop
+ ▪ cd5b99f9 RJIO: Change Roaming protocal to IPV4V6.
+ ▪ 2973c88a apns: update RJIO APNs
+ ▪ 120ae3ca sensitive_pn: Add sensitive phone number for Macedonia
+ ▪ c316877b cm: Set TARGET_CRYPTFS_HW_PATH if HW crypto is enabled
+ ▪ 132cc231 prebuilts: Fix Telfort apn
+ ▪ bc58f820 cm: extract_utils: Fix rootfs targets after 72765e4cc950d90abb730bc62e3f5f9eeba5aa4e
+ ▪ bb5249c1 Fix Android "Work Profiles" also known as AfW 'Android for Work'
+ ▪ 73cb86a1 write_makefiles: fix paths in BUILD_PREBUILT with destination
+ ▪ bfff15a2 apn: Add APN for spusu MVNO
+ ▪ 1aca5777 update magisk
+ ▪ 869ff035 vendor
 
- ▪ project packages/apps/Exchange/
+ ▪ project vendor/cmsdk/
+ ▪ 10af385b livedisplay: Allow tile creation before boot completed phase [1/2]
+ ▪ 46020172 cmsdk: fix picture adjustment from depending on color balance
+ ▪ 744399e6 CMSettingsProvider: Fix default setting for DEV_FORCE_SHOW_NAVBAR
 
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/HTMLViewer/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/KeyChain/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Profiles/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SafetyRegulatoryInfo/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/apps/WallpaperPicker/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/BlockedNumberProvider/
-
- ▪ project packages/providers/BookmarkProvider/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/CallLogProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/providers/TvProvider/
-
- ▪ project packages/providers/UserDictionaryProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▼ 03/06/2019
+ ▼ 05/23/2019
 
 
- ▪ project bootable/recovery/
- ▪ d488704 DO NOT MERGE: Initialize the ZipArchive to zero before parsing
+ ▪ project external/vim/
+ ▪ 294d9bf96 patch 8.1.1369: get E484 when using system() during GUI startup
+ ▪ e09244ee3 patch 8.1.1368: modeline test fails with python but without pythonhome
+ ▪ 7e800c604 patch 8.1.1367: can set 'modelineexpr' in modeline
+ ▪ 110289e78 patch 8.1.1366: using expressions in a modeline is unsafe
+ ▪ 535755214 patch 8.1.1365: source command doesn't check for the sandbox
 
- ▪ project build/
- ▪ 0031d069e Bump Security Patch Level to 2019-03-01
-
- ▼ 03/05/2019
+ ▼ 05/22/2019
 
 
- ▪ project external/libavc/
- ▪ 179cfe2 decoder: Signal IVD_RES_CHANGED error for change in crop params
+ ▪ project external/vim/
+ ▪ 5c017b2de patch 8.1.1364: design for popup window support needs more details
+ ▪ e0b5949a3 patch 8.1.1363: ":vert options" does not make a vertical split
 
- ▪ project external/libhevc/
- ▪ 2e034cc Decoder: Signal IVD_RES_CHANGED error for change in crop params
+ ▼ 05/21/2019
 
- ▪ project external/libnfc-nci/
- ▪ 79ae4ec Prevent integer underflow in rw_t2t_handle_tlv_detect_rsp()
- ▪ 4572143 Prevent Out of bounds read in ce_t4t.cc
- ▪ 45726e3 Prevent OOB read in rw_t3t_act_handle_ndef_detect_rsp()
- ▪ cd2adcd Prevent Out of bounds write in rw_t3t_handle_get_sc_poll_rsp()
- ▪ e8ea48a Fix heap overflow in NFA_SendRawFrame()
- ▪ 66d0837 Prevent Integer Overflow in rw_t3t_act_handle_check_rsp()
- ▪ 423a859 Prevent OOB read in rw_t3t_update_block()
- ▪ be6ace0 Prevent Out of bound error in phNxpNciHal_process_ext_rsp
- ▪ 840c7de Prevent Out of bound error in llcp_dlc_proc_rr_rnr_pdu()
- ▪ a8abdde Prevent Out of bounds read in llcp_util
 
- ▪ project external/sqlite/
- ▪ a4467e8 RESTRICT AUTOMERGE: Apply security patch to sqlite 3.9.
+ ▪ project external/vim/
+ ▪ c79745a82 patch 8.1.1362: code and data in tests can be hard to read
+ ▪ 0b0ad35c3 patch 8.1.1361: Python setuptools don't work with Python 3
+ ▪ 80341bcd8 patch 8.1.1360: buffer left 'nomodifiable' after :substitute
 
- ▪ project system/bt/
- ▪ 00ed1443 DO NOT MERGE A security fix to check buffer length in l2c_lcc_proc_pdu
+ ▼ 05/20/2019
+
+
+ ▪ project external/vim/
+ ▪ f3333b02f patch 8.1.1359: text property wrong after :substitute with backslash
+ ▪ 386b43e59 patch 8.1.1358: cannot enter character with a CSI byte
+ ▪ 999dc1464 patch 8.1.1357: test 37 is old style
+ ▪ 8471e5702 patch 8.1.1356: some text in heredoc assignment ends the text
+
+ ▼ 05/19/2019
+
+
+ ▪ project external/vim/
+ ▪ 16e9b8511 patch 8.1.1355: obvious mistakes are accepted as valid expressions
+ ▪ f5842c5a5 patch 8.1.1354: getting a list of text lines is clumsy
+ ▪ 2b39d806f patch 8.1.1353: undo test fails on Mac
+ ▪ e9ebc9a91 patch 8.1.1352: undofile() reports wrong name
+ ▪ 338dfdad3 patch 8.1.1351: text property wrong after :substitute
+
+ ▼ 05/18/2019
+
+
+ ▪ project external/vim/
+ ▪ dc6855af9 patch 8.1.1350: "W" for wrapping not shown when more than 99 matches
+ ▪ cf0bfd9ad patch 8.1.1349: if writing runs into conversion error backup file is deleted
+ ▪ f8191c5f0 patch 8.1.1348: running tests may cause the window to move
+ ▪ bd2d68c2f patch 8.1.1347: fractional scroll position not restored after closing window
+ ▪ 7f3a28490 patch 8.1.1346: error for Python exception does not show useful info
+ ▪ 6349e9411 patch 8.1.1345: stuck in sandbox with ":s/../\=Function/gn"
+ ▪ 0d3cb7301 patch 8.1.1344: Coverity complains about possibly using a NULL pointer
+ ▪ 8055d1738 patch 8.1.1343: text properties not adjusted for Visual block mode delete
+ ▪ 787880a86 patch 8.1.1342: using freed memory when joining line with text property
+
+ ▼ 05/17/2019
+
+
+ ▪ project external/vim/
+ ▪ 80e737cc6 patch 8.1.1341: text properties are lost when joining lines
+ ▪ bfd451283 patch 8.1.1340: attributes from 'cursorline' overwrite textprop
+ ▪ dabfde04f patch 8.1.1339: installer needs to product name et al.
+ ▪ 0ebe12be8 patch 8.1.1338: hang when concealing the '>' shown for half of wide char
+ ▪ 5c65e6a06 patch 8.1.1337: get empty text prop when splitting line just after text prop
+ ▪ 17aca707f patch 8.1.1336: some eval functionality is not covered by tests
+ ▪ dda4144d3 patch 8.1.1335: listener callback is called after inserting text
+ ▪ eda652215 patch 8.1.1334: when buffer is hidden "F" in 'shortmess' is not used
+
+ ▼ 05/16/2019
+
+
+ ▪ project external/vim/
+ ▪ 45dd07f10 patch 8.1.1333: text properties don't always move after changes
 
